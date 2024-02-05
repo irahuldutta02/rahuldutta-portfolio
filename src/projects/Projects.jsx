@@ -32,6 +32,7 @@ export function Projects() {
 
   useEffect(() => {
     document.title = "Rahul-Dutta/projects";
+    window.scrollTo(0, 0);
   });
 
   return (

@@ -16,6 +16,7 @@ import { useEffect } from "react";
 export function Portfolio() {
   useEffect(() => {
     document.title = "Rahul-Dutta/portfolio";
+    window.scrollTo(0, 0);
   });
   
   return (

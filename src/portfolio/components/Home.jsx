@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "../portfolio.css";
 import Typed from "typed.js";
+import { Link } from "react-router-dom";
 
 export function Home() {
   useEffect(() => {
@@ -30,14 +31,13 @@ export function Home() {
               A <span className="typing"></span>
             </div>
             <div className="home-button-div">
-              <a
+              <Link
                 className="home-button"
-                href="./projects/index.html"
-                target="_blank"
+                to="/projects"
               >
                 <span>Projects</span>
                 <i className="bx bx-laptop bx-tada"></i>
-              </a>
+              </Link>
               <a
                 className="home-button"
                 href="https://rahuldutta.bio.link/"

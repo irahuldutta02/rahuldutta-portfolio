@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../portfolio.css";
 
 export function Works() {
@@ -8,7 +9,7 @@ export function Works() {
         <div className="max-width">
           <h2 className="title">My Works</h2>
           <div className="serv-content">
-            <a className="card" target="_blank" href="./projects/">
+            <Link className="card" to="/projects">
               <div>
                 <div className="box">
                   <i className="bx bx-laptop bx-tada"></i>
@@ -16,7 +17,7 @@ export function Works() {
                   <p>Click here view projects done by me.</p>
                 </div>
               </div>
-            </a>
+            </Link>
             <a
               className="card"
               target="_blank"

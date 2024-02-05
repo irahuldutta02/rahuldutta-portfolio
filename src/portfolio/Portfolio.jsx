@@ -9,10 +9,15 @@ import { Works } from "./components/Works";
 import { Skills } from "./components/Skills";
 import "./portfolio.css";
 import { ThemeToggler } from "./components/ThemeToggler";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useEffect } from "react";
 
 export function Portfolio() {
+  useEffect(() => {
+    document.title = "Rahul-Dutta/portfolio";
+  });
+  
   return (
     <>
       <ScrollUp />

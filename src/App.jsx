@@ -1,10 +1,10 @@
 import "./App.css";
-import { Portfolio } from "./portfolio/Portfolio";
+import { CustomRoutes } from "./routes/CustomRoutes";
 
 function App() {
   return (
     <>
-      <Portfolio />
+      <CustomRoutes />
     </>
   );
 }

@@ -10,19 +10,17 @@ export function Nav() {
 
   const navRef = useRef();
 
-  useEffect(() => {
-    window.addEventListener("load", () => {
-      if (window.scrollY > 30) {
-        navRef.current.classList.add("cSticky");
-      }
-    });
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 30) {
-        navRef.current.classList.add("cSticky");
-      } else {
-        navRef.current.classList.remove("cSticky");
-      }
-    });
+  window.addEventListener("load", () => {
+    if (window.scrollY > 30) {
+      navRef.current.classList.add("cSticky");
+    }
+  });
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 30) {
+      navRef.current.classList.add("cSticky");
+    } else {
+      navRef.current.classList.remove("cSticky");
+    }
   });
 
   return (

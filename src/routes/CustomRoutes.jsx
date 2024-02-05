@@ -6,8 +6,7 @@ export function CustomRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Portfolio />} />
-      <Route path="/projects/" element={<Projects />} />
-      <Route path="*" element={<h1>Not Found</h1>} />
+      <Route path="/projects" element={<Projects />} />
     </Routes>
   );
 }

@@ -1,14 +1,4 @@
-import { useEffect, useRef } from "react";
-
 export function ProjectCard({ project }) {
-  const projectNoteRef = useRef();
-
-  useEffect(() => {
-    if (project.note.length > 0) {
-      projectNoteRef.current.innerHTML = project.note;
-    }
-  }, [project.note]);
-
   return (
     <>
       <div className="project__item ${filterClasses}">
@@ -63,7 +53,7 @@ export function ProjectCard({ project }) {
             </div>
             {/* project note */}
             <div className="project__notes">
-              <p ref={projectNoteRef}></p>
+              <p>{project.note.length > 0 && project.note}</p>
             </div>
           </div>
 

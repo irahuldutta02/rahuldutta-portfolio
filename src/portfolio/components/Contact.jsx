@@ -59,12 +59,18 @@ export function Contact() {
         ...formData,
       }),
     })
-      .then(() => {
-        console.log(formData);
+      .then((response) => {
+        console.log(response);
         toast.success("Message successfully sent.", {
           position: "bottom-left",
           autoClose: 2000,
           theme: "colored",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
         });
       })
       .catch(() => {

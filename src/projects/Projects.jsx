@@ -48,7 +48,10 @@ export function Projects() {
                 className={`filter-item ${
                   selectedFilter.length === 0 ? "active" : ""
                 }`}
-                onClick={() => setSelectedFilter([])}
+                onClick={() => {
+                  setSearch("");
+                  setSelectedFilter([]);
+                }}
               >
                 all
               </li>
@@ -66,6 +69,7 @@ export function Projects() {
                       selectedFilter.includes(item) ? "active" : ""
                     }`}
                     onClick={() => {
+                      setSearch("");
                       if (selectedFilter.includes(item)) {
                         setSelectedFilter(
                           selectedFilter.filter((filter) => filter !== item)
@@ -95,14 +99,21 @@ export function Projects() {
                 id="search__project"
                 placeholder="search project using project title..."
                 value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                onChange={(e) => {
+                  setSelectedFilter([]);
+                  setSearch(e.target.value);
+                }}
               />
             </div>
           </div>
 
           {/* <!-- Project Count --> */}
           <div className="project__count__div">
-            <p>
+            <p
+              style={{
+                color: flitteredProjects.length <= 0 ? "red" : "black",
+              }}
+            >
               <span className="project__count">
                 {flitteredProjects.length <= 0 && "No Projects Found"}
                 {flitteredProjects.length > 0 &&

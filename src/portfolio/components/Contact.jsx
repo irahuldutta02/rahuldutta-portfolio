@@ -46,7 +46,7 @@ export function Contact() {
       .join("&");
   };
 
-  function handleSubmit() {
+  function handleSubmit(e) {
     if (!validateData()) {
       return;
     }
@@ -55,24 +55,16 @@ export function Contact() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "rahul-dutta-portfolio-contact-from",
+        "form-name": "myFrom",
         ...formData,
       }),
     })
-      .then((response) => {
-        if (response.status === 200) {
-          toast.success("Message successfully sent.", {
-            position: "bottom-left",
-            autoClose: 2000,
-            theme: "colored",
-          });
-        } else {
-          toast.error("Error in sending message", {
-            position: "bottom-left",
-            autoClose: 2000,
-            theme: "colored",
-          });
-        }
+      .then(() => {
+        toast.success("Message successfully sent.", {
+          position: "bottom-left",
+          autoClose: 2000,
+          theme: "colored",
+        });
       })
       .catch(() => {
         toast.error("Error in sending message", {
@@ -81,6 +73,7 @@ export function Contact() {
           theme: "colored",
         });
       });
+    e.preventDefault();
   }
 
   return (
@@ -158,8 +151,7 @@ export function Contact() {
                 <form
                   name="myForm"
                   onSubmit={(e) => {
-                    e.preventDefault();
-                    handleSubmit();
+                    handleSubmit(e);
                   }}
                 >
                   <input
@@ -167,6 +159,7 @@ export function Contact() {
                     id="name"
                     name="name"
                     placeholder="Your Name"
+                    value={formData.name}
                     onChange={(e) => {
                       setFormData({
                         ...formData,
@@ -178,6 +171,7 @@ export function Contact() {
                     type="email"
                     id="email"
                     name="email"
+                    value={formData.email}
                     placeholder="Email Address"
                     onChange={(e) => {
                       setFormData({
@@ -190,6 +184,7 @@ export function Contact() {
                     type="text"
                     name="Subject"
                     placeholder="Subject"
+                    value={formData.subject}
                     onChange={(e) => {
                       setFormData({
                         ...formData,
@@ -200,6 +195,7 @@ export function Contact() {
                   <textarea
                     name="message"
                     placeholder="Your Message"
+                    value={formData.message}
                     id="message"
                     onChange={(e) => {
                       setFormData({

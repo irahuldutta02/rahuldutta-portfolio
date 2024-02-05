@@ -46,7 +46,7 @@ export function Contact() {
       .join("&");
   };
 
-  function handleSubmit(e) {
+  function handleSubmit() {
     if (!validateData()) {
       return;
     }
@@ -60,6 +60,7 @@ export function Contact() {
       }),
     })
       .then(() => {
+        console.log(formData);
         toast.success("Message successfully sent.", {
           position: "bottom-left",
           autoClose: 2000,
@@ -73,7 +74,6 @@ export function Contact() {
           theme: "colored",
         });
       });
-    e.preventDefault();
   }
 
   return (
@@ -151,7 +151,8 @@ export function Contact() {
                 <form
                   name="myForm"
                   onSubmit={(e) => {
-                    handleSubmit(e);
+                    e.preventDefault();
+                    handleSubmit();
                   }}
                 >
                   <input
@@ -182,7 +183,7 @@ export function Contact() {
                   />
                   <input
                     type="text"
-                    name="Subject"
+                    name="subject"
                     placeholder="Subject"
                     value={formData.subject}
                     onChange={(e) => {

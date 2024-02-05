@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getFilterItems, getProjects } from "../data/data";
 import { NavBar } from "./components/NavBar";
-import { ProjectCard } from "./components/projectCard";
+import { ProjectCard } from "./components/ProjectCard";
 import "./projects.css";
 
 export function Projects() {

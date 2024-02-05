@@ -19,7 +19,7 @@ export function Contact() {
     ) {
       toast.error("Please fill all the fields", {
         position: "bottom-left",
-        autoClose: 2000,
+        autoClose: 5000,
         theme: "colored",
       });
       return false;
@@ -29,7 +29,7 @@ export function Contact() {
     if (!emailRegex.test(formData.email)) {
       toast.error("Please give a correct email", {
         position: "bottom-left",
-        autoClose: 2000,
+        autoClose: 5000,
         theme: "colored",
       });
       return false;
@@ -60,24 +60,33 @@ export function Contact() {
       }),
     })
       .then((response) => {
-        console.log(response);
-        toast.success("Message successfully sent.", {
+        if (response.status !== 200) {
+          toast.error("Error in sending message", {
+            position: "bottom-left",
+            autoClose: 5000,
+            theme: "colored",
+          });
+        } else {
+          toast.success("Message successfully sent.", {
+            position: "bottom-left",
+            autoClose: 5000,
+            theme: "colored",
+          });
+        }
+      })
+      .catch(() => {
+        toast.error("Error in sending message", {
           position: "bottom-left",
-          autoClose: 2000,
+          autoClose: 5000,
           theme: "colored",
         });
+      })
+      .finally(() => {
         setFormData({
           name: "",
           email: "",
           subject: "",
           message: "",
-        });
-      })
-      .catch(() => {
-        toast.error("Error in sending message", {
-          position: "bottom-left",
-          autoClose: 2000,
-          theme: "colored",
         });
       });
   }

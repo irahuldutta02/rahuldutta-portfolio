@@ -808,9 +808,9 @@ const projects = [
   },
   {
     title: "Rahul Dutta / Portfolio",
-    filter: ["javascript", "css", "html"],
+    filter: ["react", "css"],
     preview: "https://i.postimg.cc/J0DmDXHh/rahuldutta-portfolio.gif",
-    techStack: ["HTML", "CSS", "JS"],
+    techStack: ["React", "CSS"],
     note: "",
     livePreview: "https://rahuldutta.netlify.app/",
     code: "https://github.com/irahuldutta02/rahuldutta-portfolio",

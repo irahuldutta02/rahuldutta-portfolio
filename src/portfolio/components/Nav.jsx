@@ -14,6 +14,8 @@ export function Nav() {
       window.addEventListener("load", () => {
         if (window.scrollY > 30) {
           setMakeSticky(true);
+        }else {
+          setMakeSticky(false);
         }
       });
       window.addEventListener("scroll", () => {
@@ -24,7 +26,7 @@ export function Nav() {
         }
       });
     }
-  },[]);
+  });
 
   return (
     <>

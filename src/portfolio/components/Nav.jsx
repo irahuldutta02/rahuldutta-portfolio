@@ -10,32 +10,25 @@ export function Nav() {
   }
 
   useEffect(() => {
-    if (document.title === "Rahul-Dutta/portfolio") {
-      window.addEventListener("load", () => {
-        if (window.scrollY > 30) {
-          setMakeSticky(true);
-        }else {
-          setMakeSticky(false);
-        }
-      });
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 30) {
-          setMakeSticky(true);
-        } else {
-          setMakeSticky(false);
-        }
-      });
-    }
+    window.addEventListener("load", () => {
+      if (window.scrollY > 30) {
+        setMakeSticky(true);
+      } else {
+        setMakeSticky(false);
+      }
+    });
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 30) {
+        setMakeSticky(true);
+      } else {
+        setMakeSticky(false);
+      }
+    });
   });
 
   return (
     <>
-      <nav
-        className={`navbar ${makeSticky ? "cSticky" : ""}`}
-        onScroll={(e) => {
-          console.log(e.target);
-        }}
-      >
+      <nav className={`navbar ${makeSticky ? "cSticky" : ""}`}>
         <div className="max-width">
           <div className="logo">
             <a href="#">

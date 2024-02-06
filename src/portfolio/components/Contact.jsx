@@ -176,6 +176,7 @@ export function Contact() {
                     name="name"
                     placeholder="Your Name"
                     value={formData.name}
+                    autoComplete="off"
                     onChange={(e) => {
                       setFormData({
                         ...formData,
@@ -187,6 +188,7 @@ export function Contact() {
                     type="email"
                     id="email"
                     name="email"
+                    autoComplete="off"
                     value={formData.email}
                     placeholder="Email Address"
                     onChange={(e) => {
@@ -200,6 +202,7 @@ export function Contact() {
                     type="text"
                     name="subject"
                     placeholder="Subject"
+                    autoComplete="off"
                     value={formData.subject}
                     onChange={(e) => {
                       setFormData({
@@ -211,6 +214,7 @@ export function Contact() {
                   <textarea
                     name="message"
                     placeholder="Your Message"
+                    autoComplete="off"
                     value={formData.message}
                     id="message"
                     onChange={(e) => {
@@ -220,7 +224,7 @@ export function Contact() {
                       });
                     }}
                   ></textarea>
-                  <input type="submit" value="Submit" />
+                  <input type="submit" value="Submit" autoComplete="off"/>
                 </form>
               </div>
             </div>

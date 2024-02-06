@@ -95,6 +95,7 @@ export function Projects() {
             <div className="search">
               <input
                 type="text"
+                autoComplete="off"
                 name="search__project"
                 id="search__project"
                 placeholder="search project using project title..."

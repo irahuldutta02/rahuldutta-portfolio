@@ -1,6 +1,8 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { ThemeContext } from "../../context/context";
 import "../portfolio.css";
 export function ThemeToggler() {
+  const { setTheme } = useContext(ThemeContext);
 
   useEffect(() => {
     let themeToggler = document.querySelector(".theme-toggler");
@@ -17,6 +19,7 @@ export function ThemeToggler() {
     document.querySelectorAll(".theme-toggler .theme-btn").forEach((btn) => {
       btn.onclick = () => {
         let newColor = btn.style.background;
+        setTheme(newColor);
         document.querySelector(":root").style.setProperty("--color", newColor);
       };
     });

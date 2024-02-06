@@ -1,31 +1,39 @@
-import { useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "../portfolio.css";
 
 export function Nav() {
   const [showMenu, setShowMenu] = useState(false);
+  const [makeSticky, setMakeSticky] = useState(false);
 
   function handleShowMenu() {
     setShowMenu(!showMenu);
   }
 
-  const navRef = useRef();
-
-  window.addEventListener("load", () => {
-    if (window.scrollY > 30) {
-      navRef.current.classList.add("cSticky");
+  useEffect(() => {
+    if (document.title === "Rahul-Dutta/portfolio") {
+      window.addEventListener("load", () => {
+        if (window.scrollY > 30) {
+          setMakeSticky(true);
+        }
+      });
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 30) {
+          setMakeSticky(true);
+        } else {
+          setMakeSticky(false);
+        }
+      });
     }
-  });
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 30) {
-      navRef.current.classList.add("cSticky");
-    } else {
-      navRef.current.classList.remove("cSticky");
-    }
-  });
+  },[]);
 
   return (
     <>
-      <nav ref={navRef} className="navbar">
+      <nav
+        className={`navbar ${makeSticky ? "cSticky" : ""}`}
+        onScroll={(e) => {
+          console.log(e.target);
+        }}
+      >
         <div className="max-width">
           <div className="logo">
             <a href="#">

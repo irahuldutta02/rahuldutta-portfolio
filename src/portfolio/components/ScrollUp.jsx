@@ -1,24 +1,23 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import "../portfolio.css";
 
 export function ScrollUp() {
-  const scrollUpRef = useRef();
+  const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 560) {
-        scrollUpRef.current.classList.add("show");
+        setShowScroll(true);
       } else {
-        scrollUpRef.current.classList.remove("show");
+        setShowScroll(false);
       }
     });
-  });
+  }, []);
 
   return (
     <>
       <div
-        ref={scrollUpRef}
-        className="scroll-up-btn"
+        className={`scroll-up-btn ${showScroll ? "show" : ""}`}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <i className="fas fa-angle-up"></i>

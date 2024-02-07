@@ -28,7 +28,7 @@ export function Background() {
                 <h3>GRADUATION</h3>
                 <p>Bachelors of Computer Application,</p>
                 <p>
-                  FROM :{" "}
+                  From :{" "}
                   <a>
                     Maulana Abul Kalam Azad University Of Technology, West
                     Bengal

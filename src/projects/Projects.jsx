@@ -33,6 +33,17 @@ export function Projects() {
     }
   });
 
+  // featured at first of the projects array
+  flitteredProjects.sort((a, b) => {
+    if (a.isFeatured) {
+      return -1;
+    }
+    if (b.isFeatured) {
+      return 1;
+    }
+    return 0;
+  });
+
   useEffect(() => {
     document.title = "Rahul-Dutta/projects";
     window.scrollTo(0, 0);

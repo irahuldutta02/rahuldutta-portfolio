@@ -3,6 +3,12 @@ export function ProjectCard({ project }) {
     <>
       <div className="project__item ${filterClasses}">
         <div className="project__preview">
+          {/* if Featured */}
+          {project.isFeatured && (
+            <div className="project__featured">
+              <span>Featured</span>
+            </div>
+          )}
           {/* preview image if any */}
           {project.preview && (
             <img
@@ -13,26 +19,24 @@ export function ProjectCard({ project }) {
           )}
           {/* preview video if any */}
           {project.videoPreview && (
-            <div className="project__preview">
-              <video
-                className="project__video"
-                muted
-                autoPlay
-                loop
-                poster={project.thumbnail && project.thumbnail}
-                onMouseOver={(event) => {
-                  event.target.style.cursor = "pointer";
-                  event.target.controls = true;
-                }}
-                onMouseOut={(event) => {
-                  event.target.style.cursor = "default";
-                  event.target.controls = false;
-                }}
-              >
-                <source src={project.videoPreview} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+            <video
+              className="project__video"
+              muted
+              autoPlay
+              loop
+              poster={project.thumbnail && project.thumbnail}
+              onMouseOver={(event) => {
+                event.target.style.cursor = "pointer";
+                event.target.controls = true;
+              }}
+              onMouseOut={(event) => {
+                event.target.style.cursor = "default";
+                event.target.controls = false;
+              }}
+            >
+              <source src={project.videoPreview} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           )}
         </div>
         <div className="project__details">

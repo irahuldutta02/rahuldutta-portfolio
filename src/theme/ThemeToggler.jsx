@@ -21,6 +21,7 @@ export function ThemeToggler() {
       btn.onclick = () => {
         let newColor = btn.style.background;
         setTheme(newColor);
+        document.querySelector(":root").style.setProperty("--theme-toggler-bg-color-1", newColor);
       };
     });
   });

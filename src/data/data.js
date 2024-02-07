@@ -1,5 +1,69 @@
 const projects = [
   {
+    id: "950d557b-977c-4f91-afe6-8fe9fc1828ea",
+    isFeatured: true,
+    title: "Rahul Dutta / Portfolio",
+    filter: ["react", "css"],
+    preview: "https://i.postimg.cc/J0DmDXHh/rahuldutta-portfolio.gif",
+    techStack: ["React", "CSS"],
+    note: "",
+    livePreview: "https://rahuldutta.netlify.app/",
+    code: "https://github.com/irahuldutta02/rahuldutta-portfolio",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/rahuldutta-portfolio",
+  },
+  {
+    id: "6dc51944-bd44-409b-b513-fe2a1537cc3f",
+    title: "CineRental App",
+    filter: ["react", "tailwind"],
+    techStack: ["React", "Tailwind CSS"],
+    videoPreview:
+      "https://github.com/irahuldutta02/cinerental/assets/78687135/91e50d7f-3a25-4eeb-a3e7-95b2711f0c21",
+    thumbnail: "https://i.postimg.cc/kXq7nCKq/output.png",
+    isFeatured: true,
+    note: "",
+    livePreview: "https://cinerental-rd.vercel.app/",
+    code: "https://github.com/irahuldutta02/cinerental",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/cinerental",
+  },
+  {
+    id: "31718d19-824f-49c4-aa9e-98298a113194",
+    title: "Form Validation",
+    filter: ["react", "tailwind"],
+    techStack: ["React", "Tailwind CSS"],
+    preview: "https://i.postimg.cc/jdxM35C8/output.gif",
+    note: "Build this project to practice useReducer and context API in react",
+    livePreview: "https://shopping-list-react-app-nu.vercel.app/",
+    code: "https://github.com/irahuldutta02/shopping-list-react-app",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/shopping-list-react-app",
+  },
+  {
+    id: "ea41fa48-45c3-49f5-88c7-89eaf1e13882",
+    title: "Form Validation",
+    filter: ["react", "tailwind"],
+    techStack: ["React", "Tailwind CSS"],
+    preview: "https://i.postimg.cc/vZQZYKb5/output.gif",
+    note: "Build this project to practice useRef and useImperativeHandle hooks in react",
+    livePreview: "https://form-validation-react-pi.vercel.app/",
+    code: "https://github.com/irahuldutta02/form-validation-react",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/form-validation-react",
+  },
+  {
+    id: "f3e3e3e3-3e3e-3e3e-3e3e-3e3e3e3e3e3e",
+    title: "Countdown App React",
+    filter: ["react", "tailwind"],
+    techStack: ["React", "Tailwind CSS"],
+    preview: "https://i.postimg.cc/wTQ102YV/output.jpg",
+    note: "Build this project to practice useRef hook with setInterval and clearInterval",
+    livePreview: "https://countdown-app-react-six.vercel.app/",
+    code: "https://github.com/irahuldutta02/countdown-app-react",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/countdown-app-react",
+  },
+  {
     id: "5bbb08fa-a198-4a98-88f0-d9085f54c0cf",
     title: "Tic Tac Toe with moves history",
     filter: ["react", "tailwind"],
@@ -55,6 +119,7 @@ const projects = [
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/simple-react-todo-app",
   },
+
   {
     id: "33d62e82-3b77-4fca-ba9f-1d25446b547e",
     title: "Insect Catch Game",
@@ -874,18 +939,6 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tindog-bootstrap",
   },
   {
-    id: "950d557b-977c-4f91-afe6-8fe9fc1828ea",
-    title: "Rahul Dutta / Portfolio",
-    filter: ["react", "css"],
-    preview: "https://i.postimg.cc/J0DmDXHh/rahuldutta-portfolio.gif",
-    techStack: ["React", "CSS"],
-    note: "",
-    livePreview: "https://rahuldutta.netlify.app/",
-    code: "https://github.com/irahuldutta02/rahuldutta-portfolio",
-    download:
-      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/rahuldutta-portfolio",
-  },
-  {
     id: "1a208847-01e5-41f8-96fa-f79719ee6b5b",
     title: "Student Management Console App",
     filter: ["java"],
@@ -907,6 +960,89 @@ const projects = [
   },
 ];
 
+const techStack = [
+  {
+    id: "c514954e-3d46-46c9-b057-180fd5ed79e1",
+    name: "HTML",
+    iconSrc: "https://img.icons8.com/fluency/48/html-5.png",
+  },
+  {
+    id: "505b37c0-0885-4175-a0d0-b4f5989ec102",
+    name: "CSS",
+    iconSrc: "https://img.icons8.com/fluency/48/css3.png",
+  },
+  {
+    id: "0d4ea74d-f5dc-4321-b132-6e3a5a837f3b",
+    name: "Bootstrap",
+    iconSrc: "https://img.icons8.com/fluency/48/bootstrap.png",
+  },
+  {
+    id: "b8f839f8-b113-4f0c-896a-38acefcbdddf",
+    name: "Tailwind",
+    iconSrc: "https://img.icons8.com/color/48/tailwindcss.png",
+  },
+  {
+    id: "ab8e2dbf-c316-4f4f-8612-24b810380ded",
+    name: "JavaScript",
+    iconSrc: "https://img.icons8.com/color/48/javascript.png",
+  },
+  {
+    id: "bfa0ba69-ff04-4768-9ca1-a085bffb67c6",
+    name: "EJS",
+    iconSrc: "https://img.icons8.com/color/48/ejs.png",
+  },
+  {
+    id: "e7b8b7e6-5c7a-4a6b-8f9a-0b1b6f1b4f0e",
+    name: "React",
+    iconSrc: "https://img.icons8.com/color/48/react-native.png",
+  },
+  {
+    id: "a30a8d24-f5a2-4056-9c87-0659e26bf62c",
+    name: "Express Js",
+    iconSrc: "https://img.icons8.com/fluency/48/express-js.png",
+  },
+  {
+    id: "6a40e7b1-2ff9-451b-809f-e5dfb7b6ae19",
+    name: "Node Js",
+    iconSrc: "https://img.icons8.com/color/48/nodejs.png",
+  },
+  {
+    id: "6a91fe19-86ce-4fc4-8aa0-e60169936da6",
+    name: "Java",
+    iconSrc: "https://img.icons8.com/color/48/java-coffee-cup-logo.png",
+  },
+  {
+    id: "3f26b341-b47e-4dff-93df-ea70196d0ac6",
+    name: "Java JDBC",
+    iconSrc: "https://img.icons8.com/color/48/database.png",
+  },
+  {
+    id: "40102a0c-ebfb-4b9b-954e-1752115a42ab",
+    name: "MySql",
+    iconSrc: "https://img.icons8.com/color/48/mysql-logo.png",
+  },
+  {
+    id: "de3c4df8-9c17-474e-af7e-d580b7416d67",
+    name: "MongoDB",
+    iconSrc: "https://img.icons8.com/color/48/mongodb.png",
+  },
+  {
+    id: "571e29ae-59fc-4cb4-9dae-8bca380cc114",
+    name: "Git",
+    iconSrc: "https://img.icons8.com/color/48/git.png",
+  },
+  {
+    id: "adf537a5-5db5-4656-ad27-9da44334a2cb",
+    name: "GitHub",
+    iconSrc: "https://img.icons8.com/fluency/48/github.png",
+  },
+  {
+    id: "b5b6db15-66c0-46aa-b237-6f00b33fe09f",
+    name: "Figma",
+    iconSrc: "https://img.icons8.com/color/48/figma.png",
+  },
+];
+
 function getProjects() {
   return projects;
 }
@@ -923,4 +1059,8 @@ function getFilterItems() {
   return filterItems;
 }
 
-export { getProjects, getFilterItems };
+function getTechStack() {
+  return techStack;
+}
+
+export { getProjects, getFilterItems, getTechStack };

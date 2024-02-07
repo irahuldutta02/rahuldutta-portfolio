@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "../context/context";
 import { getFilterItems, getProjects } from "../data/data";
+import { ThemeToggler } from "../theme/ThemeToggler";
 import { NavBar } from "./components/NavBar";
 import { ProjectCard } from "./components/ProjectCard";
 import "./projects.css";
@@ -9,6 +11,7 @@ export function Projects() {
   const [filterItem] = useState(getFilterItems());
   const [selectedFilter, setSelectedFilter] = useState([]);
   const [search, setSearch] = useState("");
+  const { theme } = useContext(ThemeContext);
 
   const flitteredProjects = projects.filter((project) => {
     if (
@@ -33,11 +36,15 @@ export function Projects() {
   useEffect(() => {
     document.title = "Rahul-Dutta/projects";
     window.scrollTo(0, 0);
+    document
+      .querySelector(":root")
+      .style.setProperty("--project-page-color-1", theme);
   });
 
   return (
     <>
       <NavBar />
+      <ThemeToggler />
 
       <main className="main">
         <div className="container">

@@ -1,6 +1,4 @@
-/* font */
-/* Yatra One */
-/* @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"); */
+/* Created By Rahul Dutta */
 
 * {
   margin: 0;
@@ -11,12 +9,10 @@
 }
 
 :root {
-  --color1: #ff5733;
-  --color2: #fa8231;
-  --color3: #ff0000;
-  --color4: #1f2937;
-  --color5: #9ca3af;
-  --color6: #374151;
+  --project-page-color-1: #fa8231;
+  --project-page-color-2: #1f2937;
+  --project-page-color-3: #9ca3af;
+  --project-page-color-4: #374151;
 }
 
 body {
@@ -28,10 +24,11 @@ body::-webkit-scrollbar {
 }
 
 .nav {
+  height: 82px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color2);
+  background-color: var(--project-page-color-1);
   padding: 1rem;
   position: fixed;
   left: 0;
@@ -61,7 +58,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color2);
+  background-color: var(--project-page-color-1);
   width: 100%;
   color: white;
   font-size: 1rem;
@@ -70,7 +67,7 @@ body::-webkit-scrollbar {
 }
 
 .nav__item h1 {
-  font-size: 1.5rem;
+  font-size: 35px;
   font-weight: 400;
 }
 
@@ -108,7 +105,7 @@ body::-webkit-scrollbar {
   padding: 5px 10px;
   border-radius: 8px;
   gap: 1rem;
-  border: 2px solid #ff5733;
+  border: 2px solid var(--project-page-color-1);
   transition: all 0.3s;
   cursor: pointer;
   position: relative;
@@ -120,14 +117,14 @@ body::-webkit-scrollbar {
 
 .filters li.active {
   color: white;
-  background-color: #fa8231;
+  background-color: var(--project-page-color-1);
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
 }
 
 .badge {
   background-color: #ffffff;
-  color: #ff5733;
-  border: 2px solid #ff5733;
+  color: var(--project-page-color-1);
+  border: 2px solid var(--project-page-color-1);
   font-size: 12px;
   width: 25px;
   height: 25px;
@@ -143,7 +140,7 @@ body::-webkit-scrollbar {
 }
 
 .badge-new {
-  background-color: #ff0000;
+  background-color: var(--project-page-color-1);
   color: #ffffff;
   font-size: 12px;
   padding: 0 5px;
@@ -180,7 +177,7 @@ body::-webkit-scrollbar {
   height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
-  border: 2px solid var(--color3);
+  border: 2px solid var(--project-page-color-1);
   border-radius: 10px;
   transition: all 0.3s;
   cursor: pointer;
@@ -188,7 +185,7 @@ body::-webkit-scrollbar {
 
 .search__project__item input:focus,
 .search__project__item input:hover {
-  background-color: var(--color2);
+  background-color: var(--project-page-color-1);
   color: white;
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
 }
@@ -235,16 +232,16 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  background-color: var(--color4);
-  border: 2px solid var(--color4);
+  background-color: var(--project-page-color-2);
+  border: 2px solid var(--project-page-color-2);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s;
 }
 
 .project__item:hover {
   transform: scale(1.05);
-  transition: all 0.2s;
 }
 
 .project__preview {
@@ -269,7 +266,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: var(--color5);
+  color: var(--project-page-color-3);
 }
 
 .project__head {
@@ -293,7 +290,7 @@ body::-webkit-scrollbar {
 }
 
 .project__tech__stack {
-  background-color: var(--color6);
+  background-color: var(--project-page-color-4);
   display: inline-flex;
   padding: 0 0.5rem;
   border-radius: 0.5rem;
@@ -311,7 +308,7 @@ body::-webkit-scrollbar {
 }
 
 .project__btn {
-  background-color: var(--color2);
+  background-color: var(--project-page-color-1);
   padding: 0.8rem;
   border-radius: 0.5rem;
   color: white;
@@ -323,6 +320,8 @@ body::-webkit-scrollbar {
   text-decoration: none;
   width: 3rem;
   height: 3rem;
+  border: 2px solid var(--project-page-color-1);
+  transition: all 0.3s;
 }
 
 .project__btn:focus {
@@ -331,5 +330,6 @@ body::-webkit-scrollbar {
 }
 
 .project__btn:hover {
-  background-color: var(--color1);
+  background-color: var(--project-page-color-2);
+  box-shadow: 3px 3px 0px rgba(255, 255, 255, 0.7);
 }

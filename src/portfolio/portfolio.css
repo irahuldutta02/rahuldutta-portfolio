@@ -1,9 +1,5 @@
 /* Created By Rahul Dutta */
 
-/* font */
-/* Yatra One */
-@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +7,12 @@
   text-decoration: none;
   font-family: "Yatra One", cursive;
   scroll-behavior: smooth;
+}
+
+:root {
+  --portfolio-page-color-1: #fa8231;
+  --portfolio-page-color-2: #111;
+  --shadow-1: rgba(255, 255, 255, 0.9);
 }
 
 html {
@@ -31,12 +33,6 @@ i {
 
 html {
   scroll-behavior: smooth;
-}
-
-:root {
-  --color: #fa8231;
-  --color-2: #111;
-  --shadow-1: rgba(255, 255, 255, 0.9);
 }
 
 /* custom scroll bar */
@@ -93,7 +89,7 @@ section .title::before {
   left: 50%;
   width: 180px;
   height: 3px;
-  background: var(--color-2);
+  background: var(--portfolio-page-color-2);
   transform: translateX(-50%);
 }
 
@@ -102,7 +98,7 @@ section .title::after {
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
@@ -120,7 +116,7 @@ section .title::after {
 
 .navbar.cSticky {
   padding: 15px 0;
-  background: var(--color);
+  background: var(--portfolio-page-color-1);
 }
 
 .navbar .max-width {
@@ -136,7 +132,7 @@ section .title::after {
 }
 
 .navbar .logo a span {
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
   transition: all 0.3s ease;
 }
 
@@ -151,7 +147,7 @@ section .title::after {
 
 .navbar .menu li a {
   display: block;
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -163,7 +159,7 @@ section .title::after {
   width: 0px;
   height: 2px;
   display: block;
-  background: var(--color);
+  background: var(--portfolio-page-color-1);
   transition: 300ms;
 }
 
@@ -172,7 +168,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
 }
 
 .navbar.cSticky .menu li a {
@@ -212,7 +208,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: var(--color);
+  background: var(--portfolio-page-color-1);
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -248,21 +244,14 @@ section .title::after {
   color: #fff;
   min-height: 500px;
   background-attachment: fixed;
-  /* font-family: "Capriola", sans-serif; */
-
-  /* background */
   background: url("https://ik.imagekit.io/irahuldutta02/rahuldutta-portfolio/new-portfolio-bg.webp?updatedAt=1707201137252")
     no-repeat center;
-
   object-fit: cover;
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   break-inside: avoid;
-
-  /* Eager loading */
-  image-rendering: -webkit-optimize-contrast; /* WebKit (Safari/Chrome) */
+  image-rendering: -webkit-optimize-contrast; /* WebKit (Safari/Chrome) Eager loading */
 }
 
 .home .max-width {
@@ -293,7 +282,7 @@ section .title::after {
 }
 
 .home .home-content .text-3 span {
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
   font-weight: 500;
   text-shadow: 2px 2px 0 black;
 }
@@ -315,20 +304,20 @@ section .title::after {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  background: var(--color);
+  background: var(--portfolio-page-color-1);
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  border: 2px solid var(--color);
+  border: 2px solid var(--portfolio-page-color-1);
   transition: all 0.3s ease;
   width: fit-content;
   box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
 }
 
 .home .home-content .home-button:hover {
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
   background: none;
   transform: scale(1.05);
 }
@@ -348,7 +337,7 @@ section .title::after {
   height: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
-  border: 4px solid var(--color);
+  border: 4px solid var(--portfolio-page-color-1);
   transition: all 0.3s ease;
   box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
   cursor: pointer;
@@ -369,7 +358,7 @@ section .title::after {
 }
 
 .about .about-content .right .text span {
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
 }
 
 .about .about-content .right p {
@@ -403,7 +392,7 @@ section .title::after {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  background: var(--color);
+  background: var(--portfolio-page-color-1);
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -411,13 +400,13 @@ section .title::after {
   margin-top: 20px;
   width: fit-content;
   border-radius: 0.5rem;
-  border: 2px solid var(--color);
+  border: 2px solid var(--portfolio-page-color-1);
   transition: all 0.3s ease;
   box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
 }
 
 .about .about-content .right a:hover {
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
   background: none;
   transform: scale(1.05);
 }
@@ -426,7 +415,7 @@ section .title::after {
 .works,
 .background {
   color: #fff;
-  background: var(--color-2);
+  background: var(--portfolio-page-color-2);
 }
 .works .serv-content {
   gap: 1rem;
@@ -443,7 +432,7 @@ section .title::after {
 
 .works .title::after,
 .background .title::after {
-  background: var(--color-2);
+  background: var(--portfolio-page-color-2);
   content: "explore";
 }
 
@@ -473,7 +462,7 @@ section .title::after {
 }
 
 .works .serv-content .card:hover {
-  background: var(--color);
+  background: var(--portfolio-page-color-1);
 }
 
 .works .serv-content .card .box {
@@ -486,7 +475,7 @@ section .title::after {
 
 .works .serv-content .card i {
   font-size: 50px;
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
   transition: color 0.3s ease;
 }
 
@@ -529,12 +518,12 @@ section .title::after {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  background: var(--color);
+  background: var(--portfolio-page-color-1);
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   border-radius: 0.5rem;
-  border: 2px solid var(--color);
+  border: 2px solid var(--portfolio-page-color-1);
   transition: all 0.3s ease;
   width: 150px;
   height: 32px;
@@ -543,7 +532,7 @@ section .title::after {
 }
 
 .skills .skills-content .inside-coloum div:hover {
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
   background: none;
   cursor: pointer;
   transform: scale(1.05);
@@ -571,13 +560,12 @@ section .title::after {
 }
 
 /* background section styling */
-
 .background .title::after {
   content: "what i did";
 }
 
 #background {
-  background-color: var(--color-2);
+  background-color: var(--portfolio-page-color-2);
 }
 
 .background .box-container {
@@ -591,7 +579,7 @@ section .title::after {
 .background .box-container .box {
   border-left: 0.2rem solid #fff;
   position: relative;
-  border: 3px solid var(--color);
+  border: 3px solid var(--portfolio-page-color-1);
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   max-width: 25rem;
@@ -623,9 +611,9 @@ section .title::after {
   top: -1.65rem;
   left: 50%;
   font-size: 1.3rem;
-  background: var(--color-2);
+  background: var(--portfolio-page-color-2);
   color: #fff;
-  border: 3px solid var(--color);
+  border: 3px solid var(--portfolio-page-color-1);
   border-radius: 0.5rem;
   padding: 0.5rem 2.5rem;
   transition: all 0.3s ease;
@@ -647,7 +635,7 @@ section .title::after {
 }
 
 .background .box-container .box p a {
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
 }
 
 .bg-icon-img-div {
@@ -658,11 +646,11 @@ section .title::after {
   width: 5rem;
   border-radius: 50%;
   color: rgb(255, 255, 255);
-  background-color: var(--color-2);
+  background-color: var(--portfolio-page-color-2);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid var(--color);
+  border: 3px solid var(--portfolio-page-color-1);
   transition: all 0.3s ease;
   box-shadow: var(--shadow-1) 4px 4px 0px;
 }
@@ -711,7 +699,7 @@ section .title::after {
 
 .contact .contact-content .row i {
   font-size: 25px;
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
 }
 
 .contact .contact-content .info .head {
@@ -723,12 +711,11 @@ section .title::after {
 }
 
 /* form  */
-
 .form-style-6 {
   max-width: 100%;
   margin: 10px auto;
   padding: 25px;
-  background: var(--color);
+  background: var(--portfolio-page-color-1);
   border-radius: 0.5rem;
   text-align: center;
   font-size: larger;
@@ -812,7 +799,7 @@ section .title::after {
 .form-style-6 select:focus {
   box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
   padding: 3%;
-  border: 1px solid var(--color);
+  border: 1px solid var(--portfolio-page-color-1);
   scale: 1.05;
 }
 
@@ -835,7 +822,7 @@ section .title::after {
 }
 
 .form-style-6 input[type="submit"]:hover {
-  background: var(--color);
+  background: var(--portfolio-page-color-1);
   box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
   color: #000000;
   cursor: pointer;
@@ -844,14 +831,14 @@ section .title::after {
 
 /* footer section styling */
 footer {
-  background: var(--color-2);
+  background: var(--portfolio-page-color-2);
   padding: 15px 23px;
   color: #fff;
   text-align: center;
 }
 
 footer span a {
-  color: var(--color);
+  color: var(--portfolio-page-color-1);
   text-decoration: none;
 }
 
@@ -888,7 +875,7 @@ footer span a:hover {
     width: 100%;
     left: -100%;
     top: 0;
-    background: var(--color-2);
+    background: var(--portfolio-page-color-2);
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -1014,9 +1001,8 @@ footer span a:hover {
 }
 
 /* preloader */
-
 :root {
-  --color-primary: #1ac4ff;
+  --portfolio-page-color-1-primary: #1ac4ff;
 }
 
 #preloader:before {
@@ -1025,8 +1011,8 @@ footer span a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #fff;
-  border-color: var(--color-primary) transparent var(--color-primary)
-    transparent;
+  border-color: var(--portfolio-page-color-1-primary) transparent
+    var(--portfolio-page-color-1-primary) transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -1060,66 +1046,6 @@ footer span a:hover {
   }
 
   100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* theme toggler  */
-.theme-toggler {
-  position: fixed;
-  top: 10rem;
-  right: -15rem;
-  background: var(--color-2);
-  z-index: 1000;
-  width: 15rem;
-  text-align: center;
-}
-
-.theme-toggler.active {
-  right: 0;
-}
-
-.theme-toggler h3 {
-  color: #fff;
-  padding: 1rem 0;
-  font-size: 1rem;
-}
-
-.theme-toggler .buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 1rem;
-}
-
-.theme-toggler .buttons .theme-btn {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.theme-toggler .toggle-btn {
-  position: absolute;
-  top: 0;
-  left: -3rem;
-  padding: 10px;
-  background: var(--color);
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 0.5rem 0 0 0.5rem;
-}
-
-.theme-toggler .toggle-btn i {
-  color: #fff;
-  font-size: 2rem;
-  animation: spin 4s linear infinite;
-}
-
-@keyframes spin {
-  0% {
     transform: rotate(360deg);
   }
 }

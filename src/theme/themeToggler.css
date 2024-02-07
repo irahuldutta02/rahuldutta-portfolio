@@ -1,0 +1,59 @@
+/* theme toggler  */
+.theme-toggler {
+  position: fixed;
+  top: 10rem;
+  right: -15rem;
+  background: var(--portfolio-page-color-2);
+  z-index: 1000;
+  width: 15rem;
+  text-align: center;
+}
+
+.theme-toggler.active {
+  right: 0;
+}
+
+.theme-toggler h3 {
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.theme-toggler .buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.theme-toggler .buttons .theme-btn {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-toggler .toggle-btn {
+  position: absolute;
+  top: 0;
+  left: -3rem;
+  padding: 10px;
+  background: var(--portfolio-page-color-1);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.theme-toggler .toggle-btn i {
+  color: #fff;
+  font-size: 2rem;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}

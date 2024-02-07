@@ -33,7 +33,7 @@ export function ThemeToggler() {
         <div className="toggle-btn">
           <i className="fas fa-cog"></i>
         </div>
-        <h3>choose color</h3>
+        <h3>Choose Theme</h3>
         <div className="buttons">
           <div className="theme-btn" style={{ background: "#fa8231" }}></div>
           <div className="theme-btn" style={{ background: "#2c58be" }}></div>

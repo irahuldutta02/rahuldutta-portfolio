@@ -1,5 +1,6 @@
 const projects = [
   {
+    id: "5bbb08fa-a198-4a98-88f0-d9085f54c0cf",
     title: "Tic Tac Toe with moves history",
     filter: ["react", "tailwind"],
     videoPreview:
@@ -13,6 +14,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/react-tic-tac-toe-game",
   },
   {
+    id: "7ce93791-b4cc-4e4a-a58e-70d9c0f95dd8",
     title: "Twitter Functionality Clone",
     filter: ["react"],
     videoPreview:
@@ -26,6 +28,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/twitter-functionality-clone-react",
   },
   {
+    id: "f45ce6d3-ae38-4045-9160-4b282ee042e3",
     title: "Tic Tac Toe Game React",
     filter: ["react"],
     videoPreview:
@@ -39,6 +42,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/tic-tac-toe-react",
   },
   {
+    id: "1c01949d-5a1f-4f53-8ef7-21d99b5f3da4",
     title: "Simple React ToDo App",
     filter: ["react"],
     videoPreview:
@@ -52,6 +56,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/simple-react-todo-app",
   },
   {
+    id: "33d62e82-3b77-4fca-ba9f-1d25446b547e",
     title: "Insect Catch Game",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/SRC5x54Y/output.gif",
@@ -64,6 +69,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/050-insect-catch-game/",
   },
   {
+    id: "896fb6de-85ba-454b-83e9-7bdb8d09500e",
     title: "ToDo List",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/Vs7SS4rM/output.gif",
@@ -76,6 +82,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/049-todo-list/",
   },
   {
+    id: "d6cd480c-ddf2-4448-ba03-9afffd6a84b1",
     title: "Random Image Generator",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/8CCZzrN5/output.png",
@@ -88,6 +95,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/048-random-image-generator/",
   },
   {
+    id: "902fa291-808c-48dd-aac4-53ec359bc439",
     title: "Testimonial Box Switcher",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/6QHgP4st/output.gif",
@@ -100,6 +108,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/047-testimonial-box-switcher/",
   },
   {
+    id: "e102a114-c101-4d1b-9116-27f2fc95e027",
     title: "Quiz App",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/dQgDYP02/output.gif",
@@ -112,6 +121,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/046-quiz-app/",
   },
   {
+    id: "802b4c8b-7dc5-478d-8086-a691422c1ce2",
     title: "Netflix Mobile Navigation",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/Dwsrf35F/output.gif",
@@ -124,6 +134,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/045-netflix-mobile-navigation/",
   },
   {
+    id: "2d4f644a-8338-4db2-8b5d-f068d6d3fac3",
     title: "Custom Range Slider",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/qMT8gdQC/output.png",
@@ -136,6 +147,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/044-custom-range-slider/",
   },
   {
+    id: "5f6625f0-38b2-4ba9-a33c-29de62840cb9",
     title: "Feedback UI Design",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/YCZd0sPG/output.png",
@@ -148,6 +160,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/043-feedback-ui-design/",
   },
   {
+    id: "6e9794a0-e997-4ed0-bbd4-de98a5dafef3",
     title: "Space Shooter Game",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/4NdNdRJf/sace-shooter-game-output-image.png",
@@ -160,6 +173,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/space-shooter-game",
   },
   {
+    id: "0ea27897-f97f-4f91-b0a8-4144e21430c1",
     title: "Snake Game",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/C5DCnrTJ/output.png",
@@ -172,6 +186,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/snake-game",
   },
   {
+    id: "b4aa072e-063c-4c1f-a2d7-5403cecd3897",
     title: "ToDo App",
     filter: ["javascript", "css", "bootstrap", "html"],
     preview: "https://i.postimg.cc/Jzkw4Zhq/output.gif",
@@ -184,6 +199,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/07-todo-app",
   },
   {
+    id: "62ca7fed-8460-4b85-8b3f-d4bd9a52b8bd",
     title: "Ping Pong Game",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/fT7m4gcj/ping-pong-game-output.gif",
@@ -196,6 +212,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/06-ping-pong-game",
   },
   {
+    id: "cb7c51d9-b69a-4891-8ea9-d3bc85dc2117",
     title: "Live User Filter",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/pTKc5SFg/output.gif",
@@ -208,6 +225,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/042-live-user-filter/",
   },
   {
+    id: "4090ac48-c5a9-4560-b2da-3ae3a166fb47",
     title: "Verify Your Account",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/76BBh6Fp/output.gif",
@@ -220,6 +238,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/041-verify-account-ui/",
   },
   {
+    id: "754eb1ff-474a-481f-a0a6-29d1fb57781f",
     title: "3D Background Boxes",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/pLvb3qty/output.gif",
@@ -232,6 +251,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/040-3d-background-boxes/",
   },
   {
+    id: "d6d15fd5-684b-4fe0-b8cd-6ff73f2d9cb5",
     title: "Password Strength Background",
     filter: ["javascript", "css", "html", "tailwind"],
     preview: "https://i.postimg.cc/525636SL/output.gif",
@@ -244,6 +264,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/039-password-strength-background/",
   },
   {
+    id: "148ce15a-2b91-413c-a568-9d3d6c4b5251",
     title: "Mobile Tab Navigation",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/nhBJ3yGH/output.gif",
@@ -256,6 +277,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/038-mobile-tab-navigation/",
   },
   {
+    id: "131af433-6372-44aa-bdf0-f9bf1214a921",
     title: "Pokedex",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/3R7H97GF/output.gif",
@@ -268,6 +290,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/037-pokedex/",
   },
   {
+    id: "3788aa4d-83d4-4680-bf1f-08126c9e2d72",
     title: "Hoverboard",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/dVxPJKgJ/output.gif",
@@ -280,6 +303,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/036-hoverboard/",
   },
   {
+    id: "f565b076-0397-40dc-9bbf-077e8b825101",
     title: "Image Carousel",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/3xs6tbx4/output.gif",
@@ -292,6 +316,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/035-image-carousel/",
   },
   {
+    id: "e2638dd7-05e8-4e4f-85b8-9b363bdda664",
     title: "Animated Countdown",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/cLfMYD31/output.gif",
@@ -304,6 +329,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/034-animated-countdown/",
   },
   {
+    id: "5a684b94-312a-46c5-8b1a-ac1451d07f32",
     title: "Notes App",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/htkBSkKy/output.gif",
@@ -316,6 +342,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/033-notes-app/",
   },
   {
+    id: "cecc98fb-d296-4eb7-8af3-10524ff32a24",
     title: "Good, Cheap, Fast",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/y658dVDY/output.gif",
@@ -328,6 +355,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/032-good-cheap-fast/",
   },
   {
+    id: "0024bffa-04d6-4049-a23c-9f8a8de30791",
     title: "Random Password",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/mkcQj6FT/output.gif",
@@ -340,6 +368,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/031-random-password/",
   },
   {
+    id: "4c6cafc1-9359-4551-824d-4b363947689b",
     title: "Auto Text Effect",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/nLp6YcPM/output.gif",
@@ -352,6 +381,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/030-auto-text-effect/",
   },
   {
+    id: "d8939ae0-e682-411f-8130-e59fd553b765",
     title: "Double Click Heart",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/k4y867sc/output.gif",
@@ -364,6 +394,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/029-double-click-heart/",
   },
   {
+    id: "5135e6eb-f58d-4b73-b3e9-ce1d98b2f0d1",
     title: "GitHub Profiles",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/d1Dgc08M/output.gif",
@@ -376,6 +407,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/028-github-profiles/",
   },
   {
+    id: "11173377-7a0e-44d6-b1a6-a8c19572615d",
     title: "Toast Notification",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/6q3jTZ1y/output.gif",
@@ -388,6 +420,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/027-toast-notification/",
   },
   {
+    id: "be141609-6683-4bc9-924e-8e0e01c931bf",
     title: "Vertical Slider",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/L5D38Vsz/output.gif",
@@ -400,6 +433,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/026-vertical-slider/",
   },
   {
+    id: "e2fe9f47-b9b8-41b1-a4fa-fb2e31d3b0bf",
     title: "Sticky Navbar",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/pr6QqNjh/output.gif",
@@ -412,6 +446,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/025-sticky-navbar/",
   },
   {
+    id: "8ed72164-f0b1-476d-8c2c-5b6701025233",
     title: "Content Placeholder",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/CMmnz3C0/output.gif",
@@ -424,6 +459,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/024-content-placeholder/",
   },
   {
+    id: "1971c91f-952d-4e91-9fa5-b701adcf2b1c",
     title: "Kinetic CSS Loader",
     filter: ["css", "html"],
     preview: "https://i.postimg.cc/26ytJCWq/output.gif",
@@ -436,6 +472,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/023-kinetic-css-loader/",
   },
   {
+    id: "2a0f3cfb-2865-4397-a779-b41e089a9a89",
     title: "Draw App",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/XYDQVfhh/output.gif",
@@ -448,6 +485,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/022-drawing-app/",
   },
   {
+    id: "bfa0122c-0bb5-4822-83d7-3fe4b0ca1bc6",
     title: "Drag N Drop",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/zXNhhLVL/output.gif",
@@ -460,6 +498,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/021-drag-n-drop/",
   },
   {
+    id: "3c10ba5d-b0f7-4976-83bf-a526449633cb",
     title: "Button Ripple Effect",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/SNyf62HY/output.gif",
@@ -472,6 +511,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/020-button-ripple-effect/",
   },
   {
+    id: "7ed05418-02ae-4c04-9b8c-e0b9dfefce4f",
     title: "Theme Clock",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/TwWgkM4b/output.gif",
@@ -484,6 +524,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/019-theme-clock/",
   },
   {
+    id: "e3890dc9-1165-4b21-964f-75d5f4aff2a8",
     title: "Background Slider",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/sg8bPqnk/output.gif",
@@ -496,6 +537,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/018-background-slider/",
   },
   {
+    id: "cf6c54ac-b992-4e5a-ac73-c2d04b38ef72",
     title: "Movie App",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/4dvShYk2/output.gif",
@@ -508,6 +550,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/017-movie-app/",
   },
   {
+    id: "e579fc28-21d9-41e1-911a-eb8c66675058",
     title: "Drink Water",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/6pk1wZ6n/output.gif",
@@ -520,6 +563,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/016-drink-water/",
   },
   {
+    id: "830ac943-6550-47d5-b12a-207576dfcead",
     title: "Increment Counter",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/cHnBsXct/output.gif",
@@ -532,6 +576,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/015-increment-counter/",
   },
   {
+    id: "ec0bb3ae-480c-489e-a4ce-253e8ddbae65",
     title: "Animated Navigation",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/F1tF5rsL/output.gif",
@@ -544,6 +589,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/014-animated-navigation/",
   },
   {
+    id: "2b34eadc-4b96-47fc-a349-99c5aba96250",
     title: "Random Choice Picker",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/3Jj2mzxN/output.gif",
@@ -556,6 +602,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/013-random-choice-picker/",
   },
   {
+    id: "6dfeab2b-c0c4-4edb-ac04-f2709321da2c",
     title: "FAQ Collapse",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/rFQLJcQY/output.gif",
@@ -568,6 +615,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/012-faq-collapse/",
   },
   {
+    id: "540645a6-47bd-4b78-9c9e-e1ebc0475fe6",
     title: "Event Key Codes",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/SxWJsBgQ/output.gif",
@@ -580,6 +628,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/011-event-keycodes/",
   },
   {
+    id: "8fa2502c-2035-458f-82a5-b20dd33a4a4c",
     title: "Dad Jokes",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/qRCfBTGj/output.gif",
@@ -592,6 +641,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/010-dad-jokes/",
   },
   {
+    id: "9743ac22-8664-4ac6-886e-e8e186137c08",
     title: "Sound Board",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/m2HNZH75/output.gif",
@@ -604,6 +654,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/009-sound-board/",
   },
   {
+    id: "bd9e05c0-06fb-456b-9306-9cf784590422",
     title: "Form Input Wave",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/wxSjzyqM/output.gif",
@@ -616,6 +667,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/008-form-wave-animation/",
   },
   {
+    id: "c66f71c4-1a70-4b02-99cd-7137a6ea6944",
     title: "Split Landing Page",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/DZ97dHmF/output.gif",
@@ -628,6 +680,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/007-split-landing-page/",
   },
   {
+    id: "380e2845-622d-4d86-a78b-ad26d25791a8",
     title: "Scroll Animation",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/QN9BQqBf/output.gif",
@@ -640,6 +693,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/006-scroll-animation/",
   },
   {
+    id: "b0fcce76-2d5b-497a-8ef6-0936a149da95",
     title: "Blurry Loading",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/htKx8YdV/output.gif",
@@ -652,6 +706,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/005-blurry-loading/",
   },
   {
+    id: "f71c36f2-718b-4da3-973f-a3fcb0e41c69",
     title: "Hidden Search Widget",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/FRZP9S3L/output.gif",
@@ -664,6 +719,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/004-hidden-search-widget/",
   },
   {
+    id: "8e3579d2-f5ec-4297-b271-6b89c2b16119",
     title: "Rotating Navigation",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/Pqvv4n2V/output.gif",
@@ -676,6 +732,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/003-rotating-navigation/",
   },
   {
+    id: "74ada76f-8349-485d-a2e2-87110ab4c748",
     title: "Progress Steps",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/qqG5644F/output.gif",
@@ -688,6 +745,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/002-progress-steps/",
   },
   {
+    id: "f7c92ad0-a988-4bcc-a345-d86429297799",
     title: "Expanding Cards",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/wj5MZNfY/output.gif",
@@ -700,6 +758,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/001-expanding-cards/",
   },
   {
+    id: "813835da-7758-44b2-9bbf-e89ad4c27367",
     title: "One Card Clone",
     filter: ["css", "html"],
     preview: "https://i.postimg.cc/qvbTLQc7/one-card-clone.gif",
@@ -711,6 +770,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card",
   },
   {
+    id: "5b9ddb7f-f8e7-45cf-93dc-ada924ed1c81",
     title: "Liquid Landing Page",
     filter: ["tailwind", "html"],
     preview: "https://i.postimg.cc/Ls2HChwy/liquid-landing-page.gif",
@@ -723,6 +783,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/liquid-landing-page",
   },
   {
+    id: "a5707b9f-d400-4fed-a26f-92848231bfab",
     title: "Trafalgar Landing Page",
     filter: ["tailwind", "html"],
     preview: "https://i.postimg.cc/pTnRy8FL/trafalgar-landing-page.gif",
@@ -735,6 +796,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/trafalgar-tailwind-landing-page",
   },
   {
+    id: "2697c01d-12de-4ee0-ae03-2012ca4f3620",
     title: "Farmman Login Page",
     filter: ["tailwind", "html"],
     preview: "https://i.postimg.cc/WzMWHpQn/farman-login-page.gif",
@@ -747,6 +809,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/farmman-loginpage-tailwind",
   },
   {
+    id: "890d03d2-75f6-4963-abe7-1436e184749e",
     title: "Pricing Card",
     filter: ["tailwind", "html"],
     preview: "https://i.postimg.cc/1tSNK9rP/pricing-card-tailwind.gif",
@@ -759,6 +822,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tailwind-pricing-card-design-01",
   },
   {
+    id: "2505bd1c-ff82-4037-a0f3-a371c7056967",
     title: "Calculator",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/sDmKQLyv/calculator.gif",
@@ -771,6 +835,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/calculator-01",
   },
   {
+    id: "c579f4cf-fcb9-4482-869e-a0de5435a37d",
     title: "ToDo List App",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/L8ZYKqy2/to-do-list.gif",
@@ -783,6 +848,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/to-do-list-01",
   },
   {
+    id: "6104f3f9-f881-43b5-9eae-29f3021a1159",
     title: "Unit Converter",
     filter: ["javascript", "css", "html"],
     preview: "https://i.postimg.cc/FRFHR1xf/unit-converter.gif",
@@ -795,6 +861,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/unit-converter-01",
   },
   {
+    id: "9fdc839a-4f52-45e6-8ca4-f3240521007f",
     title: "Tindog Landing Page",
     filter: ["bootstrap", "html"],
     preview: "https://i.postimg.cc/25GCPrfC/tindog.gif",
@@ -807,6 +874,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tindog-bootstrap",
   },
   {
+    id: "950d557b-977c-4f91-afe6-8fe9fc1828ea",
     title: "Rahul Dutta / Portfolio",
     filter: ["react", "css"],
     preview: "https://i.postimg.cc/J0DmDXHh/rahuldutta-portfolio.gif",
@@ -818,6 +886,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/rahuldutta-portfolio",
   },
   {
+    id: "1a208847-01e5-41f8-96fa-f79719ee6b5b",
     title: "Student Management Console App",
     filter: ["java"],
     preview: "https://i.postimg.cc/PrMhLdPY/student-management-console-app.gif",
@@ -828,6 +897,7 @@ const projects = [
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment",
   },
   {
+    id: "4c069a07-ee9f-46ec-9914-7d8582299b89",
     title: "SignUp-LogIn-ForgotPass",
     filter: ["ui-ux"],
     preview: "https://i.postimg.cc/XY8MvL18/signup-login-figma.gif",

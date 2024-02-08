@@ -943,7 +943,7 @@ const projects = [
     title: "Student Management Console App",
     filter: ["java"],
     preview: "https://i.postimg.cc/PrMhLdPY/student-management-console-app.gif",
-    techStack: ["Figma"],
+    techStack: ["Java"],
     note: "",
     code: "https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment",
     download:

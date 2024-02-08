@@ -73,7 +73,7 @@ export function Projects() {
               >
                 all
               </li>
-              {filterItem.map((item, idx) => {
+              {filterItem.map((item) => {
                 let count = 0;
                 projects.forEach((project) => {
                   if (project.filter.includes(item)) {
@@ -82,7 +82,7 @@ export function Projects() {
                 });
                 return (
                   <li
-                    key={idx}
+                    key={crypto.randomUUID()}
                     className={`filter-item ${
                       selectedFilter.includes(item) ? "active" : ""
                     }`}
@@ -147,8 +147,8 @@ export function Projects() {
 
           {/* <!-- Projects --> */}
           <div className="projects">
-            {flitteredProjects.map((project, idx) => {
-              return <ProjectCard key={idx} project={project} />;
+            {flitteredProjects.map((project) => {
+              return <ProjectCard key={project.id} project={project} />;
             })}
           </div>
         </div>

@@ -21,7 +21,9 @@ export function ThemeToggler() {
       btn.onclick = () => {
         let newColor = btn.style.background;
         setTheme(newColor);
-        document.querySelector(":root").style.setProperty("--theme-toggler-bg-color-1", newColor);
+        document
+          .querySelector(":root")
+          .style.setProperty("--theme-toggler-bg-color-1", newColor);
       };
     });
   });
@@ -35,11 +37,11 @@ export function ThemeToggler() {
         </div>
         <h3>Choose Theme</h3>
         <div className="buttons">
-          <div className="theme-btn" style={{ background: "#fa8231" }}></div>
+          <div className="theme-btn" style={{ background: "#20bf6b" }}></div>
           <div className="theme-btn" style={{ background: "#2c58be" }}></div>
           <div className="theme-btn" style={{ background: "#f7b731" }}></div>
-          <div className="theme-btn" style={{ background: "#ff0033" }}></div>
-          <div className="theme-btn" style={{ background: "#20bf6b" }}></div>
+          <div className="theme-btn" style={{ background: "#fa8231" }}></div>
+          <div className="theme-btn" style={{ background: "#ff3c38" }}></div>
           <div className="theme-btn" style={{ background: "#FC427B" }}></div>
         </div>
       </div>

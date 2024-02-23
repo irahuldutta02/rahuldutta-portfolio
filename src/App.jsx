@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import { CustomRoutes } from "./routes/CustomRoutes";
 import { ThemeContext } from "./context/context";
+import { CustomRoutes } from "./routes/CustomRoutes";
 
 function App() {
-  const [theme, setTheme] = useState("#fa8231");
+  const [theme, setTheme] = useState("#20bf6b");
 
   return (
     <>

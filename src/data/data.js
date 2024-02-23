@@ -36,7 +36,7 @@ const projects = [
   },
   // Weather Dashboard
   {
-    id: "a87b10b4-4c5d-4693-a637-abff1b2a1079",
+    id: "63ad1dda-a99a-4cac-8485-e3a9a5e4d466",
     title: "Weather Dashboard",
     isFeatured: true,
     filter: ["react", "tailwind"],
@@ -216,7 +216,7 @@ const projects = [
   {
     id: "1c01949d-5a1f-4f53-8ef7-21d99b5f3da4",
     title: "Simple React ToDo App",
-    filter: ["react", "redux", "redux-toolkit"],
+    filter: ["react", "redux"],
     videoPreview:
       "https://github.com/irahuldutta02/simple-react-todo-app/assets/78687135/1391de30-544f-40dc-a007-40c176942c87",
     techStack: ["React", "Redux", "Redux-toolkit"],

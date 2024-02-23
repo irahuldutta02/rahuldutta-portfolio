@@ -1,17 +1,10 @@
 const projects = [
-  {
-    id: "950d557b-977c-4f91-afe6-8fe9fc1828ea",
-    isFeatured: true,
-    title: "Rahul Dutta / Portfolio",
-    filter: ["react", "css"],
-    preview: "https://i.postimg.cc/J0DmDXHh/rahuldutta-portfolio.gif",
-    techStack: ["React", "CSS"],
-    note: "",
-    livePreview: "https://rahuldutta.netlify.app/",
-    code: "https://github.com/irahuldutta02/rahuldutta-portfolio",
-    download:
-      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/rahuldutta-portfolio",
-  },
+  /**
+   * ! --------------------------
+   * ! Featured Projects (Ends) |
+   * ! --------------------------
+   */
+  // CineRental App
   {
     id: "6dc51944-bd44-409b-b513-fe2a1537cc3f",
     title: "CineRental App",
@@ -27,9 +20,118 @@ const projects = [
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/cinerental",
   },
+  // Pomodoro App
+  {
+    id: "7e73fa97-2fae-446d-bfbc-5aa794b2f067",
+    isFeatured: true,
+    title: "Pomodoro App",
+    filter: ["react", "tailwind"],
+    preview: "https://i.postimg.cc/L5nCPcPc/image.png",
+    techStack: ["React", "Tailwind CSS"],
+    note: "This app can be downloaded as PWA",
+    livePreview: "https://rd-pomodoro.vercel.app/",
+    code: "https://github.com/irahuldutta02/pomodoro-timer",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/pomodoro-timer",
+  },
+  // Weather Dashboard
+  {
+    id: "a87b10b4-4c5d-4693-a637-abff1b2a1079",
+    title: "Weather Dashboard",
+    isFeatured: true,
+    filter: ["react", "tailwind"],
+    preview: "https://i.postimg.cc/D0pH0tvN/image.png",
+    techStack: ["React", "Tailwind CSS"],
+    note: "used debounce to avoid api call on every key stroke in the search bar; used openweathermap.org api",
+    livePreview: "https://weather-dashboard-react-one.vercel.app/",
+    code: "https://github.com/irahuldutta02/weather-dashboard-react",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/weather-dashboard-react",
+  },
+  // Cine Search
+  {
+    id: "d1a2535e-3dcf-40b3-a83e-89721a5bee88",
+    isFeatured: true,
+    title: "Cine Search",
+    filter: ["react", "tailwind"],
+    preview: "https://i.postimg.cc/SRcnsssj/image.png",
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "React Router Dom",
+      "Axios",
+      "OMDB API",
+    ],
+    livePreview: "https://cine-search-three.vercel.app/",
+    code: "https://github.com/irahuldutta02/cine-search",
+    note: "",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/cine-search",
+  },
+  /**
+   * ! ----------------------------
+   * ! Featured Projects (starts )|
+   * ! ----------------------------
+   */
+  /**
+   * ! --------------------------------
+   * ! Non Featured Projects (Starts) |
+   * ! --------------------------------
+   */
+  // Random UUId Generator
+  {
+    id: "a87b10b4-4c5d-4693-a637-abff1b2a1079",
+    title: "Weather Dashboard",
+    filter: ["react", "tailwind"],
+    preview: "https://i.postimg.cc/Zn7TF7Hk/image.png",
+    techStack: ["React", "Tailwind CSS"],
+    note: "",
+    livePreview: "https://random-uuid-generator-eight.vercel.app/",
+    code: "https://github.com/irahuldutta02/random-uuid-generator",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/random-uuid-generator",
+  },
+  // Qr Genie Telegram Bot
+  {
+    id: "9b67700d-2848-4ddb-8cb5-d6c9f40f240f",
+    title: "Qr Genie Telegram Bot",
+    filter: ["nodejs"],
+    preview: "https://i.postimg.cc/Sx3q9jqQ/preview-not-available.jpg",
+    techStack: ["Node Js", "Telegraf"],
+    note: "Converts text or URL to QR code and vice versa",
+    code: "https://github.com/irahuldutta02/qr-code-genie-telegram-bot",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/qr-code-genie-telegram-bot",
+  },
+  // quiz bot discord
+  {
+    id: "1233b24b-5c2d-4978-b789-0c9b40982aad",
+    title: "Quiz Bot Discord",
+    filter: ["nodejs"],
+    preview: "https://i.postimg.cc/Sx3q9jqQ/preview-not-available.jpg",
+    techStack: ["Node Js", "Discord.js"],
+    note: "",
+    code: "https://github.com/irahuldutta02/quiz-bot-discord",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/quiz-bot-discord",
+  },
+  // Rahul Dutta / Portfolio
+  {
+    id: "950d557b-977c-4f91-afe6-8fe9fc1828ea",
+    title: "Rahul Dutta / Portfolio",
+    filter: ["react", "css"],
+    preview: "https://i.postimg.cc/J0DmDXHh/rahuldutta-portfolio.gif",
+    techStack: ["React", "CSS"],
+    note: "",
+    livePreview: "https://rahuldutta.netlify.app/",
+    code: "https://github.com/irahuldutta02/rahuldutta-portfolio",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/rahuldutta-portfolio",
+  },
+  // Shopping List React App
   {
     id: "31718d19-824f-49c4-aa9e-98298a113194",
-    title: "Form Validation",
+    title: "Shopping List React App",
     filter: ["react", "tailwind"],
     techStack: ["React", "Tailwind CSS"],
     preview: "https://i.postimg.cc/jdxM35C8/output.gif",
@@ -39,6 +141,7 @@ const projects = [
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/shopping-list-react-app",
   },
+  // Form Validation
   {
     id: "ea41fa48-45c3-49f5-88c7-89eaf1e13882",
     title: "Form Validation",
@@ -51,6 +154,7 @@ const projects = [
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/form-validation-react",
   },
+  // Countdown App React
   {
     id: "f3e3e3e3-3e3e-3e3e-3e3e-3e3e3e3e3e3e",
     title: "Countdown App React",
@@ -63,6 +167,7 @@ const projects = [
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/countdown-app-react",
   },
+  // Tic Tac Toe with moves history
   {
     id: "5bbb08fa-a198-4a98-88f0-d9085f54c0cf",
     title: "Tic Tac Toe with moves history",
@@ -77,6 +182,7 @@ const projects = [
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/react-tic-tac-toe-game",
   },
+  // Twitter Functionality Clone
   {
     id: "7ce93791-b4cc-4e4a-a58e-70d9c0f95dd8",
     title: "Twitter Functionality Clone",
@@ -91,6 +197,7 @@ const projects = [
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/twitter-functionality-clone-react",
   },
+  // Tic Tac Toe Game React
   {
     id: "f45ce6d3-ae38-4045-9160-4b282ee042e3",
     title: "Tic Tac Toe Game React",
@@ -105,13 +212,14 @@ const projects = [
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/tic-tac-toe-react",
   },
+  // Simple React ToDo App
   {
     id: "1c01949d-5a1f-4f53-8ef7-21d99b5f3da4",
     title: "Simple React ToDo App",
-    filter: ["react"],
+    filter: ["react", "redux", "redux-toolkit"],
     videoPreview:
       "https://github.com/irahuldutta02/simple-react-todo-app/assets/78687135/1391de30-544f-40dc-a007-40c176942c87",
-    techStack: ["React"],
+    techStack: ["React", "Redux", "Redux-toolkit"],
     thumbnail: "https://i.postimg.cc/FRJbmPLp/output.png",
     note: "",
     livePreview: "https://simple-react-todo-app-rdtech2002.vercel.app/",
@@ -119,7 +227,6 @@ const projects = [
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/simple-react-todo-app",
   },
-
   {
     id: "33d62e82-3b77-4fca-ba9f-1d25446b547e",
     title: "Insect Catch Game",
@@ -958,6 +1065,11 @@ const projects = [
     note: "",
     link: "https://www.figma.com/file/HVJhlP7JpvMLwyWhLZaPZr/SignUp-LogIn-ForgotPassword-for-Mobile-App?t=DswFYEZQKhzfmC8D-1",
   },
+  /**
+   * ! ------------------------------
+   * ! Non Featured Projects (Ends) |
+   * ! ------------------------------
+   */
 ];
 
 const techStack = [

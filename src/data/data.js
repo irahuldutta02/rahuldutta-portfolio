@@ -81,7 +81,7 @@ const projects = [
   // Random UUId Generator
   {
     id: "a87b10b4-4c5d-4693-a637-abff1b2a1079",
-    title: "Weather Dashboard",
+    title: "Random UUId Generator",
     filter: ["react", "tailwind"],
     preview: "https://i.postimg.cc/Zn7TF7Hk/image.png",
     techStack: ["React", "Tailwind CSS"],

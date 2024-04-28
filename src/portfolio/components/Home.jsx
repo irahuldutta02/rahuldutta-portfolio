@@ -33,7 +33,7 @@ export function Home() {
             <div className="home-button-div">
               <Link className="home-button" to="/projects">
                 <span>Projects</span>
-                <i className="bx bx-laptop bx-tada"></i>
+                <i className="fa-solid fa-code fa-flip"></i>
               </Link>
               <a
                 className="home-button"
@@ -42,7 +42,7 @@ export function Home() {
                 rel="noreferrer"
               >
                 <span>My links</span>
-                <i className="bx bx-link-external bx-tada"></i>
+                <i className="fa-solid fa-link fa-flip"></i>
               </a>
             </div>
           </div>

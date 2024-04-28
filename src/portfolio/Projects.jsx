@@ -4,6 +4,7 @@ import { getFilterItems, getProjects } from "../data/data";
 import { Nav } from "../NavBar/Nav";
 import { ThemeToggler } from "../theme/ThemeToggler";
 import { ProjectCard } from "./components/ProjectCard";
+import { ScrollUp } from "./components/ScrollUp";
 
 export function Projects() {
   const [projects] = useState(getProjects());
@@ -57,6 +58,7 @@ export function Projects() {
 
   return (
     <>
+      <ScrollUp />
       <Nav />
       <ThemeToggler />
 

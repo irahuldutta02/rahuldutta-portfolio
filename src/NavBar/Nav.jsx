@@ -99,16 +99,11 @@ export function Nav() {
         <nav className="navbar cSticky">
           <div className="max-width">
             <div className="logo">
-              <Link to={"/projects"}>
-                My <span>Projects</span>
+              <Link to={"/"}>
+                Rahul <span>Dutta</span>
               </Link>
             </div>
             <ul className={`menu ${showMenu && "active"}`}>
-              <li>
-                <Link to={"/"} className="menu-btn" onClick={handleShowMenu}>
-                  Portfolio
-                </Link>
-              </li>
               <li>
                 <a
                   href="https://rahuldutta.bio.link"
@@ -117,7 +112,7 @@ export function Nav() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Links
+                  My Links
                 </a>
               </li>
             </ul>

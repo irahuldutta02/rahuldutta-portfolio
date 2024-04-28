@@ -5,14 +5,16 @@ import { getFeaturedProjects } from "../../data/data";
 import { ProjectCard } from "./ProjectCard";
 
 export function ProjectsPreview() {
-  const [featuredProjects] = useState(getFeaturedProjects().reverse().slice(0, 6));
+  const [featuredProjects] = useState(
+    getFeaturedProjects().reverse().slice(0, 6)
+  );
 
   return (
     <>
       {/* <!-- project-preview section start --> */}
       <section className="projects-preview" id="projects">
         <div className="max-width">
-          <h2 className="title">Projects</h2>
+          <h2 className="title">Projects </h2>
 
           <div className="project-preview-container">
             {featuredProjects.map((project) => {

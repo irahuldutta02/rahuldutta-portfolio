@@ -577,7 +577,7 @@ section .title::after {
 /* project-preview section styling */
 
 .projects-preview .title::after {
-  content: "projects";
+  content: "featured";
 }
 
 .projects-preview .project-preview-container {

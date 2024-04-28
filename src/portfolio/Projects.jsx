@@ -143,7 +143,7 @@ export function Projects() {
               <span className="project__count">
                 {flitteredProjects.length <= 0 && "No Projects Found"}
                 {flitteredProjects.length > 0 &&
-                  `${flitteredProjects.length} projects found`}{" "}
+                  `${flitteredProjects.length} projects `}{" "}
                 {selectedFilter.length > 0 && `using `}
               </span>
               <span className="filter__message">

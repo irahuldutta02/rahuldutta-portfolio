@@ -1216,6 +1216,14 @@ footer span a:hover {
   padding: 1rem;
 }
 
+.project-page-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  align-items: center;
+  gap: 1rem;
+}
+
 /* filter */
 .filter {
   z-index: -1;

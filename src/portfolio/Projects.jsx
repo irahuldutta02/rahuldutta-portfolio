@@ -60,6 +60,11 @@ export function Projects() {
 
       <main className="main">
         <div className="container">
+
+          <div className="project-page-header">
+            <h1>My Projects</h1>
+          </div>
+
           {/* <!-- Filter --> */}
           <div className="filters">
             <ul className="filter-items">
@@ -100,9 +105,9 @@ export function Projects() {
                   >
                     {item}
                     <span className="badge">{count}</span>
-                    {item === filterItem[0] && (
+                    {/* {item === filterItem[0] && (
                       <span className="badge-new">New</span>
-                    )}
+                    )} */}
                   </li>
                 );
               })}

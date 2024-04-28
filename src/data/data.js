@@ -10,9 +10,7 @@ const projects = [
     title: "CineRental App",
     filter: ["react", "tailwind"],
     techStack: ["React", "Tailwind CSS"],
-    videoPreview:
-      "https://github.com/irahuldutta02/cinerental/assets/78687135/91e50d7f-3a25-4eeb-a3e7-95b2711f0c21",
-    thumbnail: "https://i.postimg.cc/kXq7nCKq/output.png",
+    preview: "https://i.postimg.cc/xTrMh9Ph/output.png",
     isFeatured: true,
     note: "",
     livePreview: "https://cinerental-rd.vercel.app/",
@@ -67,6 +65,53 @@ const projects = [
     note: "",
     download:
       "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/cine-search",
+  },
+  // RemoteRepo
+  {
+    id: "b9021fe0-1a76-46ac-979f-d53a5364fd8a",
+    isFeatured: true,
+    title: "RemoteRepo",
+    filter: ["react", "tailwind", "nodejs", "express", "mongodb"],
+    preview: "https://i.postimg.cc/154rhWxV/output.png",
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "React Router Dom",
+      "Axios",
+      "GitHub API",
+      "Node Js",
+      "Express",
+      "MongoDB",
+    ],
+    livePreview: "https://remote-repo-mern-app.onrender.com/",
+    code: "https://github.com/irahuldutta02/remote-repo-mern-app",
+    note: "",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/remote-repo-mern-app",
+  },
+  // ShopEase
+  {
+    id: "47934790-7f64-4cf6-9d02-1992d7f9c21e",
+    isFeatured: true,
+    title: "ShopEase",
+    filter: ["react", "tailwind", "nodejs", "express", "mongodb", "redux"],
+    preview: "https://i.postimg.cc/0NTn57sd/output.png",
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "React Router Dom",
+      "Axios",
+      "GitHub API",
+      "Node Js",
+      "Express",
+      "Redux",
+      "MongoDB",
+    ],
+    livePreview: "https://shop-ease-a7ya.onrender.com/",
+    code: "https://github.com/irahuldutta02/shop-ease",
+    note: "",
+    download:
+      "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/shop-ease",
   },
   /**
    * ! ----------------------------

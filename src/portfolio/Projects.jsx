@@ -119,6 +119,7 @@ export function Projects() {
             <div className="search">
               <input
                 type="text"
+                className="search-projects"
                 autoComplete="off"
                 name="search__project"
                 id="search__project"

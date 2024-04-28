@@ -1317,6 +1317,7 @@ footer span a:hover {
 }
 
 .search__project__item input {
+  outline: none;
   height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;

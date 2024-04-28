@@ -1,14 +1,12 @@
 import { useEffect } from "react";
-import "../portfolio.css";
 import Typed from "typed.js";
-
+import "../portfolio.css";
 
 export function About() {
-
   useEffect(() => {
     // Initialize Typed.js when component mounts
-    var typed = new Typed('.typing-2', {
-      strings: ['Full Stack Developer'],
+    var typed = new Typed(".typing-2", {
+      strings: ["Full Stack Developer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,
@@ -37,8 +35,7 @@ export function About() {
             </div>
             <div className="column right">
               <div className="text">
-                I'm Rahul and I'm a{" "}
-                <span className="typing-2"></span>
+                I'm Rahul and I'm a <span className="typing-2"></span>
               </div>
               <p>
                 I'm a Ambitious individual with strong technical skills in full
@@ -103,6 +100,12 @@ export function About() {
               <div className="about-hireme-btn">
                 <a className="about-button" href="#contact">
                   Hire me <i className="bx bxs-hand-down bx-fade-down"></i>
+                </a>
+                <a
+                  href="/files/resume-rahul-dutta.pdf"
+                  className="about-button"
+                >
+                  Resume <i className="bx bxs-download bx-fade-down"></i>
                 </a>
               </div>
             </div>

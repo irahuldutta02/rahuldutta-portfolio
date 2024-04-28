@@ -11,7 +11,7 @@ export function Works() {
             <Link className="card" to="/projects">
               <div>
                 <div className="box">
-                  <i className="bx bx-laptop bx-tada"></i>
+                  <i className="fa-solid fa-code"></i>
                   <div className="text">Projects</div>
                   <p>Click here view projects done by me.</p>
                 </div>
@@ -25,9 +25,9 @@ export function Works() {
             >
               <div>
                 <div className="box">
-                  <i className="bx bx-edit bx-tada"></i>
+                  <i className="fa-solid fa-pen-to-square"></i>
                   <div className="text">Blogs</div>
-                  <p>Click here to go through my blogs.</p>
+                  <p>Click here to read my blogs & Articles.</p>
                 </div>
               </div>
             </a>
@@ -39,7 +39,7 @@ export function Works() {
             >
               <div>
                 <div className="box">
-                  <i className="bx bx-link-external bx-tada"></i>
+                  <i className="fa-solid fa-link"></i>
                   <div className="text">All Links</div>
                   <p>Click here visit all my listed links.</p>
                 </div>

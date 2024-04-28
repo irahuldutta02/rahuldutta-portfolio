@@ -102,7 +102,7 @@ export function Contact() {
               <div className="text">Get in Touch</div>
               <p>
                 Feel free to drop a mail{" "}
-                <i className="bx bx-mail-send bx-fade-right"></i>
+                <i className="fa-solid fa-envelope-open-text fa-flip"></i>
               </p>
               <div className="icons">
                 <div className="row">

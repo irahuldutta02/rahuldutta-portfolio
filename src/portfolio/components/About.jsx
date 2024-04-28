@@ -99,13 +99,14 @@ export function About() {
               </div>
               <div className="about-hireme-btn">
                 <a className="about-button" href="#contact">
-                  Hire me <i className="bx bxs-hand-down bx-fade-down"></i>
+                  Hire me{" "}
+                  <i className="fa-solid fa-hand-point-down fa-bounce"></i>
                 </a>
                 <a
                   href="/files/resume-rahul-dutta.pdf"
                   className="about-button"
                 >
-                  Resume <i className="bx bxs-download bx-fade-down"></i>
+                  Resume <i className="fa-solid fa-download fa-bounce"></i>
                 </a>
               </div>
             </div>

@@ -21,7 +21,7 @@ export function Experience() {
                 <h3>Tech Mantra Co.</h3>
                 <p>MERN Stack Developer</p>
                 <div className="ex-text-div-div">
-                  <p>From April 2024 To Present</p>
+                  <p>April, 2024 - Present</p>
                   <p>({getCountFromDate("2024-04-01")})</p>
                   <p>Full Time, In Office</p>
                 </div>
@@ -29,7 +29,11 @@ export function Experience() {
             </div>
             {/*  */}
             <div className="box">
-              <a href="https://businesswebsolutions.in/" target="_blank" rel="noreferrer">
+              <a
+                href="https://businesswebsolutions.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="ex-icon-img-div">
                   <img src={businessWebSolutionsLogo} alt="techmantra-logo" />
                 </div>
@@ -38,7 +42,7 @@ export function Experience() {
                 <h3>Business Web Solutions</h3>
                 <p>Full Stack Web Developer Intern</p>
                 <div className="ex-text-div-div">
-                  <p>From April 2024 To Present</p>
+                  <p>Sep, 2022 – Nov, 2022</p>
                   <p>(2 Months)</p>
                   <p>Internship, Remote</p>
                 </div>

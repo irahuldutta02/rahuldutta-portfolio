@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../portfolio.css";
+
 import { getTechStack } from "../../data/data";
 
 export function Skills() {

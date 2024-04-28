@@ -8,21 +8,23 @@ import { Background } from "./components/Background";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Home } from "./components/Home";
-import { Nav } from "./components/Nav";
 import { ScrollUp } from "./components/ScrollUp";
 import { Skills } from "./components/Skills";
 import { Works } from "./components/Works";
-import "./portfolio.css";
+import { Nav } from "../NavBar/Nav";
 
 export function Portfolio() {
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     document.title = "Rahul-Dutta/portfolio";
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
     document
       .querySelector(":root")
-      .style.setProperty("--portfolio-page-color-1", theme);
+      .style.setProperty("--page-color-1", theme);
   });
 
   return (

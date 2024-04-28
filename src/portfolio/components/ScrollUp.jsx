@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "../portfolio.css";
 
 export function ScrollUp() {
   const [showScroll, setShowScroll] = useState(false);

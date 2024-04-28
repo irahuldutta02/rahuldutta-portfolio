@@ -2,9 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../context/context";
 import { getFilterItems, getProjects } from "../data/data";
 import { ThemeToggler } from "../theme/ThemeToggler";
-import { NavBar } from "./components/NavBar";
 import { ProjectCard } from "./components/ProjectCard";
-import "./projects.css";
+import { Nav } from "../NavBar/Nav";
 
 export function Projects() {
   const [projects] = useState(getProjects());
@@ -46,15 +45,19 @@ export function Projects() {
 
   useEffect(() => {
     document.title = "Rahul-Dutta/projects";
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
     document
       .querySelector(":root")
-      .style.setProperty("--project-page-color-1", theme);
-  });
+      .style.setProperty("--theme-toggler-bg-color-1", theme);
+    document.querySelector(":root").style.setProperty("--page-color-1", theme);
+  }, [theme]);
 
   return (
     <>
-      <NavBar />
+      <Nav />
       <ThemeToggler />
 
       <main className="main">

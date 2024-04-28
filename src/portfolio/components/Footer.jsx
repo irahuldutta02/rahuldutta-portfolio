@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import "../portfolio.css";
 
 export function Footer() {
   useEffect(() => {
@@ -48,7 +47,7 @@ export function Footer() {
               alignItems: "center",
               color: "#74c0fc",
             }}
-            className="fa-brands fa-react fa-spin" 
+            className="fa-brands fa-react fa-spin"
           ></i>
           | Last Updated : <span id="last-modified"></span> |
           <a

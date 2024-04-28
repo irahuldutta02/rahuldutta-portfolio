@@ -1,6 +1,5 @@
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "../context/context";
-import "./themeToggler.css";
 
 export function ThemeToggler() {
   const { setTheme } = useContext(ThemeContext);
@@ -24,9 +23,12 @@ export function ThemeToggler() {
         document
           .querySelector(":root")
           .style.setProperty("--theme-toggler-bg-color-1", newColor);
+        document
+          .querySelector(":root")
+          .style.setProperty("--project-page-color-1", newColor);
       };
     });
-  });
+  }, [setTheme]);
 
   return (
     <>

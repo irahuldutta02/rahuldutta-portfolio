@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../portfolio.css";
+
 import { toast } from "react-toastify";
 
 export function Contact() {
@@ -224,7 +224,7 @@ export function Contact() {
                       });
                     }}
                   ></textarea>
-                  <input type="submit" value="Submit" autoComplete="off"/>
+                  <input type="submit" value="Submit" autoComplete="off" />
                 </form>
               </div>
             </div>

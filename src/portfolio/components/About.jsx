@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Typed from "typed.js";
-import "../portfolio.css";
 
 export function About() {
   useEffect(() => {
@@ -21,6 +20,7 @@ export function About() {
   return (
     <>
       {/* <!-- about section start --> */}
+
       <section className="about" id="about">
         <div className="max-width">
           <h2 className="title">About me</h2>

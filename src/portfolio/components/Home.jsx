@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import "../portfolio.css";
-import Typed from "typed.js";
+
 import { Link } from "react-router-dom";
+import Typed from "typed.js";
 
 export function Home() {
   useEffect(() => {
@@ -31,10 +31,7 @@ export function Home() {
               A <span className="typing"></span>
             </div>
             <div className="home-button-div">
-              <Link
-                className="home-button"
-                to="/projects"
-              >
+              <Link className="home-button" to="/projects">
                 <span>Projects</span>
                 <i className="bx bx-laptop bx-tada"></i>
               </Link>

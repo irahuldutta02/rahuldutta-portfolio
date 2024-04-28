@@ -1,5 +1,3 @@
-import "../portfolio.css";
-
 export function Background() {
   return (
     <>

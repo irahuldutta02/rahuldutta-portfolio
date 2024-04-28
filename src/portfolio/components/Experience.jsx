@@ -39,7 +39,7 @@ export function Experience() {
                 <p>Full Stack Web Developer Intern</p>
                 <div className="ex-text-div-div">
                   <p>From April 2024 To Present</p>
-                  <p>2 Months</p>
+                  <p>(2 Months)</p>
                   <p>Internship, Remote</p>
                 </div>
               </div>

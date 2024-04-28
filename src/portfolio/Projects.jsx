@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../context/context";
 import { getFilterItems, getProjects } from "../data/data";
+import { Nav } from "../NavBar/Nav";
 import { ThemeToggler } from "../theme/ThemeToggler";
 import { ProjectCard } from "./components/ProjectCard";
-import { Nav } from "../NavBar/Nav";
 
 export function Projects() {
   const [projects] = useState(getProjects());

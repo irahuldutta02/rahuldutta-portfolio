@@ -93,7 +93,7 @@ export function Nav() {
     );
   }
 
-  if (path === "/projects") {
+  if (path.includes("/projects")) {
     return (
       <>
         <nav className="navbar cSticky">

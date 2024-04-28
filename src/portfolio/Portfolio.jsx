@@ -12,19 +12,15 @@ import { ScrollUp } from "./components/ScrollUp";
 import { Skills } from "./components/Skills";
 import { Works } from "./components/Works";
 import { Nav } from "../NavBar/Nav";
+import { Experience } from "./components/Experience";
+import { ProjectsPreview } from "./components/ProjectsPreview";
 
 export function Portfolio() {
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     document.title = "Rahul-Dutta/portfolio";
-    window.scrollTo({
-      top: 0,
-      behavior: "instant",
-    });
-    document
-      .querySelector(":root")
-      .style.setProperty("--page-color-1", theme);
+    document.querySelector(":root").style.setProperty("--page-color-1", theme);
   });
 
   return (
@@ -35,6 +31,8 @@ export function Portfolio() {
       <About />
       <Works />
       <Skills />
+      <Experience />
+      <ProjectsPreview />
       <Background />
       <Contact />
       <Footer />

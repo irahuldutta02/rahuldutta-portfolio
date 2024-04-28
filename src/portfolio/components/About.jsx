@@ -105,6 +105,8 @@ export function About() {
                 <a
                   href="/files/resume-rahul-dutta.pdf"
                   className="about-button"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Resume <i className="fa-solid fa-download fa-bounce"></i>
                 </a>

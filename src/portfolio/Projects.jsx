@@ -46,10 +46,6 @@ export function Projects() {
 
   useEffect(() => {
     document.title = "Rahul-Dutta/projects";
-    window.scrollTo({
-      top: 0,
-      behavior: "instant",
-    });
     document
       .querySelector(":root")
       .style.setProperty("--theme-toggler-bg-color-1", theme);

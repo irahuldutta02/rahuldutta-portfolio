@@ -48,22 +48,26 @@ export function Nav() {
                 </a>
               </li>
               <li>
-                <a href="#works" className="menu-btn" onClick={handleShowMenu}>
-                  Works
-                </a>
-              </li>
-              <li>
                 <a href="#skills" className="menu-btn" onClick={handleShowMenu}>
                   Tech stack
                 </a>
               </li>
               <li>
                 <a
-                  href="#background"
+                  href="#experience"
                   className="menu-btn"
                   onClick={handleShowMenu}
                 >
-                  Background
+                  Experience
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className="menu-btn"
+                  onClick={handleShowMenu}
+                >
+                  Projects
                 </a>
               </li>
               <li>

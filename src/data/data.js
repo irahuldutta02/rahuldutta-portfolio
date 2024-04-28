@@ -1175,4 +1175,8 @@ function getTechStack() {
   return techStack;
 }
 
-export { getProjects, getFilterItems, getTechStack };
+function getFeaturedProjects() {
+  return projects.filter((project) => project.isFeatured);
+}
+
+export { getProjects, getFilterItems, getTechStack, getFeaturedProjects };

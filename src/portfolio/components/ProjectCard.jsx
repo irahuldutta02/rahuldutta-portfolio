@@ -1,7 +1,7 @@
 export function ProjectCard({ project }) {
   return (
     <>
-      <div className="project__item ${filterClasses}">
+      <div className="project__item">
         <div className="project__preview">
           {/* if Featured */}
           {project.isFeatured && (

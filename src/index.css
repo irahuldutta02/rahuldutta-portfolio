@@ -1211,7 +1211,7 @@ footer span a:hover {
 }
 
 .container {
-  max-width: 96rem;
+  max-width: 1300px;
   margin: auto;
   padding: 1rem;
 }
@@ -1370,8 +1370,8 @@ footer span a:hover {
 }
 
 .project__item {
-  width: 20rem;
-  height: 28rem;
+  width: 17rem;
+  height: 25rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1400,7 +1400,7 @@ footer span a:hover {
   top: 0;
   right: 0;
   background-color: var(--page-color-1);
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 0px 0px 0px 10px;
   border-bottom: 2px solid var(--project-page-color-2);
   border-left: 2px solid var(--project-page-color-2);
@@ -1437,14 +1437,16 @@ footer span a:hover {
 
 .project__title {
   color: white;
+  font-size: 0.8rem;
 }
 
 .project__tech__stacks {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.2rem;
   flex-wrap: wrap;
+  font-size: 0.8rem;
 }
 
 .project__tech__stack {
@@ -1467,17 +1469,17 @@ footer span a:hover {
 
 .project__btn {
   background-color: var(--page-color-1);
-  padding: 0.8rem;
+  padding: 0.6rem;
   border-radius: 0.5rem;
   color: white;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: 2px solid var(--page-color-1);
   transition: all 0.3s;
 }
@@ -1490,6 +1492,10 @@ footer span a:hover {
 .project__btn:hover {
   background-color: var(--project-page-color-2);
   box-shadow: 3px 3px 0px rgba(255, 255, 255, 0.7);
+}
+
+.project__notes{
+  font-size: 0.8rem;
 }
 
 /* projects page ends */

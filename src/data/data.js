@@ -52,7 +52,7 @@ const projects = [
     isFeatured: true,
     title: "Cine Search",
     filter: ["react", "tailwind"],
-    preview: "https://i.postimg.cc/SRcnsssj/image.png",
+    preview: "/projects/cine-search.png",
     techStack: [
       "React",
       "Tailwind CSS",
@@ -72,7 +72,7 @@ const projects = [
     isFeatured: true,
     title: "RemoteRepo",
     filter: ["react", "tailwind", "nodejs", "express", "mongodb"],
-    preview: "https://i.postimg.cc/154rhWxV/output.png",
+    preview: "/projects/remote-repo.png",
     techStack: [
       "React",
       "Tailwind CSS",
@@ -95,7 +95,7 @@ const projects = [
     isFeatured: true,
     title: "ShopEase",
     filter: ["react", "tailwind", "nodejs", "express", "mongodb", "redux"],
-    preview: "https://i.postimg.cc/0NTn57sd/output.png",
+    preview: "/projects/shop-ease.png",
     techStack: [
       "React",
       "Tailwind CSS",
@@ -217,8 +217,7 @@ const projects = [
     id: "5bbb08fa-a198-4a98-88f0-d9085f54c0cf",
     title: "Tic Tac Toe with moves history",
     filter: ["react", "tailwind"],
-    videoPreview:
-      "https://github.com/irahuldutta02/react-tic-tac-toe-game/assets/78687135/847be105-5904-473e-a38b-2e8d18fb3527",
+    preview: "/projects/tick-tac-toe-with-move-history.png",
     techStack: ["React", "Tailwind CSS"],
     thumbnail: "https://i.postimg.cc/dVg5VNY3/output.jpg",
     note: "",
@@ -232,8 +231,7 @@ const projects = [
     id: "7ce93791-b4cc-4e4a-a58e-70d9c0f95dd8",
     title: "Twitter Functionality Clone",
     filter: ["react"],
-    videoPreview:
-      "https://github.com/irahuldutta02/twitter-functionality-clone-react/assets/78687135/b1313cff-8fe7-4c39-ad51-83cf2467b3dd",
+    preview: "https://i.postimg.cc/7LqFGjq7/image.png",
     techStack: ["React"],
     thumbnail: "https://i.postimg.cc/QNTgfBqC/output.jpg",
     note: "",
@@ -247,8 +245,7 @@ const projects = [
     id: "f45ce6d3-ae38-4045-9160-4b282ee042e3",
     title: "Tic Tac Toe Game React",
     filter: ["react"],
-    videoPreview:
-      "https://github.com/irahuldutta02/tic-tac-toe-react/assets/78687135/14684bda-51ce-4212-b0d1-797a239fbb86",
+    preview: "/projects/tick-tac-toe.png",
     techStack: ["React"],
     thumbnail: "https://i.postimg.cc/CxjHWfSn/output.png",
     note: "",
@@ -262,8 +259,7 @@ const projects = [
     id: "1c01949d-5a1f-4f53-8ef7-21d99b5f3da4",
     title: "Simple React ToDo App",
     filter: ["react", "redux"],
-    videoPreview:
-      "https://github.com/irahuldutta02/simple-react-todo-app/assets/78687135/1391de30-544f-40dc-a007-40c176942c87",
+    preview: "/projects/simple-react-todo-app.png",
     techStack: ["React", "Redux", "Redux-toolkit"],
     thumbnail: "https://i.postimg.cc/FRJbmPLp/output.png",
     note: "",

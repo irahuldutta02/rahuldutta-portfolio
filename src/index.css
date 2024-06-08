@@ -1494,8 +1494,39 @@ footer span a:hover {
   box-shadow: 3px 3px 0px rgba(255, 255, 255, 0.7);
 }
 
-.project__notes{
+.project__notes {
   font-size: 0.8rem;
+}
+
+.pagination-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pagination-button {
+  background-color: var(--page-color-1);
+  cursor: pointer; 
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.pagination-button.disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.pagination-text {
+  color: var(--portfolio-page-color-2);
 }
 
 /* projects page ends */

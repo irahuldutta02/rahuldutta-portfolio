@@ -5,6 +5,7 @@ import { Nav } from "../NavBar/Nav";
 import { ThemeToggler } from "../theme/ThemeToggler";
 import { ProjectCard } from "./components/ProjectCard";
 import { ScrollUp } from "./components/ScrollUp";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 export function Projects() {
   const [projects] = useState(getProjects());
@@ -12,6 +13,9 @@ export function Projects() {
   const [selectedFilter, setSelectedFilter] = useState([]);
   const [search, setSearch] = useState("");
   const { theme } = useContext(ThemeContext);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const rowsPerPage = 8;
 
   const flitteredProjects = projects.filter((project) => {
     if (
@@ -52,6 +56,31 @@ export function Projects() {
     document.querySelector(":root").style.setProperty("--page-color-1", theme);
   }, [theme]);
 
+  const renderProjects = () => {
+    const start = (currentPage - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
+
+    return (
+      <>
+        {/* <!-- Projects --> */}
+        <div className="projects">
+          {flitteredProjects?.slice(start, end).map((project) => {
+            return <ProjectCard key={project.id} project={project} />;
+          })}
+        </div>
+      </>
+    );
+  };
+
+  const scrollToBottom = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "instant",
+      });
+    }, 1);
+  };
+
   return (
     <>
       <ScrollUp />
@@ -60,7 +89,6 @@ export function Projects() {
 
       <main className="main">
         <div className="container">
-
           <div className="project-page-header">
             <h1>My Projects</h1>
           </div>
@@ -152,11 +180,90 @@ export function Projects() {
             </p>
           </div>
 
-          {/* <!-- Projects --> */}
-          <div className="projects">
-            {flitteredProjects.map((project) => {
-              return <ProjectCard key={project.id} project={project} />;
-            })}
+          {/* render projects */}
+          {renderProjects()}
+
+          {/* pagination */}
+          {/* <div className="mt-4 flex justify-center gap-4 items-center">
+            {flitteredProjects?.length / rowsPerPage > 1 && (
+              <>
+                <button
+                  onClick={() => {
+                    currentPage > 1 && setCurrentPage(currentPage - 1);
+                  }}
+                  className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ${
+                    currentPage <= 1 && "opacity-50 cursor-not-allowed "
+                  }`}
+                  disabled={currentPage <= 1}
+                >
+                  <FaAngleLeft size={25} />
+                </button>
+                <span className="dark:text-white">
+                  Page {currentPage} of{" "}
+                  {Math.ceil(flitteredProjects?.length / rowsPerPage)}
+                </span>
+                <button
+                  onClick={() => {
+                    currentPage <
+                      Math.ceil(flitteredProjects?.length / rowsPerPage) &&
+                      setCurrentPage(currentPage + 1);
+                  }}
+                  className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ${
+                    currentPage >=
+                      Math.ceil(flitteredProjects?.length / rowsPerPage) &&
+                    "opacity-50 cursor-not-allowed"
+                  }`}
+                  disabled={
+                    currentPage >=
+                    Math.ceil(flitteredProjects?.length / rowsPerPage)
+                  }
+                >
+                  <FaAngleRight size={25} />
+                </button>
+              </>
+            )}
+          </div> */}
+
+          <div className="pagination-container">
+            {flitteredProjects?.length / rowsPerPage > 1 && (
+              <>
+                <button
+                  onClick={() => {
+                    scrollToBottom();
+                    currentPage > 1 && setCurrentPage(currentPage - 1);
+                  }}
+                  className={`pagination-button ${
+                    currentPage <= 1 && "disabled"
+                  }`}
+                  disabled={currentPage <= 1}
+                >
+                  <FaAngleLeft size={25} />
+                </button>
+                <span className="pagination-text">
+                  Page {currentPage} of{" "}
+                  {Math.ceil(flitteredProjects?.length / rowsPerPage)}
+                </span>
+                <button
+                  onClick={() => {
+                    scrollToBottom();
+                    currentPage <
+                      Math.ceil(flitteredProjects?.length / rowsPerPage) &&
+                      setCurrentPage(currentPage + 1);
+                  }}
+                  className={`pagination-button ${
+                    currentPage >=
+                      Math.ceil(flitteredProjects?.length / rowsPerPage) &&
+                    "disabled"
+                  }`}
+                  disabled={
+                    currentPage >=
+                    Math.ceil(flitteredProjects?.length / rowsPerPage)
+                  }
+                >
+                  <FaAngleRight size={25} />
+                </button>
+              </>
+            )}
           </div>
         </div>
       </main>

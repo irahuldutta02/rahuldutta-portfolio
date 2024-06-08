@@ -6,7 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export function ProjectsPreview() {
   const [featuredProjects] = useState(
-    getFeaturedProjects().reverse().slice(0, 6)
+    getFeaturedProjects().reverse().slice(0, 3)
   );
 
   return (

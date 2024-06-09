@@ -1,71 +1,5 @@
 const projects = [
-  /**
-   * ! --------------------------
-   * ! Featured Projects (Ends) |
-   * ! --------------------------
-   */
-  // CineRental App
-  {
-    id: "6dc51944-bd44-409b-b513-fe2a1537cc3f",
-    title: "CineRental App",
-    filter: ["react", "tailwind"],
-    techStack: ["React", "Tailwind CSS"],
-    preview: "https://i.postimg.cc/xTrMh9Ph/output.png",
-    isFeatured: true,
-    note: "",
-    livePreview: "https://cinerental-rd.vercel.app/",
-    code: "https://github.com/irahuldutta02/cinerental",
-    download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/cinerental",
-  },
-  // Pomodoro App
-  {
-    id: "7e73fa97-2fae-446d-bfbc-5aa794b2f067",
-    isFeatured: true,
-    title: "Pomodoro App",
-    filter: ["react", "tailwind"],
-    preview: "https://i.postimg.cc/L5nCPcPc/image.png",
-    techStack: ["React", "Tailwind CSS"],
-    note: "This app can be downloaded as PWA",
-    livePreview: "https://rd-pomodoro.vercel.app/",
-    code: "https://github.com/irahuldutta02/pomodoro-timer",
-    download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/pomodoro-timer",
-  },
-  // Weather Dashboard
-  {
-    id: "63ad1dda-a99a-4cac-8485-e3a9a5e4d466",
-    title: "Weather Dashboard",
-    isFeatured: true,
-    filter: ["react", "tailwind"],
-    preview: "https://i.postimg.cc/D0pH0tvN/image.png",
-    techStack: ["React", "Tailwind CSS"],
-    note: "used debounce to avoid api call on every key stroke in the search bar; used openweathermap.org api",
-    livePreview: "https://weather-dashboard-react-one.vercel.app/",
-    code: "https://github.com/irahuldutta02/weather-dashboard-react",
-    download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/weather-dashboard-react",
-  },
-  // Cine Search
-  {
-    id: "d1a2535e-3dcf-40b3-a83e-89721a5bee88",
-    isFeatured: true,
-    title: "Cine Search",
-    filter: ["react", "tailwind"],
-    preview: "/projects/cine-search.png",
-    techStack: [
-      "React",
-      "Tailwind CSS",
-      "React Router Dom",
-      "Axios",
-      "OMDB API",
-    ],
-    livePreview: "https://cine-search-three.vercel.app/",
-    code: "https://github.com/irahuldutta02/cine-search",
-    note: "",
-    download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/cine-search",
-  },
+  // ! Featured Projects
   // RemoteRepo
   {
     id: "b9021fe0-1a76-46ac-979f-d53a5364fd8a",
@@ -113,16 +47,89 @@ const projects = [
     download:
       "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/shop-ease",
   },
-  /**
-   * ! ----------------------------
-   * ! Featured Projects (starts )|
-   * ! ----------------------------
-   */
-  /**
-   * ! --------------------------------
-   * ! Non Featured Projects (Starts) |
-   * ! --------------------------------
-   */
+  // ! Non Featured Projects
+  // CineRental App
+  {
+    id: "6dc51944-bd44-409b-b513-fe2a1537cc3f",
+    title: "CineRental App",
+    filter: ["react", "tailwind"],
+    techStack: ["React", "Tailwind CSS"],
+    preview: "https://i.postimg.cc/xTrMh9Ph/output.png",
+    note: "",
+    livePreview: "https://cinerental-rd.vercel.app/",
+    code: "https://github.com/irahuldutta02/cinerental",
+    download:
+      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/cinerental",
+  },
+  // Pomodoro App
+  {
+    id: "7e73fa97-2fae-446d-bfbc-5aa794b2f067",
+    title: "Pomodoro App",
+    filter: ["react", "tailwind"],
+    preview: "https://i.postimg.cc/L5nCPcPc/image.png",
+    techStack: ["React", "Tailwind CSS"],
+    note: "This app can be downloaded as PWA",
+    livePreview: "https://rd-pomodoro.vercel.app/",
+    code: "https://github.com/irahuldutta02/pomodoro-timer",
+    download:
+      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/pomodoro-timer",
+  },
+  // Weather Dashboard
+  {
+    id: "63ad1dda-a99a-4cac-8485-e3a9a5e4d466",
+    title: "Weather Dashboard",
+    filter: ["react", "tailwind"],
+    preview: "https://i.postimg.cc/D0pH0tvN/image.png",
+    techStack: ["React", "Tailwind CSS"],
+    note: "used debounce to avoid api call on every key stroke in the search bar; used openweathermap.org api",
+    livePreview: "https://weather-dashboard-react-one.vercel.app/",
+    code: "https://github.com/irahuldutta02/weather-dashboard-react",
+    download:
+      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/weather-dashboard-react",
+  },
+  // Cine Search
+  {
+    id: "d1a2535e-3dcf-40b3-a83e-89721a5bee88",
+    title: "Cine Search",
+    filter: ["react", "tailwind"],
+    preview: "/projects/cine-search.png",
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "React Router Dom",
+      "Axios",
+      "OMDB API",
+    ],
+    livePreview: "https://cine-search-three.vercel.app/",
+    code: "https://github.com/irahuldutta02/cine-search",
+    note: "",
+    download:
+      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/cine-search",
+  },
+  // Basic Chat App
+  {
+    id: "8dd383eb-4249-4cff-8423-6bb8b3a806d6",
+    title: "Basic Chat App",
+    filter: ["react", "tailwind", "nodejs", "express", "socket.io"],
+    multiImages: [
+      "/projects/basic-chat-app-01.png",
+      "/projects/basic-chat-app-02.png",
+      "/projects/basic-chat-app-03.png",
+    ],
+    techStack: [
+      "React",
+      "Daisy UI",
+      "Tailwind CSS",
+      "Node Js",
+      "Express",
+      "Socket.io",
+    ],
+    note: "",
+    livePreview: "https://chat-app-rho-topaz.vercel.app/",
+    code: "https://github.com/irahuldutta02/chat-app",
+    download:
+      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/chat-app",
+  },
   // Random UUId Generator
   {
     id: "a87b10b4-4c5d-4693-a637-abff1b2a1079",

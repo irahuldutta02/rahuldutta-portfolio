@@ -1,3 +1,13 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+import { Fragment } from "react";
+
 export function ProjectCard({ project }) {
   return (
     <>
@@ -37,6 +47,26 @@ export function ProjectCard({ project }) {
               <source src={project.videoPreview} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+          )}
+          {/* if multi image */}
+          {project?.multiImages && (
+            <Swiper
+              pagination={{
+                dynamicBullets: true,
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              {project?.multiImages.map((image, index) => {
+                return (
+                  <Fragment key={index}>
+                    <SwiperSlide>
+                      <img src={image} alt="multi" className="project__image" />
+                    </SwiperSlide>
+                  </Fragment>
+                );
+              })}
+            </Swiper>
           )}
         </div>
         <div className="project__details">

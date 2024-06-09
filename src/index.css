@@ -1508,7 +1508,7 @@ footer span a:hover {
 
 .pagination-button {
   background-color: var(--page-color-1);
-  cursor: pointer; 
+  cursor: pointer;
   color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -1527,6 +1527,41 @@ footer span a:hover {
 
 .pagination-text {
   color: var(--portfolio-page-color-2);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Custom styles for pagination bullets */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--page-color-1); /* Change the color */
+  opacity: 1; /* Make sure they are fully visible */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--page-color-1); /* Change the color for active bullet */
 }
 
 /* projects page ends */

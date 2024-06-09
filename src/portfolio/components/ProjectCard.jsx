@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper/modules";
-import { Fragment } from "react";
+import { generateUUID } from "../../helper/helper";
 
 export function ProjectCard({ project }) {
   return (
@@ -27,27 +27,6 @@ export function ProjectCard({ project }) {
               className="project__image"
             />
           )}
-          {/* preview video if any */}
-          {project.videoPreview && (
-            <video
-              className="project__video"
-              muted
-              autoPlay
-              loop
-              poster={project.thumbnail && project.thumbnail}
-              onMouseOver={(event) => {
-                event.target.style.cursor = "pointer";
-                event.target.controls = true;
-              }}
-              onMouseOut={(event) => {
-                event.target.style.cursor = "default";
-                event.target.controls = false;
-              }}
-            >
-              <source src={project.videoPreview} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
           {/* if multi image */}
           {project?.multiImages && (
             <Swiper
@@ -57,13 +36,11 @@ export function ProjectCard({ project }) {
               modules={[Pagination]}
               className="mySwiper"
             >
-              {project?.multiImages.map((image, index) => {
+              {project?.multiImages.map((image) => {
                 return (
-                  <Fragment key={index}>
-                    <SwiperSlide>
-                      <img src={image} alt="multi" className="project__image" />
-                    </SwiperSlide>
-                  </Fragment>
+                  <SwiperSlide key={generateUUID()}>
+                    <img src={image} alt="multi" className="project__image" />
+                  </SwiperSlide>
                 );
               })}
             </Swiper>

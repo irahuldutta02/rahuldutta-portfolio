@@ -19,7 +19,7 @@ export function Projects() {
 
   const flitteredProjects = projects.filter((project) => {
     if (
-      project.title.toLowerCase().includes(search.toLowerCase()) &&
+      project.title.toLowerCase().includes(search.trim().toLowerCase()) &&
       selectedFilter.length === 0
     ) {
       return true;
@@ -55,6 +55,10 @@ export function Projects() {
       .style.setProperty("--theme-toggler-bg-color-1", theme);
     document.querySelector(":root").style.setProperty("--page-color-1", theme);
   }, [theme]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  },[search])
 
   const renderProjects = () => {
     const start = (currentPage - 1) * rowsPerPage;

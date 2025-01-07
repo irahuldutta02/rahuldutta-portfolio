@@ -55,7 +55,7 @@ const projects = [
     download:
       "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/shop-ease",
   },
-  // ShopEase
+  // ExpenseEase
   {
     id: "243c2301-1421-4c95-8b17-9d1767bfedf3",
     isFeatured: true,
@@ -88,6 +88,20 @@ const projects = [
     note: "",
     download:
       "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/expense-ease-tracker",
+  },
+  // InterviewEase
+  {
+    id: "d9432efb-2751-40ef-8e15-804c0f60a731",
+    isFeatured: true,
+    title: "InterviewEase",
+    filter: ["nextjs", "gemini-ai"],
+    preview: "/projects/interview-ease.png",
+    techStack: ["Next Js", "Gemini AI"],
+    livePreview: "https://interviewease.vercel.app",
+    code: "https://github.com/irahuldutta02/interview-ease",
+    note: "Ai powered interview preparation platform",
+    download:
+      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/interview-ease",
   },
   // ! Non Featured Projects
   // CineRental App

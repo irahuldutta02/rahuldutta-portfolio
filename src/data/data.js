@@ -1204,13 +1204,19 @@ const techStack = [
   },
   {
     id: "bfa0ba69-ff04-4768-9ca1-a085bffb67c6",
-    name: "EJS",
-    iconSrc: "https://img.icons8.com/color/48/ejs.png",
+    name: "TypeScript",
+    iconSrc:
+      "https://static-00.iconduck.com/assets.00/file-type-typescript-official-icon-512x512-873ff1r9.png",
   },
   {
     id: "e7b8b7e6-5c7a-4a6b-8f9a-0b1b6f1b4f0e",
-    name: "React",
+    name: "ReactJs",
     iconSrc: "https://img.icons8.com/color/48/react-native.png",
+  },
+  {
+    id: "52516083-6171-4905-a90a-a32c9314c3b4",
+    name: "NextJs",
+    iconSrc: "https://simpleicons.org/icons/nextdotjs.svg",
   },
   {
     id: "a30a8d24-f5a2-4056-9c87-0659e26bf62c",
@@ -1223,19 +1229,9 @@ const techStack = [
     iconSrc: "https://img.icons8.com/color/48/nodejs.png",
   },
   {
-    id: "6a91fe19-86ce-4fc4-8aa0-e60169936da6",
-    name: "Java",
-    iconSrc: "https://img.icons8.com/color/48/java-coffee-cup-logo.png",
-  },
-  {
-    id: "3f26b341-b47e-4dff-93df-ea70196d0ac6",
-    name: "Java JDBC",
-    iconSrc: "https://img.icons8.com/color/48/database.png",
-  },
-  {
     id: "40102a0c-ebfb-4b9b-954e-1752115a42ab",
-    name: "MySql",
-    iconSrc: "https://img.icons8.com/color/48/mysql-logo.png",
+    name: "PostgreSQL",
+    iconSrc: "https://img.icons8.com/color/48/postgreesql.png",
   },
   {
     id: "de3c4df8-9c17-474e-af7e-d580b7416d67",

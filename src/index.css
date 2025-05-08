@@ -1560,7 +1560,6 @@ footer span a:hover {
 
 .project__btn:hover {
   background-color: transparent;
-  color: var(--page-color-1);
   transform: translateY(-3px);
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }

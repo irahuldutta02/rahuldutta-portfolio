@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { FaChevronRight, FaEye, FaGithub, FaLink } from "react-icons/fa";
+import { FaDownload, FaEye, FaGithub, FaLink } from "react-icons/fa";
 import { ThemeContext } from "../../context/context";
 
 // Import Swiper styles
@@ -42,14 +42,14 @@ export function ProjectCard({ project }) {
           </div>
 
           {/* Project Notes */}
-          <p className="project__notes">{project.notes}</p>
+          {project.note && <p className="project__notes">{project.note}</p>}
         </div>
 
         {/* Action Buttons */}
         <div className="project__btns">
-          {project.demoLink && (
+          {project.livePreview && (
             <a
-              href={project.demoLink}
+              href={project.livePreview}
               target="_blank"
               rel="noopener noreferrer"
               className="project__btn"
@@ -60,9 +60,9 @@ export function ProjectCard({ project }) {
             </a>
           )}
 
-          {project.codeLink && (
+          {project.code && (
             <a
-              href={project.codeLink}
+              href={project.code}
               target="_blank"
               rel="noopener noreferrer"
               className="project__btn"
@@ -73,29 +73,29 @@ export function ProjectCard({ project }) {
             </a>
           )}
 
-          {project.deployLink && (
+          {project.link && (
             <a
-              href={project.deployLink}
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="project__btn"
-              aria-label="View deployed app"
+              aria-label="View link"
               style={{ backgroundColor: theme }}
             >
               <FaLink />
             </a>
           )}
 
-          {project.detailLink && (
+          {project.download && (
             <a
-              href={project.detailLink}
+              href={project.download}
               target="_blank"
               rel="noopener noreferrer"
               className="project__btn"
-              aria-label="More details"
+              aria-label="Download project"
               style={{ backgroundColor: theme }}
             >
-              <FaChevronRight />
+              <FaDownload />
             </a>
           )}
         </div>

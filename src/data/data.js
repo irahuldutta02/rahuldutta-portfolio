@@ -167,11 +167,7 @@ const projects = [
     id: "8dd383eb-4249-4cff-8423-6bb8b3a806d6",
     title: "Basic Chat App",
     filter: ["react", "tailwind", "nodejs", "express", "socket.io"],
-    multiImages: [
-      "/projects/basic-chat-app-01.png",
-      "/projects/basic-chat-app-02.png",
-      "/projects/basic-chat-app-03.png",
-    ],
+    preview: "/projects/basic-chat-app-01.png",
     techStack: [
       "React",
       "Daisy UI",

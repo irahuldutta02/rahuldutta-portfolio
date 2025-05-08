@@ -1,118 +1,105 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useContext } from "react";
+import { FaChevronRight, FaEye, FaGithub, FaLink } from "react-icons/fa";
+import { ThemeContext } from "../../context/context";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
-import { generateUUID } from "../../helper/helper";
 
 export function ProjectCard({ project }) {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <>
-      <div className="project__item">
-        <div className="project__preview">
-          {/* if Featured */}
-          {project.isFeatured && (
-            <div className="project__featured">
-              <span>Featured</span>
-            </div>
-          )}
-          {/* preview image if any */}
-          {project.preview && (
-            <img
-              src={project.preview}
-              alt="preview"
-              className="project__image"
-            />
-          )}
-          {/* if multi image */}
-          {project?.multiImages && (
-            <Swiper
-              pagination={{
-                dynamicBullets: true,
-              }}
-              modules={[Pagination]}
-              className="mySwiper"
-            >
-              {project?.multiImages.map((image) => {
-                return (
-                  <SwiperSlide key={generateUUID()}>
-                    <img src={image} alt="multi" className="project__image" />
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          )}
-        </div>
-        <div className="project__details">
-          <div className="project__head">
-            <div className="project__title">
-              <h2>{project.title}</h2>
-            </div>
-            {/* tech stack */}
-            <div className="project__tech__stacks">
-              Using:{" "}
-              {project.techStack.map((techStack) => {
-                return (
-                  <span key={techStack} className="project__tech__stack">
-                    {techStack}
-                  </span>
-                );
-              })}
-            </div>
-            {/* project note */}
-            <div className="project__notes">
-              <p>{project.note.length > 0 && project.note}</p>
-            </div>
+    <div className="project__item">
+      {/* Project Preview Image */}
+      <div className="project__preview">
+        {project.isFeatured && (
+          <span className="project__featured">Featured</span>
+        )}
+        {project.isNew && <span className="badge-new">NEW</span>}
+        <img
+          src={`${project.preview}`}
+          alt={project.title}
+          className="project__img"
+          loading="lazy"
+        />
+      </div>
+
+      {/* Project Details */}
+      <div className="project__details">
+        <div className="project__head">
+          <h3 className="project__title">{project.title}</h3>
+
+          {/* Tech Stack Tags */}
+          <div className="project__tech__stacks">
+            {project.techStack.map((tech, index) => (
+              <span key={index} className="project__tech__stack">
+                {tech}
+              </span>
+            ))}
           </div>
 
-          {/* btns */}
-          <div className="project__btns">
-            {project.livePreview && (
-              <a
-                target="_blank"
-                href={project.livePreview}
-                className="project__btn"
-                rel="noreferrer"
-              >
-                <i className="fa-solid fa-link"></i>
-              </a>
-            )}
-            {project.code && (
-              <a
-                target="_blank"
-                href={project.code}
-                className="project__btn"
-                rel="noreferrer"
-              >
-                <i className="fa-brands fa-github"></i>
-              </a>
-            )}
-            {project.download && (
-              <a
-                target="_blank"
-                href={project.download}
-                className="project__btn"
-                rel="noreferrer"
-              >
-                <i className="fa-solid fa-download"></i>
-              </a>
-            )}
-            {project.link && (
-              <a
-                target="_blank"
-                href={project.link}
-                className="project__btn"
-                rel="noreferrer"
-              >
-                <i className="fa-solid fa-link"></i>
-              </a>
-            )}
-          </div>
+          {/* Project Notes */}
+          <p className="project__notes">{project.notes}</p>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="project__btns">
+          {project.demoLink && (
+            <a
+              href={project.demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__btn"
+              aria-label="View live demo"
+              style={{ backgroundColor: theme }}
+            >
+              <FaEye />
+            </a>
+          )}
+
+          {project.codeLink && (
+            <a
+              href={project.codeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__btn"
+              aria-label="View source code"
+              style={{ backgroundColor: theme }}
+            >
+              <FaGithub />
+            </a>
+          )}
+
+          {project.deployLink && (
+            <a
+              href={project.deployLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__btn"
+              aria-label="View deployed app"
+              style={{ backgroundColor: theme }}
+            >
+              <FaLink />
+            </a>
+          )}
+
+          {project.detailLink && (
+            <a
+              href={project.detailLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__btn"
+              aria-label="More details"
+              style={{ backgroundColor: theme }}
+            >
+              <FaChevronRight />
+            </a>
+          )}
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useMemo, useCallback } from "react";
 import { ThemeContext } from "../context/context";
 import { getFilterItems, getProjects } from "../data/data";
 import { Nav } from "../NavBar/Nav";
@@ -17,73 +17,75 @@ export function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
   const rowsPerPage = 8;
 
-  const flitteredProjects = projects.filter((project) => {
-    if (
-      project.title.toLowerCase().includes(search.trim().toLowerCase()) &&
-      selectedFilter.length === 0
-    ) {
-      return true;
-    }
+  // Use useMemo to avoid recalculating filtered projects on every render
+  const flitteredProjects = useMemo(() => {
+    const filtered = projects.filter((project) => {
+      const titleMatches = project.title
+        .toLowerCase()
+        .includes(search.trim().toLowerCase());
 
-    if (
-      project.title.toLowerCase().includes(search.toLowerCase()) &&
-      selectedFilter.length > 0
-    ) {
-      // return those projects which have all the selected filters and whose title includes the search string
+      if (selectedFilter.length === 0) {
+        return titleMatches;
+      }
+
       return (
-        selectedFilter.every((filter) => project.filter.includes(filter)) &&
-        project.title.toLowerCase().includes(search.toLowerCase())
+        titleMatches &&
+        selectedFilter.every((filter) => project.filter.includes(filter))
       );
-    }
-  });
+    });
 
-  // featured at first of the projects array
-  flitteredProjects.sort((a, b) => {
-    if (a.isFeatured) {
-      return -1;
-    }
-    if (b.isFeatured) {
-      return 1;
-    }
-    return 0;
-  });
+    // Sort by featured
+    return filtered.sort((a, b) => {
+      if (a.isFeatured && !b.isFeatured) return -1;
+      if (!a.isFeatured && b.isFeatured) return 1;
+      return 0;
+    });
+  }, [projects, search, selectedFilter]);
 
   useEffect(() => {
     document.title = "Rahul-Dutta/projects";
-    document
-      .querySelector(":root")
-      .style.setProperty("--theme-toggler-bg-color-1", theme);
-    document.querySelector(":root").style.setProperty("--page-color-1", theme);
+    const root = document.querySelector(":root");
+    root.style.setProperty("--theme-toggler-bg-color-1", theme);
+    root.style.setProperty("--page-color-1", theme);
   }, [theme]);
 
   useEffect(() => {
     setCurrentPage(1);
-  },[search])
+  }, [search, selectedFilter]);
 
-  const renderProjects = () => {
-    const start = (currentPage - 1) * rowsPerPage;
-    const end = start + rowsPerPage;
+  const handleFilterClick = useCallback((item) => {
+    setSearch("");
+    if (item === undefined) {
+      setSelectedFilter([]);
+      return;
+    }
 
-    return (
-      <>
-        {/* <!-- Projects --> */}
-        <div className="projects">
-          {flitteredProjects?.slice(start, end).map((project) => {
-            return <ProjectCard key={project.id} project={project} />;
-          })}
-        </div>
-      </>
+    setSelectedFilter((prev) =>
+      prev.includes(item)
+        ? prev.filter((filter) => filter !== item)
+        : [...prev, item]
     );
-  };
+  }, []);
 
-  const scrollToBottom = () => {
+  const scrollToBottom = useCallback(() => {
     setTimeout(() => {
       window.scrollTo({
         top: document.documentElement.scrollHeight,
         behavior: "instant",
       });
     }, 1);
-  };
+  }, []);
+
+  const totalPages = useMemo(
+    () => Math.ceil(flitteredProjects.length / rowsPerPage),
+    [flitteredProjects.length, rowsPerPage]
+  );
+
+  const paginatedProjects = useMemo(() => {
+    const start = (currentPage - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
+    return flitteredProjects.slice(start, end);
+  }, [flitteredProjects, currentPage, rowsPerPage]);
 
   return (
     <>
@@ -104,42 +106,25 @@ export function Projects() {
                 className={`filter-item ${
                   selectedFilter.length === 0 ? "active" : ""
                 }`}
-                onClick={() => {
-                  setSearch("");
-                  setSelectedFilter([]);
-                }}
+                onClick={() => handleFilterClick()}
               >
                 all
               </li>
               {filterItem.map((item) => {
-                let count = 0;
-                projects.forEach((project) => {
-                  if (project.filter.includes(item)) {
-                    count++;
-                  }
-                });
+                const count = projects.filter((project) =>
+                  project.filter.includes(item)
+                ).length;
+
                 return (
                   <li
-                    key={crypto.randomUUID()}
+                    key={item}
                     className={`filter-item ${
                       selectedFilter.includes(item) ? "active" : ""
                     }`}
-                    onClick={() => {
-                      setSearch("");
-                      if (selectedFilter.includes(item)) {
-                        setSelectedFilter(
-                          selectedFilter.filter((filter) => filter !== item)
-                        );
-                      } else {
-                        setSelectedFilter([...selectedFilter, item]);
-                      }
-                    }}
+                    onClick={() => handleFilterClick(item)}
                   >
                     {item}
                     <span className="badge">{count}</span>
-                    {/* {item === filterItem[0] && (
-                      <span className="badge-new">New</span>
-                    )} */}
                   </li>
                 );
               })}
@@ -168,73 +153,35 @@ export function Projects() {
           {/* <!-- Project Count --> */}
           <div className="project__count__div">
             <p
-              style={{
-                color: flitteredProjects.length <= 0 ? "red" : "black",
-              }}
+              style={{ color: flitteredProjects.length <= 0 ? "red" : "black" }}
             >
               <span className="project__count">
-                {flitteredProjects.length <= 0 && "No Projects Found"}
-                {flitteredProjects.length > 0 &&
-                  `${flitteredProjects.length} projects `}{" "}
-                {selectedFilter.length > 0 && `using `}
+                {flitteredProjects.length <= 0
+                  ? "No Projects Found"
+                  : `${flitteredProjects.length} projects `}
+                {selectedFilter.length > 0 && "using "}
               </span>
               <span className="filter__message">
-                {selectedFilter.length > 0 && `${selectedFilter.join(", ")}`}
+                {selectedFilter.length > 0 && selectedFilter.join(", ")}
               </span>
             </p>
           </div>
 
-          {/* render projects */}
-          {renderProjects()}
+          {/* Projects */}
+          <div className="projects">
+            {paginatedProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
 
-          {/* pagination */}
-          {/* <div className="mt-4 flex justify-center gap-4 items-center">
-            {flitteredProjects?.length / rowsPerPage > 1 && (
-              <>
-                <button
-                  onClick={() => {
-                    currentPage > 1 && setCurrentPage(currentPage - 1);
-                  }}
-                  className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ${
-                    currentPage <= 1 && "opacity-50 cursor-not-allowed "
-                  }`}
-                  disabled={currentPage <= 1}
-                >
-                  <FaAngleLeft size={25} />
-                </button>
-                <span className="dark:text-white">
-                  Page {currentPage} of{" "}
-                  {Math.ceil(flitteredProjects?.length / rowsPerPage)}
-                </span>
-                <button
-                  onClick={() => {
-                    currentPage <
-                      Math.ceil(flitteredProjects?.length / rowsPerPage) &&
-                      setCurrentPage(currentPage + 1);
-                  }}
-                  className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ${
-                    currentPage >=
-                      Math.ceil(flitteredProjects?.length / rowsPerPage) &&
-                    "opacity-50 cursor-not-allowed"
-                  }`}
-                  disabled={
-                    currentPage >=
-                    Math.ceil(flitteredProjects?.length / rowsPerPage)
-                  }
-                >
-                  <FaAngleRight size={25} />
-                </button>
-              </>
-            )}
-          </div> */}
-
+          {/* Pagination */}
           <div className="pagination-container">
-            {flitteredProjects?.length / rowsPerPage > 1 && (
+            {totalPages > 1 && (
               <>
                 <button
                   onClick={() => {
                     scrollToBottom();
-                    currentPage > 1 && setCurrentPage(currentPage - 1);
+                    setCurrentPage((prev) => Math.max(prev - 1, 1));
                   }}
                   className={`pagination-button ${
                     currentPage <= 1 && "disabled"
@@ -244,25 +191,17 @@ export function Projects() {
                   <FaAngleLeft size={25} />
                 </button>
                 <span className="pagination-text">
-                  Page {currentPage} of{" "}
-                  {Math.ceil(flitteredProjects?.length / rowsPerPage)}
+                  Page {currentPage} of {totalPages}
                 </span>
                 <button
                   onClick={() => {
                     scrollToBottom();
-                    currentPage <
-                      Math.ceil(flitteredProjects?.length / rowsPerPage) &&
-                      setCurrentPage(currentPage + 1);
+                    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
                   }}
                   className={`pagination-button ${
-                    currentPage >=
-                      Math.ceil(flitteredProjects?.length / rowsPerPage) &&
-                    "disabled"
+                    currentPage >= totalPages && "disabled"
                   }`}
-                  disabled={
-                    currentPage >=
-                    Math.ceil(flitteredProjects?.length / rowsPerPage)
-                  }
+                  disabled={currentPage >= totalPages}
                 >
                   <FaAngleRight size={25} />
                 </button>

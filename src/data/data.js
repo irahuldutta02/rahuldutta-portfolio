@@ -20,7 +20,7 @@ const projects = [
     code: "https://github.com/irahuldutta02/remote-repo-mern-app",
     note: "",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/remote-repo-mern-app",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/remote-repo-mern-app",
   },
   // ShopEase
   {
@@ -53,7 +53,7 @@ const projects = [
     code: "https://github.com/irahuldutta02/shop-ease",
     note: "",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/shop-ease",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/shop-ease",
   },
   // ExpenseEase
   {
@@ -87,7 +87,7 @@ const projects = [
     code: "https://github.com/irahuldutta02/expense-ease-tracker",
     note: "",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/expense-ease-tracker",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/expense-ease-tracker",
   },
   // InterviewEase
   {
@@ -101,7 +101,42 @@ const projects = [
     code: "https://github.com/irahuldutta02/interview-ease",
     note: "Ai powered interview preparation platform",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/interview-ease",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/interview-ease",
+  },
+  // FeedSync
+  {
+    id: "2b2bad37-2a58-44c0-9138-35d473907dd31",
+    isFeatured: true,
+    title: "FeedSync",
+    filter: ["react", "typescript", "tailwind", "nodejs", "express", "mongodb"],
+    preview: "/projects/feed-sync.png",
+    techStack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node Js",
+      "Express",
+      "MongoDB",
+    ],
+    livePreview: "https://feedsync.netlify.app",
+    code: "https://github.com/irahuldutta02/feed-sync",
+    note: "",
+    download:
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/feed-sync",
+  },
+  // FactChecker AI
+  {
+    id: "5a0e5662-2ef4-4355-8689-c20023b4f83b",
+    isFeatured: true,
+    title: "FactChecker AI",
+    filter: ["nextjs", "gemini-ai", "tailwind"],
+    preview: "/projects/fact-checker.png",
+    techStack: ["Next Js", "Tailwind CSS", "Gemini AI"],
+    livePreview: "https://factcheckai.netlify.app",
+    code: "https://github.com/irahuldutta02/fact-check",
+    note: "",
+    download:
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/fact-check",
   },
   // ! Non Featured Projects
   // CineRental App
@@ -115,7 +150,7 @@ const projects = [
     livePreview: "https://cinerental-rd.vercel.app/",
     code: "https://github.com/irahuldutta02/cinerental",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/cinerental",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/cinerental",
   },
   // Pomodoro App
   {
@@ -128,7 +163,7 @@ const projects = [
     livePreview: "https://rd-pomodoro.vercel.app/",
     code: "https://github.com/irahuldutta02/pomodoro-timer",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/pomodoro-timer",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/pomodoro-timer",
   },
   // Weather Dashboard
   {
@@ -141,7 +176,7 @@ const projects = [
     livePreview: "https://weather-dashboard-react-one.vercel.app/",
     code: "https://github.com/irahuldutta02/weather-dashboard-react",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/weather-dashboard-react",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/weather-dashboard-react",
   },
   // Cine Search
   {
@@ -160,7 +195,7 @@ const projects = [
     code: "https://github.com/irahuldutta02/cine-search",
     note: "",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/cine-search",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/cine-search",
   },
   // Basic Chat App
   {
@@ -180,7 +215,7 @@ const projects = [
     livePreview: "https://chat-app-rho-topaz.vercel.app/",
     code: "https://github.com/irahuldutta02/chat-app",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/chat-app",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/chat-app",
   },
   // Random UUId Generator
   {
@@ -193,7 +228,7 @@ const projects = [
     livePreview: "https://random-uuid-generator-eight.vercel.app/",
     code: "https://github.com/irahuldutta02/random-uuid-generator",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/random-uuid-generator",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/random-uuid-generator",
   },
   // Qr Genie Telegram Bot
   {
@@ -205,7 +240,7 @@ const projects = [
     note: "Converts text or URL to QR code and vice versa",
     code: "https://github.com/irahuldutta02/qr-code-genie-telegram-bot",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/qr-code-genie-telegram-bot",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/qr-code-genie-telegram-bot",
   },
   // quiz bot discord
   {
@@ -217,7 +252,7 @@ const projects = [
     note: "",
     code: "https://github.com/irahuldutta02/quiz-bot-discord",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/quiz-bot-discord",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/quiz-bot-discord",
   },
   // Rahul Dutta / Portfolio
   {
@@ -230,7 +265,7 @@ const projects = [
     livePreview: "https://rahuldutta.netlify.app/",
     code: "https://github.com/irahuldutta02/rahuldutta-portfolio",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/rahuldutta-portfolio",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/rahuldutta-portfolio",
   },
   // Shopping List React App
   {
@@ -243,7 +278,7 @@ const projects = [
     livePreview: "https://shopping-list-react-app-nu.vercel.app/",
     code: "https://github.com/irahuldutta02/shopping-list-react-app",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/shopping-list-react-app",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/shopping-list-react-app",
   },
   // Form Validation
   {
@@ -256,7 +291,7 @@ const projects = [
     livePreview: "https://form-validation-react-pi.vercel.app/",
     code: "https://github.com/irahuldutta02/form-validation-react",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/form-validation-react",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/form-validation-react",
   },
   // Countdown App React
   {
@@ -269,7 +304,7 @@ const projects = [
     livePreview: "https://countdown-app-react-six.vercel.app/",
     code: "https://github.com/irahuldutta02/countdown-app-react",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/countdown-app-react",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/countdown-app-react",
   },
   // Tic Tac Toe with moves history
   {
@@ -283,7 +318,7 @@ const projects = [
     livePreview: "https://react-tic-tac-toe-game-with-history.vercel.app/",
     code: "https://github.com/irahuldutta02/twitter-functionality-clone-react",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/react-tic-tac-toe-game",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/react-tic-tac-toe-game",
   },
   // Twitter Functionality Clone
   {
@@ -297,7 +332,7 @@ const projects = [
     livePreview: "https://twitter-functionality-clone-react.vercel.app/",
     code: "https://github.com/irahuldutta02/twitter-functionality-clone-react",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/twitter-functionality-clone-react",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/twitter-functionality-clone-react",
   },
   // Tic Tac Toe Game React
   {
@@ -311,7 +346,7 @@ const projects = [
     livePreview: "https://tic-tac-toe-react-rdtech2002.vercel.app/",
     code: "https://github.com/irahuldutta02/tic-tac-toe-react",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/tic-tac-toe-react",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/tic-tac-toe-react",
   },
   // Simple React ToDo App
   {
@@ -325,7 +360,7 @@ const projects = [
     livePreview: "https://simple-react-todo-app-rdtech2002.vercel.app/",
     code: "https://github.com/irahuldutta02/simple-react-todo-app",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/simple-react-todo-app",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/simple-react-todo-app",
   },
   {
     id: "33d62e82-3b77-4fca-ba9f-1d25446b547e",
@@ -338,7 +373,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/050-insect-catch-game/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/050-insect-catch-game/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/050-insect-catch-game/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/050-insect-catch-game/",
   },
   {
     id: "896fb6de-85ba-454b-83e9-7bdb8d09500e",
@@ -351,7 +386,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/049-todo-list/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/049-todo-list/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/049-todo-list/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/049-todo-list/",
   },
   {
     id: "d6cd480c-ddf2-4448-ba03-9afffd6a84b1",
@@ -364,7 +399,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/048-random-image-generator/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/048-random-image-generator/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/048-random-image-generator/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/048-random-image-generator/",
   },
   {
     id: "902fa291-808c-48dd-aac4-53ec359bc439",
@@ -377,7 +412,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/047-testimonial-box-switcher/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/047-testimonial-box-switcher/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/047-testimonial-box-switcher/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/047-testimonial-box-switcher/",
   },
   {
     id: "e102a114-c101-4d1b-9116-27f2fc95e027",
@@ -390,7 +425,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/046-quiz-app/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/046-quiz-app/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/046-quiz-app/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/046-quiz-app/",
   },
   {
     id: "802b4c8b-7dc5-478d-8086-a691422c1ce2",
@@ -403,7 +438,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/045-netflix-mobile-navigation/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/045-netflix-mobile-navigation/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/045-netflix-mobile-navigation/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/045-netflix-mobile-navigation/",
   },
   {
     id: "2d4f644a-8338-4db2-8b5d-f068d6d3fac3",
@@ -416,7 +451,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/044-custom-range-slider/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/044-custom-range-slider/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/044-custom-range-slider/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/044-custom-range-slider/",
   },
   {
     id: "5f6625f0-38b2-4ba9-a33c-29de62840cb9",
@@ -429,7 +464,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/043-feedback-ui-design/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/043-feedback-ui-design/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/043-feedback-ui-design/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/043-feedback-ui-design/",
   },
   {
     id: "6e9794a0-e997-4ed0-bbd4-de98a5dafef3",
@@ -442,7 +477,7 @@ const projects = [
       "https://irahuldutta02.github.io/javascript-projects-01/space-shooter-game",
     code: "https://github.com/irahuldutta02/javascript-projects-01/tree/main/space-shooter-game",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/space-shooter-game",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/space-shooter-game",
   },
   {
     id: "0ea27897-f97f-4f91-b0a8-4144e21430c1",
@@ -455,7 +490,7 @@ const projects = [
       "https://irahuldutta02.github.io/javascript-projects-01/snake-game",
     code: "https://github.com/irahuldutta02/javascript-projects-01/tree/main/snake-game",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/snake-game",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/snake-game",
   },
   {
     id: "b4aa072e-063c-4c1f-a2d7-5403cecd3897",
@@ -468,7 +503,7 @@ const projects = [
       "https://irahuldutta02.github.io/javascript-projects-01/07-todo-app",
     code: "https://github.com/irahuldutta02/javascript-projects-01/tree/main/07-todo-app",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/07-todo-app",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/07-todo-app",
   },
   {
     id: "62ca7fed-8460-4b85-8b3f-d4bd9a52b8bd",
@@ -481,7 +516,7 @@ const projects = [
       "https://irahuldutta02.github.io/javascript-projects-01/06-ping-pong-game",
     code: "https://github.com/irahuldutta02/javascript-projects-01/tree/main/06-ping-pong-game",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/06-ping-pong-game",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/06-ping-pong-game",
   },
   {
     id: "cb7c51d9-b69a-4891-8ea9-d3bc85dc2117",
@@ -494,7 +529,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/042-live-user-filter/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/042-live-user-filter/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/042-live-user-filter/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/042-live-user-filter/",
   },
   {
     id: "4090ac48-c5a9-4560-b2da-3ae3a166fb47",
@@ -507,7 +542,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/041-verify-account-ui/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/041-verify-account-ui/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/041-verify-account-ui/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/041-verify-account-ui/",
   },
   {
     id: "754eb1ff-474a-481f-a0a6-29d1fb57781f",
@@ -520,7 +555,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/040-3d-background-boxes/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/040-3d-background-boxes/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/040-3d-background-boxes/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/040-3d-background-boxes/",
   },
   {
     id: "d6d15fd5-684b-4fe0-b8cd-6ff73f2d9cb5",
@@ -533,7 +568,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/039-password-strength-background/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/039-password-strength-background/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/039-password-strength-background/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/039-password-strength-background/",
   },
   {
     id: "148ce15a-2b91-413c-a568-9d3d6c4b5251",
@@ -546,7 +581,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/038-mobile-tab-navigation/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/038-mobile-tab-navigation/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/038-mobile-tab-navigation/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/038-mobile-tab-navigation/",
   },
   {
     id: "131af433-6372-44aa-bdf0-f9bf1214a921",
@@ -559,7 +594,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/037-pokedex/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/037-pokedex/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/037-pokedex/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/037-pokedex/",
   },
   {
     id: "3788aa4d-83d4-4680-bf1f-08126c9e2d72",
@@ -572,7 +607,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/036-hoverboard/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/036-hoverboard/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/036-hoverboard/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/036-hoverboard/",
   },
   {
     id: "f565b076-0397-40dc-9bbf-077e8b825101",
@@ -585,7 +620,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/035-image-carousel/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/035-image-carousel/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/035-image-carousel/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/035-image-carousel/",
   },
   {
     id: "e2638dd7-05e8-4e4f-85b8-9b363bdda664",
@@ -598,7 +633,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/034-animated-countdown/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/034-animated-countdown/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/034-animated-countdown/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/034-animated-countdown/",
   },
   {
     id: "5a684b94-312a-46c5-8b1a-ac1451d07f32",
@@ -611,7 +646,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/033-notes-app/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/033-notes-app/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/033-notes-app/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/033-notes-app/",
   },
   {
     id: "cecc98fb-d296-4eb7-8af3-10524ff32a24",
@@ -624,7 +659,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/032-good-cheap-fast/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/032-good-cheap-fast/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/032-good-cheap-fast/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/032-good-cheap-fast/",
   },
   {
     id: "0024bffa-04d6-4049-a23c-9f8a8de30791",
@@ -637,7 +672,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/031-random-password/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/031-random-password/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/031-random-password/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/031-random-password/",
   },
   {
     id: "4c6cafc1-9359-4551-824d-4b363947689b",
@@ -650,7 +685,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/030-auto-text-effect/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/030-auto-text-effect/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/030-auto-text-effect/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/030-auto-text-effect/",
   },
   {
     id: "d8939ae0-e682-411f-8130-e59fd553b765",
@@ -663,7 +698,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/029-double-click-heart/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/029-double-click-heart/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/029-double-click-heart/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/029-double-click-heart/",
   },
   {
     id: "5135e6eb-f58d-4b73-b3e9-ce1d98b2f0d1",
@@ -676,7 +711,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/028-github-profiles/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/028-github-profiles/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/028-github-profiles/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/028-github-profiles/",
   },
   {
     id: "11173377-7a0e-44d6-b1a6-a8c19572615d",
@@ -689,7 +724,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/027-toast-notification/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/027-toast-notification/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/027-toast-notification/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/027-toast-notification/",
   },
   {
     id: "be141609-6683-4bc9-924e-8e0e01c931bf",
@@ -702,7 +737,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/026-vertical-slider/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/026-vertical-slider/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/026-vertical-slider/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/026-vertical-slider/",
   },
   {
     id: "e2fe9f47-b9b8-41b1-a4fa-fb2e31d3b0bf",
@@ -715,7 +750,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/025-sticky-navbar/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/025-sticky-navbar/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/025-sticky-navbar/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/025-sticky-navbar/",
   },
   {
     id: "8ed72164-f0b1-476d-8c2c-5b6701025233",
@@ -728,7 +763,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/024-content-placeholder/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/024-content-placeholder/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/024-content-placeholder/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/024-content-placeholder/",
   },
   {
     id: "1971c91f-952d-4e91-9fa5-b701adcf2b1c",
@@ -741,7 +776,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/023-kinetic-css-loader/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/023-kinetic-css-loader/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/023-kinetic-css-loader/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/023-kinetic-css-loader/",
   },
   {
     id: "2a0f3cfb-2865-4397-a779-b41e089a9a89",
@@ -754,7 +789,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/022-drawing-app/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/022-drawing-app/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/022-drawing-app/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/022-drawing-app/",
   },
   {
     id: "bfa0122c-0bb5-4822-83d7-3fe4b0ca1bc6",
@@ -767,7 +802,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/021-drag-n-drop/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/021-drag-n-drop/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/021-drag-n-drop/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/021-drag-n-drop/",
   },
   {
     id: "3c10ba5d-b0f7-4976-83bf-a526449633cb",
@@ -780,7 +815,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/020-button-ripple-effect/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/020-button-ripple-effect/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/020-button-ripple-effect/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/020-button-ripple-effect/",
   },
   {
     id: "7ed05418-02ae-4c04-9b8c-e0b9dfefce4f",
@@ -793,7 +828,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/019-theme-clock/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/019-theme-clock/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/019-theme-clock/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/019-theme-clock/",
   },
   {
     id: "e3890dc9-1165-4b21-964f-75d5f4aff2a8",
@@ -806,7 +841,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/018-background-slider/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/018-background-slider/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/018-background-slider/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/018-background-slider/",
   },
   {
     id: "cf6c54ac-b992-4e5a-ac73-c2d04b38ef72",
@@ -819,7 +854,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/017-movie-app/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/017-movie-app/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/017-movie-app/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/017-movie-app/",
   },
   {
     id: "e579fc28-21d9-41e1-911a-eb8c66675058",
@@ -832,7 +867,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/016-drink-water/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/016-drink-water/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/016-drink-water/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/016-drink-water/",
   },
   {
     id: "830ac943-6550-47d5-b12a-207576dfcead",
@@ -845,7 +880,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/015-increment-counter/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/015-increment-counter/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/015-increment-counter/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/015-increment-counter/",
   },
   {
     id: "ec0bb3ae-480c-489e-a4ce-253e8ddbae65",
@@ -858,7 +893,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/014-animated-navigation/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/014-animated-navigation/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/014-animated-navigation/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/014-animated-navigation/",
   },
   {
     id: "2b34eadc-4b96-47fc-a349-99c5aba96250",
@@ -871,7 +906,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/013-random-choice-picker/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/013-random-choice-picker/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/013-random-choice-picker/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/013-random-choice-picker/",
   },
   {
     id: "6dfeab2b-c0c4-4edb-ac04-f2709321da2c",
@@ -884,7 +919,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/012-faq-collapse/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/012-faq-collapse/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/012-faq-collapse/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/012-faq-collapse/",
   },
   {
     id: "540645a6-47bd-4b78-9c9e-e1ebc0475fe6",
@@ -897,7 +932,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/011-event-keycodes/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/011-event-keycodes/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/011-event-keycodes/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/011-event-keycodes/",
   },
   {
     id: "8fa2502c-2035-458f-82a5-b20dd33a4a4c",
@@ -910,7 +945,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/010-dad-jokes/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/010-dad-jokes/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/010-dad-jokes/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/010-dad-jokes/",
   },
   {
     id: "9743ac22-8664-4ac6-886e-e8e186137c08",
@@ -923,7 +958,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/009-sound-board/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/009-sound-board/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/009-sound-board/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/009-sound-board/",
   },
   {
     id: "bd9e05c0-06fb-456b-9306-9cf784590422",
@@ -936,7 +971,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/008-form-wave-animation/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/008-form-wave-animation/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/008-form-wave-animation/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/008-form-wave-animation/",
   },
   {
     id: "c66f71c4-1a70-4b02-99cd-7137a6ea6944",
@@ -949,7 +984,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/007-split-landing-page/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/007-split-landing-page/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/007-split-landing-page/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/007-split-landing-page/",
   },
   {
     id: "380e2845-622d-4d86-a78b-ad26d25791a8",
@@ -962,7 +997,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/006-scroll-animation/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/006-scroll-animation/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/006-scroll-animation/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/006-scroll-animation/",
   },
   {
     id: "b0fcce76-2d5b-497a-8ef6-0936a149da95",
@@ -975,7 +1010,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/005-blurry-loading/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/005-blurry-loading/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/005-blurry-loading/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/005-blurry-loading/",
   },
   {
     id: "f71c36f2-718b-4da3-973f-a3fcb0e41c69",
@@ -988,7 +1023,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/004-hidden-search-widget/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/004-hidden-search-widget/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/004-hidden-search-widget/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/004-hidden-search-widget/",
   },
   {
     id: "8e3579d2-f5ec-4297-b271-6b89c2b16119",
@@ -1001,7 +1036,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/003-rotating-navigation/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/003-rotating-navigation/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/003-rotating-navigation/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/003-rotating-navigation/",
   },
   {
     id: "74ada76f-8349-485d-a2e2-87110ab4c748",
@@ -1014,7 +1049,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/002-progress-steps/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/002-progress-steps/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/002-progress-steps/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/002-progress-steps/",
   },
   {
     id: "f7c92ad0-a988-4bcc-a345-d86429297799",
@@ -1027,7 +1062,7 @@ const projects = [
       "https://irahuldutta02.github.io/html-css-js-only-projects/001-expanding-cards/",
     code: "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/001-expanding-cards/",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/001-expanding-cards/",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/001-expanding-cards/",
   },
   {
     id: "813835da-7758-44b2-9bbf-e89ad4c27367",
@@ -1039,7 +1074,7 @@ const projects = [
     livePreview: "https://irahuldutta02.github.io/web-dev-projects-01/one-card",
     code: "https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card",
   },
   {
     id: "5b9ddb7f-f8e7-45cf-93dc-ada924ed1c81",
@@ -1052,7 +1087,7 @@ const projects = [
       "https://irahuldutta02.github.io/web-dev-projects-01/liquid-landing-page/dist/",
     code: "https://github.com/irahuldutta02/web-dev-projects-01/tree/main/liquid-landing-page",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/liquid-landing-page",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/liquid-landing-page",
   },
   {
     id: "a5707b9f-d400-4fed-a26f-92848231bfab",
@@ -1065,7 +1100,7 @@ const projects = [
       "https://irahuldutta02.github.io/web-dev-projects-01/trafalgar-tailwind-landing-page/dist/",
     code: "https://github.com/irahuldutta02/web-dev-projects-01/tree/main/trafalgar-tailwind-landing-page",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/trafalgar-tailwind-landing-page",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/trafalgar-tailwind-landing-page",
   },
   {
     id: "2697c01d-12de-4ee0-ae03-2012ca4f3620",
@@ -1078,7 +1113,7 @@ const projects = [
       "https://irahuldutta02.github.io/web-dev-projects-01/farmman-loginpage-tailwind/dist/",
     code: "https://github.com/irahuldutta02/web-dev-projects-01/tree/main/farmman-loginpage-tailwind",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/farmman-loginpage-tailwind",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/farmman-loginpage-tailwind",
   },
   {
     id: "890d03d2-75f6-4963-abe7-1436e184749e",
@@ -1091,7 +1126,7 @@ const projects = [
       "https://irahuldutta02.github.io/web-dev-projects-01/tailwind-pricing-card-design-01/dist",
     code: "https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tailwind-pricing-card-design-01",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tailwind-pricing-card-design-01",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tailwind-pricing-card-design-01",
   },
   {
     id: "2505bd1c-ff82-4037-a0f3-a371c7056967",
@@ -1104,7 +1139,7 @@ const projects = [
       "https://irahuldutta02.github.io/web-dev-projects-01/calculator-01",
     code: "https://github.com/irahuldutta02/web-dev-projects-01/tree/main/calculator-01",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/calculator-01",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/calculator-01",
   },
   {
     id: "c579f4cf-fcb9-4482-869e-a0de5435a37d",
@@ -1117,7 +1152,7 @@ const projects = [
       "https://irahuldutta02.github.io/web-dev-projects-01/to-do-list-01",
     code: "https://github.com/irahuldutta02/web-dev-projects-01/tree/main/to-do-list-01",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/to-do-list-01",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/to-do-list-01",
   },
   {
     id: "6104f3f9-f881-43b5-9eae-29f3021a1159",
@@ -1130,7 +1165,7 @@ const projects = [
       "https://irahuldutta02.github.io/web-dev-projects-01/unit-converter-01",
     code: "https://github.com/irahuldutta02/web-dev-projects-01/tree/main/unit-converter-01",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/unit-converter-01",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/unit-converter-01",
   },
   {
     id: "9fdc839a-4f52-45e6-8ca4-f3240521007f",
@@ -1143,7 +1178,7 @@ const projects = [
       "https://irahuldutta02.github.io/web-dev-projects-01/tindog-bootstrap/index.html",
     code: "https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tindog-bootstrap",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tindog-bootstrap",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tindog-bootstrap",
   },
   {
     id: "1a208847-01e5-41f8-96fa-f79719ee6b5b",
@@ -1154,7 +1189,7 @@ const projects = [
     note: "",
     code: "https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment",
     download:
-      "https://downgit.evecalm.com/#/home?url=https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment",
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment",
   },
   {
     id: "4c069a07-ee9f-46ec-9914-7d8582299b89",

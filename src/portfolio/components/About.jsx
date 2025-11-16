@@ -5,7 +5,7 @@ export function About() {
   useEffect(() => {
     // Initialize Typed.js when component mounts
     var typed = new Typed(".typing-2", {
-      strings: ["Full Stack Developer"],
+      strings: ["Full Stack Developer", "Software Engineer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,
@@ -103,7 +103,7 @@ export function About() {
                   <i className="fa-solid fa-hand-point-down fa-bounce"></i>
                 </a>
                 <a
-                  href="/files/resume-rahul-dutta.pdf"
+                  href="https://drive.google.com/file/d/1uGMN5bGO7-6gSVstjHhgSMpfJ2-R9n6b/view?usp=sharing"
                   className="about-button"
                   target="_blank"
                   rel="noreferrer"

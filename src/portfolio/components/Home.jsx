@@ -7,7 +7,7 @@ export function Home() {
   useEffect(() => {
     // Initialize Typed.js when component mounts
     var typed = new Typed(".typing", {
-      strings: ["Full Stack Developer"],
+      strings: ["Full Stack Developer", "Software Engineer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,

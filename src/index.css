@@ -12,12 +12,12 @@
 :root {
   --portfolio-page-color-2: #111;
   --shadow-1: rgba(255, 255, 255, 0.9);
-  --page-color-1: #20bf6b;
+  --page-color-1: #14afc1;
   --project-page-color-2: #1f2937;
   --project-page-color-3: #9ca3af;
   --project-page-color-4: #374151;
   --portfolio-page-color-1-primary: #1ac4ff;
-  --theme-toggler-bg-color-1: #20bf6b;
+  --theme-toggler-bg-color-1: #14afc1;
   --theme-toggler-bg-color-2: #111;
 }
 

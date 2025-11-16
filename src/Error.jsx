@@ -19,7 +19,7 @@ export function Error() {
         <Link
           to="/"
           style={{
-            backgroundColor: "#20bf6b",
+            backgroundColor: "#14afc1",
             color: "#fff",
             padding: "10px 20px",
             borderRadius: "10px",

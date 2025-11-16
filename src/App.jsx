@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./App.css";
 import { ThemeContext } from "./context/context";
 import { CustomRoutes } from "./routes/CustomRoutes";
-import { useLocation } from "react-router-dom";
 
 function App() {
-  const [theme, setTheme] = useState("#20bf6b");
+  const [theme, setTheme] = useState("#14afc1");
   const { pathname } = useLocation();
 
   useEffect(() => {

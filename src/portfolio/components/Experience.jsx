@@ -1,5 +1,5 @@
 import techMantraLogo from "../../assets/images/techmantra-logo.png";
-import businessWebSolutionsLogo from "../../assets/images/bws-logo.png";
+import planysTechLogo from "../../assets/images/planystech-logo.png";
 import { getCountFromDate } from "../../helper/helper";
 
 export function Experience() {
@@ -21,30 +21,32 @@ export function Experience() {
                 <h3>Tech Mantra Co.</h3>
                 <p>MERN Stack Developer</p>
                 <div className="ex-text-div-div">
-                  <p>April, 2024 - Present</p>
-                  <p>({getCountFromDate("2024-04-01")})</p>
-                  <p>Full Time, In Office</p>
+                  <p>April, 2024 - Aug, 2025</p>
+                  <p>(1 Year 5 Months)</p>
+                  <p>Kolkata, West Bengal, India</p>
+                  <p>(Full Time, In Office)</p>
                 </div>
               </div>
             </div>
             {/*  */}
             <div className="box">
               <a
-                href="https://businesswebsolutions.in/"
+                href="https://planystech.com/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <div className="ex-icon-img-div">
-                  <img src={businessWebSolutionsLogo} alt="techmantra-logo" />
+                  <img src={planysTechLogo} alt="planys-tech-logo" />
                 </div>
               </a>
               <div className="ex-txt-div">
-                <h3>Business Web Solutions</h3>
-                <p>Full Stack Web Developer Intern</p>
+                <h3>Planys Technologies</h3>
+                <p>Software Engineer</p>
                 <div className="ex-text-div-div">
                   <p>Sep, 2022 – Nov, 2022</p>
-                  <p>(2 Months)</p>
-                  <p>Internship, Remote</p>
+                  <p>({getCountFromDate("2025-09-10")})</p>
+                  <p>Chennai, Tamil Nadu, India</p>
+                  <p>(Full Time, In Office)</p>
                 </div>
               </div>
             </div>

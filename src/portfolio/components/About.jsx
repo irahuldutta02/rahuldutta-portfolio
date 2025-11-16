@@ -40,11 +40,11 @@ export function About() {
                 I'm Rahul and I'm a <span className="typing-2"></span>
               </div>
               <p>
-                I'm a Ambitious individual with strong technical skills in full
-                stack developmet as well as excellent interpersonal & management
-                skills, enabling me to interact with a wide range of industries.
-                Ready to contribute in a dynamic environment that offers
-                opportunities to grow and learn new things in the work field.
+                with experience in building scalable and high-performance Web
+                Applications and Software. Proficient in modern technologies to
+                drive impactful business outcomes. Adept at collaborating with
+                cross-functional teams to deliver solutions on time and within
+                scope.
               </p>
               <br />
               <div className="about-social-icons">

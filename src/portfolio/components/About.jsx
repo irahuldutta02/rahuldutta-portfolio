@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import Typed from "typed.js";
+import rahulDuttaImage from "../../assets/images/rahul-dutta.png";
+import { getSocialLinks } from "../../data/data";
 
 export function About() {
   useEffect(() => {
@@ -27,7 +29,7 @@ export function About() {
           <div className="about-content">
             <div className="column left">
               <img
-                src="https://ik.imagekit.io/irahuldutta02/rahuldutta-portfolio/image-rahuldutta-1.png"
+                src={rahulDuttaImage}
                 width="320"
                 height="320"
                 alt="rahul-dutta-image"
@@ -46,56 +48,11 @@ export function About() {
               </p>
               <br />
               <div className="about-social-icons">
-                <a
-                  target="_blank"
-                  href="https://linkedin.com/in/irahuldutta02"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="https://img.icons8.com/color/48/linkedin-circled--v1.png"
-                    alt="linkedin-@irahuldutta02"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://github.com/irahuldutta02/"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="https://img.icons8.com/fluency/48/github.png"
-                    alt="github-@irahuldutta02"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://rahuldutta.hashnode.dev/"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="https://img.icons8.com/color/48/hashnode.png"
-                    alt="leetcode-@irahuldutta02"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://twitter.com/irahuldutta02"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="https://img.icons8.com/fluency/48/twitterx--v1.png"
-                    alt="twitter-@irahuldutta02"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://instagram.com/irahuldutta02"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="https://img.icons8.com/fluency/48/instagram-new.png"
-                    alt="instagram-@irahuldutta02"
-                  />
-                </a>
+                {getSocialLinks().map((s) => (
+                  <a key={s.id} target="_blank" href={s.href} rel="noreferrer">
+                    <img src={s.iconSrc} alt={s.alt} />
+                  </a>
+                ))}
               </div>
               <div className="about-hireme-btn">
                 <a className="about-button" href="#contact">

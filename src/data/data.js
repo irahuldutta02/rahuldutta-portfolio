@@ -1298,6 +1298,39 @@ const techStack = [
   },
 ];
 
+const socialLinks = [
+  {
+    id: "linkedin",
+    href: "https://linkedin.com/in/irahuldutta02",
+    iconSrc: "https://img.icons8.com/color/48/linkedin-circled--v1.png",
+    alt: "linkedin-@irahuldutta02",
+  },
+  {
+    id: "github",
+    href: "https://github.com/irahuldutta02/",
+    iconSrc: "https://img.icons8.com/fluency/48/github.png",
+    alt: "github-@irahuldutta02",
+  },
+  {
+    id: "hashnode",
+    href: "https://rahuldutta.hashnode.dev/",
+    iconSrc: "https://img.icons8.com/color/48/hashnode.png",
+    alt: "hashnode-@irahuldutta02",
+  },
+  {
+    id: "twitter",
+    href: "https://twitter.com/irahuldutta02",
+    iconSrc: "https://img.icons8.com/fluency/48/twitterx--v1.png",
+    alt: "twitter-@irahuldutta02",
+  },
+  {
+    id: "instagram",
+    href: "https://instagram.com/irahuldutta02",
+    iconSrc: "https://img.icons8.com/fluency/48/instagram-new.png",
+    alt: "instagram-@irahuldutta02",
+  },
+];
+
 import planysTechLogo from "../assets/images/planystech-logo.png";
 import techMantraLogo from "../assets/images/techmantra-logo.png";
 
@@ -1350,14 +1383,19 @@ function getFeaturedProjects() {
   return projects.filter((project) => project.isFeatured);
 }
 
+function getSocialLinks() {
+  return socialLinks;
+}
+
 function getExperiences() {
   return experiences;
 }
 
 export {
+  getExperiences,
   getFeaturedProjects,
   getFilterItems,
   getProjects,
+  getSocialLinks,
   getTechStack,
-  getExperiences,
 };

@@ -1,5 +1,62 @@
 const projects = [
-  // ! Featured Projects
+  /************************
+   * Featured Projects
+   *************************/
+  // FeedSync
+  {
+    id: "2b2bad37-2a58-44c0-9138-35d473907dd31",
+    isFeatured: true,
+    title: "FeedSync",
+    filter: ["react", "typescript", "tailwind", "nodejs", "express", "mongodb"],
+    preview: "/projects/feed-sync.png",
+    techStack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node Js",
+      "Express",
+      "MongoDB",
+    ],
+    livePreview: "https://feedsync.netlify.app",
+    code: "https://github.com/irahuldutta02/feed-sync",
+    note: "",
+    download:
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/feed-sync",
+  },
+  // ExpenseEase
+  {
+    id: "243c2301-1421-4c95-8b17-9d1767bfedf3",
+    isFeatured: true,
+    title: "ExpenseEase",
+    filter: [
+      "react",
+      "tailwind",
+      "nodejs",
+      "express",
+      "mongodb",
+      "redux",
+      "rtk-query",
+      "gemini-ai",
+    ],
+    preview: "/projects/expense-ease.png",
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "React Router Dom",
+      "Axios",
+      "Rtk Query",
+      "Gemini AI",
+      "Node Js",
+      "Express",
+      "Redux",
+      "MongoDB",
+    ],
+    livePreview: "https://expense-ease-tracker.vercel.app",
+    code: "https://github.com/irahuldutta02/expense-ease-tracker",
+    note: "",
+    download:
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/expense-ease-tracker",
+  },
   // RemoteRepo
   {
     id: "b9021fe0-1a76-46ac-979f-d53a5364fd8a",
@@ -55,40 +112,6 @@ const projects = [
     download:
       "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/shop-ease",
   },
-  // ExpenseEase
-  {
-    id: "243c2301-1421-4c95-8b17-9d1767bfedf3",
-    isFeatured: true,
-    title: "ExpenseEase",
-    filter: [
-      "react",
-      "tailwind",
-      "nodejs",
-      "express",
-      "mongodb",
-      "redux",
-      "rtk-query",
-      "gemini-ai",
-    ],
-    preview: "/projects/expense-ease.png",
-    techStack: [
-      "React",
-      "Tailwind CSS",
-      "React Router Dom",
-      "Axios",
-      "Rtk Query",
-      "Gemini AI",
-      "Node Js",
-      "Express",
-      "Redux",
-      "MongoDB",
-    ],
-    livePreview: "https://expense-ease-tracker.vercel.app",
-    code: "https://github.com/irahuldutta02/expense-ease-tracker",
-    note: "",
-    download:
-      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/expense-ease-tracker",
-  },
   // InterviewEase
   {
     id: "d9432efb-2751-40ef-8e15-804c0f60a731",
@@ -103,31 +126,12 @@ const projects = [
     download:
       "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/interview-ease",
   },
-  // FeedSync
-  {
-    id: "2b2bad37-2a58-44c0-9138-35d473907dd31",
-    isFeatured: true,
-    title: "FeedSync",
-    filter: ["react", "typescript", "tailwind", "nodejs", "express", "mongodb"],
-    preview: "/projects/feed-sync.png",
-    techStack: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Node Js",
-      "Express",
-      "MongoDB",
-    ],
-    livePreview: "https://feedsync.netlify.app",
-    code: "https://github.com/irahuldutta02/feed-sync",
-    note: "",
-    download:
-      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/feed-sync",
-  },
+  /************************
+   * Non-Featured Projects
+   *************************/
   // FactChecker AI
   {
     id: "5a0e5662-2ef4-4355-8689-c20023b4f83b",
-    isFeatured: true,
     title: "FactChecker AI",
     filter: ["nextjs", "gemini-ai", "tailwind"],
     preview: "/projects/fact-checker.png",
@@ -138,7 +142,6 @@ const projects = [
     download:
       "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/fact-check",
   },
-  // ! Non Featured Projects
   // CineRental App
   {
     id: "6dc51944-bd44-409b-b513-fe2a1537cc3f",
@@ -1209,80 +1212,117 @@ const projects = [
 
 const techStack = [
   {
-    id: "c514954e-3d46-46c9-b057-180fd5ed79e1",
+    id: 1,
     name: "HTML",
     iconSrc: "https://img.icons8.com/fluency/48/html-5.png",
   },
   {
-    id: "505b37c0-0885-4175-a0d0-b4f5989ec102",
+    id: 2,
     name: "CSS",
     iconSrc: "https://img.icons8.com/fluency/48/css3.png",
   },
   {
-    id: "0d4ea74d-f5dc-4321-b132-6e3a5a837f3b",
+    id: 3,
     name: "Bootstrap",
     iconSrc: "https://img.icons8.com/fluency/48/bootstrap.png",
   },
   {
-    id: "b8f839f8-b113-4f0c-896a-38acefcbdddf",
+    id: 4,
     name: "Tailwind",
     iconSrc: "https://img.icons8.com/color/48/tailwindcss.png",
   },
   {
-    id: "ab8e2dbf-c316-4f4f-8612-24b810380ded",
+    id: 5,
     name: "JavaScript",
     iconSrc: "https://img.icons8.com/color/48/javascript.png",
   },
   {
-    id: "bfa0ba69-ff04-4768-9ca1-a085bffb67c6",
+    id: 6,
     name: "TypeScript",
-    iconSrc:
-      "https://static-00.iconduck.com/assets.00/file-type-typescript-official-icon-512x512-873ff1r9.png",
+    iconSrc: "https://img.icons8.com/fluency/48/typescript--v2.png",
   },
   {
-    id: "e7b8b7e6-5c7a-4a6b-8f9a-0b1b6f1b4f0e",
+    id: 7,
     name: "ReactJs",
     iconSrc: "https://img.icons8.com/color/48/react-native.png",
   },
   {
-    id: "52516083-6171-4905-a90a-a32c9314c3b4",
+    id: 8,
     name: "NextJs",
     iconSrc: "https://simpleicons.org/icons/nextdotjs.svg",
   },
   {
-    id: "a30a8d24-f5a2-4056-9c87-0659e26bf62c",
+    id: 9,
     name: "Express Js",
     iconSrc: "https://img.icons8.com/fluency/48/express-js.png",
   },
   {
-    id: "6a40e7b1-2ff9-451b-809f-e5dfb7b6ae19",
+    id: 10,
     name: "Node Js",
     iconSrc: "https://img.icons8.com/color/48/nodejs.png",
   },
   {
-    id: "40102a0c-ebfb-4b9b-954e-1752115a42ab",
+    id: 11,
     name: "PostgreSQL",
     iconSrc: "https://img.icons8.com/color/48/postgreesql.png",
   },
   {
-    id: "de3c4df8-9c17-474e-af7e-d580b7416d67",
+    id: 12,
     name: "MongoDB",
     iconSrc: "https://img.icons8.com/color/48/mongodb.png",
   },
   {
-    id: "571e29ae-59fc-4cb4-9dae-8bca380cc114",
+    id: 13,
     name: "Git",
     iconSrc: "https://img.icons8.com/color/48/git.png",
   },
   {
-    id: "adf537a5-5db5-4656-ad27-9da44334a2cb",
+    id: 14,
     name: "GitHub",
     iconSrc: "https://img.icons8.com/fluency/48/github.png",
   },
   {
-    id: "b5b6db15-66c0-46aa-b237-6f00b33fe09f",
+    id: 15,
+    name: "Linux",
+    iconSrc: "https://img.icons8.com/color/48/linux.png",
+  },
+  {
+    id: 16,
+    name: "Docker",
+    iconSrc: "https://img.icons8.com/color/48/docker.png",
+  },
+  {
+    id: 17,
     name: "Figma",
     iconSrc: "https://img.icons8.com/color/48/figma.png",
+  },
+];
+
+import planysTechLogo from "../assets/images/planystech-logo.png";
+import techMantraLogo from "../assets/images/techmantra-logo.png";
+
+export const experiences = [
+  {
+    id: "planys",
+    company: "Planys Technologies",
+    role: "Software Engineer",
+    logo: planysTechLogo,
+    link: "https://planystech.com/",
+    startDate: "2025-09-10",
+    endDate: null,
+    location: "Chennai, Tamil Nadu, India",
+    employmentType: "Full Time, In Office",
+  },
+  {
+    id: "techmantra",
+    company: "Tech Mantra Co.",
+    role: "MERN Stack Developer",
+    logo: techMantraLogo,
+    link: "https://techmantra.co/",
+    startDate: "2024-04-01",
+    endDate: "2025-08-31",
+    location: "Kolkata, West Bengal, India",
+    employmentType: "Full Time, In Office",
   },
 ];
 
@@ -1310,4 +1350,14 @@ function getFeaturedProjects() {
   return projects.filter((project) => project.isFeatured);
 }
 
-export { getFeaturedProjects, getFilterItems, getProjects, getTechStack };
+function getExperiences() {
+  return experiences;
+}
+
+export {
+  getFeaturedProjects,
+  getFilterItems,
+  getProjects,
+  getTechStack,
+  getExperiences,
+};

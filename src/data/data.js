@@ -23,6 +23,27 @@ const projects = [
     download:
       "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/feed-sync",
   },
+  // ChatEase
+  {
+    id: "207810ea-fe92-4a23-a0d8-857ce8c65b9b",
+    isFeatured: true,
+    title: "ChatEase",
+    filter: [
+      "react",
+      "express",
+      "socket.io",
+      "mongodb",
+      "nodejs",
+      "tailwind",
+    ],
+    preview: "/projects/chat-ease.png",
+    techStack: ["React Js", "Express Js", "Socket.io", "MongoDB", "Node Js"],
+    livePreview: "https://chat-ease-97er.onrender.com",
+    code: "https://github.com/irahuldutta02/chat-ease",
+    note: "A real-time chat application",
+    download:
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/chat-ease",
+  },
   // ExpenseEase
   {
     id: "243c2301-1421-4c95-8b17-9d1767bfedf3",

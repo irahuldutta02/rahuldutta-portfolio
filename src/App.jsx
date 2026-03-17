@@ -5,7 +5,7 @@ import { ThemeContext } from "./context/context";
 import { CustomRoutes } from "./routes/CustomRoutes";
 
 function App() {
-  const [theme, setTheme] = useState("#14afc1");
+  const [theme, setTheme] = useState("#00e5ff");
   const { pathname } = useLocation();
 
   useEffect(() => {

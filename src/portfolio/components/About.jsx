@@ -24,6 +24,21 @@ export function About() {
       {/* <!-- about section start --> */}
 
       <section className="about" id="about">
+        <div className="code-leak code-leak-right" style={{ top: "15%" }} aria-hidden="true">
+          <div><span className="cl-keyword">class</span> <span className="cl-variable">Developer</span> {"{"}</div>
+          <div>{"  "}<span className="cl-function">constructor</span>() {"{"}</div>
+          <div>{"    "}<span className="cl-keyword">this</span>.<span className="cl-variable">coffee</span> <span className="cl-operator">=</span> <span className="cl-boolean">true</span>;</div>
+          <div>{"    "}<span className="cl-keyword">this</span>.<span className="cl-variable">sleep</span> <span className="cl-operator">=</span> <span className="cl-boolean">false</span>;</div>
+          <div>{"  }"}</div>
+          <div>{" "}</div>
+          <div>{"  "}<span className="cl-function">code</span>() {"{"}</div>
+          <div>{"    "}<span className="cl-keyword">while</span>(<span className="cl-keyword">this</span>.<span className="cl-variable">coffee</span>) {"{"}</div>
+          <div>{"      "}<span className="cl-function">createMagic</span>();</div>
+          <div>{"    }"}</div>
+          <div>{"  }"}</div>
+          <div>{"}"}</div>
+        </div>
+
         <div className="max-width">
           <h2 className="title">About me</h2>
           <div className="about-content">

@@ -10,6 +10,21 @@ export function Experience() {
     <>
       {/* <!-- background section starts  --> */}
       <section className="background experience" id="experience">
+        <div className="code-leak code-leak-right" style={{ top: "35%" }} aria-hidden="true">
+          <div><span className="cl-keyword">const</span> <span className="cl-variable">history</span> <span className="cl-operator">=</span> [</div>
+          <div>{"  { "}<span className="cl-variable">year</span>: <span className="cl-boolean">2024</span>,</div>
+          <div>{"    "}<span className="cl-variable">event</span>: <span className="cl-string">'Tech Mantra'</span> {"},"}</div>
+          <div>{"  { "}<span className="cl-variable">year</span>: <span className="cl-boolean">2025</span>,</div>
+          <div>{"    "}<span className="cl-variable">event</span>: <span className="cl-string">'Planys Tech'</span> {"},"}</div>
+          <div>{"  { "}<span className="cl-variable">year</span>: <span className="cl-boolean">2026</span>,</div>
+          <div>{"    "}<span className="cl-variable">event</span>: <span className="cl-string">'Chola'</span> {"}"}</div>
+          <div>{"];"}</div>
+          <div>{" "}</div>
+          <div>history.<span className="cl-function">map</span>(h <span className="cl-keyword">{"=>"}</span></div>
+          <div>{"  "}<span className="cl-function">grow</span>(h.event)</div>
+          <div>{");"}</div>
+        </div>
+
         <div className="max-width">
           <h2 className="title">Experience</h2>
           <div className="box-container">

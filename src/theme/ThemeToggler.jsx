@@ -39,12 +39,12 @@ export function ThemeToggler() {
         </div>
         <h3>Choose Theme</h3>
         <div className="buttons">
-          <div className="theme-btn" style={{ background: "#14afc1" }}></div>
-          <div className="theme-btn" style={{ background: "#20bf6b" }}></div>
-          <div className="theme-btn" style={{ background: "#f7b731" }}></div>
-          <div className="theme-btn" style={{ background: "#fa8231" }}></div>
-          <div className="theme-btn" style={{ background: "#ff3c38" }}></div>
-          <div className="theme-btn" style={{ background: "#FC427B" }}></div>
+          <div className="theme-btn" style={{ background: "#00e5ff" }}></div>
+          <div className="theme-btn" style={{ background: "#7c4dff" }}></div>
+          <div className="theme-btn" style={{ background: "#00e676" }}></div>
+          <div className="theme-btn" style={{ background: "#ff6e40" }}></div>
+          <div className="theme-btn" style={{ background: "#ff1744" }}></div>
+          <div className="theme-btn" style={{ background: "#f50057" }}></div>
         </div>
       </div>
     </>

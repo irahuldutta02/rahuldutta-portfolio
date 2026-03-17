@@ -95,6 +95,25 @@ export function Contact() {
     <>
       {/* <!-- contact section start --> */}
       <section className="contact" id="contact">
+        <div className="code-leak code-leak-right" style={{ top: "20%" }} aria-hidden="true">
+          <div><span className="cl-keyword">async function</span></div>
+          <div>{"  "}<span className="cl-function">sendMail</span>(form) {"{"}</div>
+          <div>{"  "}<span className="cl-keyword">try</span> {"{"}</div>
+          <div>{"    "}<span className="cl-keyword">const</span> <span className="cl-variable">res</span> <span className="cl-operator">=</span></div>
+          <div>{"      "}<span className="cl-keyword">await</span> <span className="cl-function">fetch</span>(</div>
+          <div>{"        "}<span className="cl-string">'/api/send'</span>,</div>
+          <div>{"        { "}<span className="cl-variable">method</span>: <span className="cl-string">'POST'</span>,</div>
+          <div>{"          "}<span className="cl-variable">body</span>: form {"}"}</div>
+          <div>{"      );"}</div>
+          <div>{"    "}<span className="cl-keyword">if</span> (<span className="cl-operator">!</span>res.<span className="cl-variable">ok</span>)</div>
+          <div>{"      "}<span className="cl-keyword">throw</span> <span className="cl-function">Error</span>();</div>
+          <div>{"    "}<span className="cl-keyword">return</span> res.<span className="cl-function">json</span>();</div>
+          <div>{"  } "}<span className="cl-keyword">catch</span> (err) {"{"}</div>
+          <div>{"    "}<span className="cl-variable">console</span>.<span className="cl-function">error</span>(err);</div>
+          <div>{"  }"}</div>
+          <div>{"}"}</div>
+        </div>
+
         <div className="max-width">
           <h2 className="title">Contact me</h2>
           <div className="contact-content">
@@ -130,7 +149,7 @@ export function Contact() {
                         href="mailto:rdtech2002@gmail"
                         rel="noreferrer"
                         style={{
-                          color: "blue",
+                          color: "var(--page-color-1)",
                         }}
                       >
                         rdtech2002@gmail.com
@@ -153,7 +172,7 @@ export function Contact() {
                       >
                         <span
                           style={{
-                            color: "green",
+                            color: "#22c55e",
                           }}
                         >
                           Open to work

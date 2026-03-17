@@ -79,6 +79,17 @@ export function Nav() {
                   Contact
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://rahuldutta.bio.link"
+                  className="menu-btn"
+                  onClick={handleShowMenu}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  My Links
+                </a>
+              </li>
             </ul>
             <div className="menu-btn" onClick={handleShowMenu}>
               {showMenu ? (

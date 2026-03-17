@@ -1,15 +1,10 @@
-import { useContext } from "react";
 import { FaDownload, FaEye, FaGithub, FaLink } from "react-icons/fa";
-import { ThemeContext } from "../../context/context";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import required modules
-
 export function ProjectCard({ project }) {
-  const { theme } = useContext(ThemeContext);
 
   return (
     <div className="project__item">
@@ -54,7 +49,6 @@ export function ProjectCard({ project }) {
               rel="noopener noreferrer"
               className="project__btn"
               aria-label="View live demo"
-              style={{ backgroundColor: theme }}
             >
               <FaEye />
             </a>
@@ -67,7 +61,6 @@ export function ProjectCard({ project }) {
               rel="noopener noreferrer"
               className="project__btn"
               aria-label="View source code"
-              style={{ backgroundColor: theme }}
             >
               <FaGithub />
             </a>
@@ -80,7 +73,6 @@ export function ProjectCard({ project }) {
               rel="noopener noreferrer"
               className="project__btn"
               aria-label="View link"
-              style={{ backgroundColor: theme }}
             >
               <FaLink />
             </a>
@@ -93,7 +85,6 @@ export function ProjectCard({ project }) {
               rel="noopener noreferrer"
               className="project__btn"
               aria-label="Download project"
-              style={{ backgroundColor: theme }}
             >
               <FaDownload />
             </a>

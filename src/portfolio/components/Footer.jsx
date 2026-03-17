@@ -17,8 +17,9 @@ export function Footer() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            gap: "5px",
+            gap: "6px",
             flexWrap: "wrap",
+            fontSize: "13px",
           }}
         >
           Created By
@@ -35,7 +36,7 @@ export function Footer() {
               display: "inline-flex",
               justifyContent: "center",
               alignItems: "center",
-              color: "red",
+              color: "#ef4444",
             }}
             className="fa-solid fa-heart"
           ></i>
@@ -45,7 +46,7 @@ export function Footer() {
               display: "inline-flex",
               justifyContent: "center",
               alignItems: "center",
-              color: "#74c0fc",
+              color: "#61dafb",
             }}
             className="fa-brands fa-react fa-spin"
           ></i>

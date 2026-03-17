@@ -1354,8 +1354,20 @@ const socialLinks = [
 
 import planysTechLogo from "../assets/images/planystech-logo.png";
 import techMantraLogo from "../assets/images/techmantra-logo.png";
+import cholaLogo from "../assets/images/chola-logo.png";
 
 export const experiences = [
+  {
+    id: "chola",
+    company: "Cholamandalam Investment and Finance Company",
+    role: "Software Developer",
+    logo: cholaLogo,
+    link: "https://www.cholamandalam.com",
+    startDate: "2026-02-18",
+    endDate: null,
+    location: "Chennai, Tamil Nadu, India",
+    employmentType: "Full Time, In Office",
+  },
   {
     id: "planys",
     company: "Planys Technologies",
@@ -1363,7 +1375,7 @@ export const experiences = [
     logo: planysTechLogo,
     link: "https://planystech.com/",
     startDate: "2025-09-10",
-    endDate: null,
+    endDate: "2026-02-14",
     location: "Chennai, Tamil Nadu, India",
     employmentType: "Full Time, In Office",
   },

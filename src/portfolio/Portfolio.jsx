@@ -4,16 +4,15 @@ import "react-toastify/dist/ReactToastify.css";
 import { ThemeContext } from "../context/context";
 import { ThemeToggler } from "../theme/ThemeToggler";
 import { About } from "./components/About";
-import { Background } from "./components/Background";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Home } from "./components/Home";
 import { ScrollUp } from "./components/ScrollUp";
 import { Skills } from "./components/Skills";
-import { Works } from "./components/Works";
 import { Nav } from "../NavBar/Nav";
 import { Experience } from "./components/Experience";
 import { ProjectsPreview } from "./components/ProjectsPreview";
+import { CodeRain } from "./components/CodeRain";
 
 export function Portfolio() {
   const { theme } = useContext(ThemeContext);
@@ -25,15 +24,14 @@ export function Portfolio() {
 
   return (
     <>
+      <CodeRain />
       <ScrollUp />
       <Nav />
       <Home />
       <About />
-      <Works />
       <Skills />
       <Experience />
       <ProjectsPreview />
-      <Background />
       <Contact />
       <Footer />
       <ThemeToggler />

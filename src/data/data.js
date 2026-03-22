@@ -1204,26 +1204,6 @@ const projects = [
     download:
       "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tindog-bootstrap",
   },
-  {
-    id: "1a208847-01e5-41f8-96fa-f79719ee6b5b",
-    title: "Student Management Console App",
-    filter: ["java"],
-    preview: "https://i.postimg.cc/PrMhLdPY/student-management-console-app.gif",
-    techStack: ["Java"],
-    note: "",
-    code: "https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment",
-    download:
-      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment",
-  },
-  {
-    id: "4c069a07-ee9f-46ec-9914-7d8582299b89",
-    title: "SignUp-LogIn-ForgotPass",
-    filter: ["ui-ux"],
-    preview: "https://i.postimg.cc/XY8MvL18/signup-login-figma.gif",
-    techStack: ["Figma"],
-    note: "",
-    link: "https://www.figma.com/file/HVJhlP7JpvMLwyWhLZaPZr/SignUp-LogIn-ForgotPassword-for-Mobile-App?t=DswFYEZQKhzfmC8D-1",
-  },
   /**
    * ! ------------------------------
    * ! Non Featured Projects (Ends) |

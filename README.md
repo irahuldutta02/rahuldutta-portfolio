@@ -1,3 +1,3 @@
 # rahuldutta-portfolio
 
-### Deployed at: [rahultech.in](https://rahuldutta.netlify.app)
+### Deployed at: [rahultech.in](https://rahultech.in)

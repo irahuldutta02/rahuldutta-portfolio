@@ -23,13 +23,7 @@ export function Footer() {
           }}
         >
           Created By
-          <a
-            href="https://rahuldutta.bio.link/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Rahul-Dutta
-          </a>
+          <span>Rahul-Dutta</span>
           with
           <i
             style={{

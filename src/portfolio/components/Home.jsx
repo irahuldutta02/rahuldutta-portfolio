@@ -69,19 +69,14 @@ export function Home() {
               <span className="cursor-blink">_</span>
             </div>
             <div className="home-button-div">
+              <a className="home-button" href="#contact">
+                <span>Let&apos;s connect</span>
+                <i className="fa-regular fa-envelope"></i>
+              </a>
               <Link className="home-button" to="/projects">
                 <span>Projects</span>
                 <i className="fa-solid fa-code"></i>
               </Link>
-              <a
-                className="home-button"
-                href="https://rahuldutta.bio.link/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>My links</span>
-                <i className="fa-solid fa-link"></i>
-              </a>
             </div>
           </div>
         </div>

@@ -1333,12 +1333,6 @@ const socialLinks = [
     alt: "github-@irahuldutta02",
   },
   {
-    id: "hashnode",
-    href: "https://rahuldutta.hashnode.dev/",
-    iconSrc: "https://img.icons8.com/color/48/hashnode.png",
-    alt: "hashnode-@irahuldutta02",
-  },
-  {
     id: "twitter",
     href: "https://twitter.com/irahuldutta02",
     iconSrc: "https://img.icons8.com/fluency/48/twitterx--v1.png",

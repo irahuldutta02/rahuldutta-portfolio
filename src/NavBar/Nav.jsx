@@ -79,17 +79,6 @@ export function Nav() {
                   Contact
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://rahuldutta.bio.link"
-                  className="menu-btn"
-                  onClick={handleShowMenu}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  My Links
-                </a>
-              </li>
             </ul>
             <div className="menu-btn" onClick={handleShowMenu}>
               {showMenu ? (
@@ -113,26 +102,6 @@ export function Nav() {
               <Link to={"/"}>
                 Rahul <span>Dutta</span>
               </Link>
-            </div>
-            <ul className={`menu ${showMenu && "active"}`}>
-              <li>
-                <a
-                  href="https://rahuldutta.bio.link"
-                  className="menu-btn"
-                  onClick={handleShowMenu}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  My Links
-                </a>
-              </li>
-            </ul>
-            <div className="menu-btn" onClick={handleShowMenu}>
-              {showMenu ? (
-                <i className="fas fa-times"></i>
-              ) : (
-                <i className="fas fa-bars"></i>
-              )}
             </div>
           </div>
         </nav>

@@ -1,9 +1,14 @@
-version: "3.9"
-
 services:
-  app:
-    build: .
+  rahuldutta-portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: rahuldutta-portfolio
-    restart: always
+    restart: unless-stopped
     ports:
       - "3001:80"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

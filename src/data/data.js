@@ -72,16 +72,18 @@ const projects = [
       "Redux",
       "MongoDB",
     ],
-    livePreview: "https://expense-ease-tracker.vercel.app",
+    livePreview: "https://expense-ease.rahultech.in",
     code: "https://github.com/irahuldutta02/expense-ease-tracker",
     note: "",
     download:
       "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/expense-ease-tracker",
   },
+  /************************
+   * Non-Featured Projects
+   *************************/
   // RemoteRepo
   {
     id: "b9021fe0-1a76-46ac-979f-d53a5364fd8a",
-    isFeatured: true,
     title: "RemoteRepo",
     filter: ["react", "tailwind", "nodejs", "express", "mongodb"],
     preview: "/projects/remote-repo.png",
@@ -103,7 +105,6 @@ const projects = [
   // ShopEase
   {
     id: "47934790-7f64-4cf6-9d02-1992d7f9c21e",
-    isFeatured: true,
     title: "ShopEase",
     filter: [
       "react",
@@ -136,7 +137,6 @@ const projects = [
   // InterviewEase
   {
     id: "d9432efb-2751-40ef-8e15-804c0f60a731",
-    isFeatured: true,
     title: "InterviewEase",
     filter: ["nextjs", "gemini-ai"],
     preview: "/projects/interview-ease.png",
@@ -147,9 +147,6 @@ const projects = [
     download:
       "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/interview-ease",
   },
-  /************************
-   * Non-Featured Projects
-   *************************/
   // FactChecker AI
   {
     id: "5a0e5662-2ef4-4355-8689-c20023b4f83b",

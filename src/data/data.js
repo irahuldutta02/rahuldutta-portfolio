@@ -38,7 +38,7 @@ const projects = [
     ],
     preview: "/projects/chat-ease.png",
     techStack: ["React Js", "Express Js", "Socket.io", "MongoDB", "Node Js"],
-    livePreview: "https://chat-ease-97er.onrender.com",
+    livePreview: "https://chatease.rahultech.in",
     code: "https://github.com/irahuldutta02/chat-ease",
     note: "A real-time chat application",
     download:

@@ -17,7 +17,7 @@ const projects = [
       "Express",
       "MongoDB",
     ],
-    livePreview: "https://feedsync.netlify.app",
+    livePreview: "https://feedsync.rahultech.in",
     code: "https://github.com/irahuldutta02/feed-sync",
     note: "",
     download:

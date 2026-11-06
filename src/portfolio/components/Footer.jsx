@@ -1,59 +1,41 @@
-import { useEffect } from "react";
+import { useState } from "react";
+import { FaHeart, FaReact } from "react-icons/fa";
+import { getSocialLinks } from "../../data/data";
 
 export function Footer() {
-  useEffect(() => {
-    const lastUpdated = new Date(document.lastModified);
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    const formattedDate = lastUpdated.toLocaleString("en-US", options);
-    document.getElementById("last-modified").innerHTML = formattedDate;
-  });
+  const linkedin = getSocialLinks().find((s) => s.id === "linkedin");
+  const [lastUpdated] = useState(() =>
+    new Date(document.lastModified).toLocaleString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+  );
 
   return (
-    <>
-      {/* <!-- footer section start --> */}
-      <footer>
-        <span
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "6px",
-            flexWrap: "wrap",
-            fontSize: "13px",
-          }}
-        >
-          Created By
-          <span>Rahul-Dutta</span>
-          with
-          <i
-            style={{
-              display: "inline-flex",
-              justifyContent: "center",
-              alignItems: "center",
-              color: "#ef4444",
-            }}
-            className="fa-solid fa-heart"
-          ></i>
-          and
-          <i
-            style={{
-              display: "inline-flex",
-              justifyContent: "center",
-              alignItems: "center",
-              color: "#61dafb",
-            }}
-            className="fa-brands fa-react fa-spin"
-          ></i>
-          | Last Updated : <span id="last-modified"></span> |
-          <a
-            target="_blank"
-            href="https://github.com/irahuldutta02/rahuldutta-portfolio.git"
-            rel="noreferrer"
-          >
-            Source Code
+    <footer className="footer">
+      <p>
+        <span>Created By</span>
+        <strong>
+          <a href={linkedin?.href} target="_blank" rel="noreferrer">
+            Rahul-Dutta
           </a>
-        </span>
-      </footer>
-    </>
+        </strong>
+        <span>with</span>
+        <FaHeart className="heart" aria-label="love" />
+        <span>and</span>
+        <FaReact aria-label="React" />
+        <span aria-hidden="true">|</span>
+        <span>Last Updated : {lastUpdated}</span>
+        <span aria-hidden="true">|</span>
+        <a
+          target="_blank"
+          href="https://github.com/irahuldutta02/rahuldutta-portfolio.git"
+          rel="noreferrer"
+        >
+          Source Code
+        </a>
+      </p>
+    </footer>
   );
 }

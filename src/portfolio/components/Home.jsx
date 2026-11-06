@@ -1,86 +1,71 @@
-import { useEffect } from "react";
-
 import { Link } from "react-router-dom";
-import Typed from "typed.js";
+import { motion } from "framer-motion";
+import { FaCode, FaRegEnvelope } from "react-icons/fa";
+import { Magnetic } from "../../components/Magnetic";
+import { RoleRotator } from "../../components/RoleRotator";
+import { ParticleName } from "../../components/ParticleName";
 
 export function Home() {
-  useEffect(() => {
-    // Initialize Typed.js when component mounts
-    var typed = new Typed(".typing", {
-      strings: ["Full Stack Developer", "Software Engineer"],
-      typeSpeed: 100,
-      backSpeed: 60,
-      loop: true,
-    });
-
-    // Clean up Typed instance when component unmounts
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
   return (
-    <>
-      {/* home section start */}
-      <section className="home" id="home">
-        {/* Leaky code decorations */}
-        <div className="code-leak code-leak-left" style={{ top: "20%" }} aria-hidden="true">
-          <div><span className="cl-keyword">const</span> <span className="cl-variable">dev</span> <span className="cl-operator">=</span> {"{"}</div>
-          <div>{"  name: "}<span className="cl-string">'Rahul'</span>,</div>
-          <div>{"  role: "}<span className="cl-string">'fullstack'</span>,</div>
-          <div>{"  stack: ["}<span className="cl-string">'React'</span>,</div>
-          <div>{"    "}<span className="cl-string">'Node'</span>, <span className="cl-string">'MongoDB'</span>],</div>
-          <div>{"  available: "}<span className="cl-boolean">true</span>,</div>
-          <div>{"};"}</div>
-          <div>&nbsp;</div>
-          <div><span className="cl-keyword">async function</span> <span className="cl-function">build</span>() {"{"}</div>
-          <div>{"  "}<span className="cl-keyword">const</span> <span className="cl-variable">app</span> <span className="cl-operator">=</span> <span className="cl-keyword">await</span></div>
-          <div>{"    "}<span className="cl-function">createApp</span>(config);</div>
-          <div>{"  "}<span className="cl-keyword">return</span> app.<span className="cl-function">deploy</span>();</div>
-          <div>{"}"}</div>
-        </div>
-        <div className="code-leak code-leak-right" style={{ top: "30%" }} aria-hidden="true">
-          <div><span className="cl-keyword">import</span> {"{ "}useState{" }"}</div>
-          <div>{"  "}<span className="cl-keyword">from</span> <span className="cl-string">'react'</span>;</div>
-          <div>&nbsp;</div>
-          <div><span className="cl-keyword">export default</span></div>
-          <div>{"  "}<span className="cl-keyword">function</span> <span className="cl-function">App</span>() {"{"}</div>
-          <div>{"  "}<span className="cl-keyword">const</span> [data,</div>
-          <div>{"    setData] "}<span className="cl-operator">=</span></div>
-          <div>{"    "}<span className="cl-function">useState</span>(<span className="cl-boolean">null</span>);</div>
-          <div>&nbsp;</div>
-          <div>{"  "}<span className="cl-function">useEffect</span>(() <span className="cl-keyword">{"=>"}</span> {"{"}</div>
-          <div>{"    "}<span className="cl-function">fetchData</span>()</div>
-          <div>{"      ."}<span className="cl-function">then</span>(res <span className="cl-keyword">{"=>"}</span></div>
-          <div>{"        "}<span className="cl-function">setData</span>(res))</div>
-          <div>{"  }, []);"}</div>
-          <div>{"}"}</div>
+    <section className="hero" id="home" aria-labelledby="hero-title">
+      <div className="hero-bg" aria-hidden="true">
+        <span className="blob blob-a" />
+        <span className="blob blob-b" />
+        <span className="hero-beam hero-beam-a" />
+        <span className="hero-beam hero-beam-b" />
+        <span className="hero-floor" />
+      </div>
+
+      <div className="container hero-grid">
+        <div className="hero-copy">
+          <motion.span
+            className="eyebrow"
+            initial={{ opacity: 0, x: -16 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            Hello, I&apos;m
+          </motion.span>
+
+          {/* real heading for SEO + screen readers; the canvas is the visual */}
+          <h1 id="hero-title" className="sr-only">Rahul Dutta</h1>
+          <ParticleName text="Rahul Dutta" className="hero-name" />
+
+          <motion.p
+            className="hero-role"
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+          >
+            A <RoleRotator className="hero-role-text" />
+          </motion.p>
+
         </div>
 
-        <div className="max-width">
-          <div className="home-content">
-            <div className="text-1">
-              <span className="code-comment">{"// "}</span>Hello, I'm
-            </div>
-            <div className="text-2">Rahul Dutta</div>
-            <div className="text-3">
-              <span className="code-prefix">{">"} </span>
-              A <span className="typing"></span>
-              <span className="cursor-blink">_</span>
-            </div>
-            <div className="home-button-div">
-              <a className="home-button" href="#contact">
-                <span>Let&apos;s connect</span>
-                <i className="fa-regular fa-envelope"></i>
-              </a>
-              <Link className="home-button" to="/projects">
-                <span>Projects</span>
-                <i className="fa-solid fa-code"></i>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+        <motion.div
+          className="hero-cta"
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.85 }}
+        >
+          <Magnetic>
+            <a className="btn btn-primary" href="#contact">
+              <span>Let&apos;s connect</span>
+              <FaRegEnvelope aria-hidden="true" />
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <Link className="btn btn-ghost" to="/projects">
+              <span>Projects</span>
+              <FaCode aria-hidden="true" />
+            </Link>
+          </Magnetic>
+        </motion.div>
+      </div>
+
+      <a className="scroll-cue" href="#about" aria-label="Scroll to About section">
+        <span />
+      </a>
+    </section>
   );
 }

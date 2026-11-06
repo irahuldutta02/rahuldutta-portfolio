@@ -1,41 +1,36 @@
-import { useContext, useEffect } from "react";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { ThemeContext } from "../context/context";
-import { ThemeToggler } from "../theme/ThemeToggler";
+import { Cinematic } from "../components/Cinematic";
+import { Seo } from "../components/Seo";
+import { Nav } from "../NavBar/Nav";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
+import { Experience } from "./components/Experience";
 import { Footer } from "./components/Footer";
 import { Home } from "./components/Home";
+import { ProjectsPreview } from "./components/ProjectsPreview";
 import { ScrollUp } from "./components/ScrollUp";
 import { Skills } from "./components/Skills";
-import { Nav } from "../NavBar/Nav";
-import { Experience } from "./components/Experience";
-import { ProjectsPreview } from "./components/ProjectsPreview";
-import { CodeRain } from "./components/CodeRain";
 
 export function Portfolio() {
-  const { theme } = useContext(ThemeContext);
-
-  useEffect(() => {
-    document.title = "Rahul-Dutta/portfolio";
-    document.querySelector(":root").style.setProperty("--page-color-1", theme);
-  });
-
   return (
     <>
-      <CodeRain />
-      <ScrollUp />
+      <Seo
+        title="Rahul Dutta | Full Stack Developer (MERN)"
+        description="Rahul Dutta is a full stack web developer (MERN stack). Explore his portfolio: tech stack, work experience and projects built with React, Node.js, Express and MongoDB."
+        path="/"
+      />
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Cinematic />
       <Nav />
-      <Home />
-      <About />
-      <Skills />
-      <Experience />
-      <ProjectsPreview />
-      <Contact />
+      <main id="main">
+        <Home />
+        <About />
+        <Skills />
+        <Experience />
+        <ProjectsPreview />
+        <Contact />
+      </main>
       <Footer />
-      <ThemeToggler />
-      <ToastContainer />
+      <ScrollUp />
     </>
   );
 }

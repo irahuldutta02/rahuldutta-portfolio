@@ -1,22 +1,21 @@
-import { useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { FaAngleLeft, FaAngleRight, FaSearch, FaTimes } from "react-icons/fa";
-import { ThemeContext } from "../context/context";
 import { getFilterItems, getProjects } from "../data/data";
 import { Nav } from "../NavBar/Nav";
-import { ThemeToggler } from "../theme/ThemeToggler";
 import { ProjectCard } from "./components/ProjectCard";
 import { ScrollUp } from "./components/ScrollUp";
-import { CodeRain } from "./components/CodeRain";
+import { Cinematic } from "../components/Cinematic";
+import { Reveal } from "../components/Reveal";
+import { Seo } from "../components/Seo";
 
 export function Projects() {
   const [projects] = useState(getProjects());
   const [filterItem] = useState(getFilterItems());
   const [selectedFilter, setSelectedFilter] = useState([]);
   const [search, setSearch] = useState("");
-  const { theme } = useContext(ThemeContext);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const rowsPerPage = 8;
+  const rowsPerPage = 12; // divisible by 1, 2, 3 and 4 grid columns: no half-empty last row
   const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   // Use useMemo to avoid recalculating filtered projects on every render
@@ -43,13 +42,6 @@ export function Projects() {
       return 0;
     });
   }, [projects, search, selectedFilter]);
-
-  useEffect(() => {
-    document.title = "Rahul-Dutta/projects";
-    const root = document.querySelector(":root");
-    root.style.setProperty("--theme-toggler-bg-color-1", theme);
-    root.style.setProperty("--page-color-1", theme);
-  }, [theme]);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -93,50 +85,38 @@ export function Projects() {
 
   return (
     <>
-      <CodeRain />
+      <Seo
+        title="Projects | Rahul Dutta"
+        description="Web projects by Rahul Dutta, a full stack developer: React, Next.js, Node.js, Express, MongoDB and more. Filter by technology and open the live demo or source code."
+        path="/projects"
+      />
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Cinematic />
       <ScrollUp />
       <Nav />
-      <ThemeToggler />
 
-      <main className="main">
-        <div className="code-leak code-leak-left" style={{ top: "15%" }} aria-hidden="true">
-          <div><span className="cl-keyword">const</span> <span className="cl-function">filter</span> <span className="cl-operator">=</span></div>
-          <div>{"  "}(arr, tags) <span className="cl-keyword">{"=>"}</span></div>
-          <div>{"  "}arr.<span className="cl-function">filter</span>(item <span className="cl-keyword">{"=>"}</span></div>
-          <div>{"    "}tags.<span className="cl-function">every</span>(</div>
-          <div>{"      "}tag <span className="cl-keyword">{"=>"}</span></div>
-          <div>{"      "}item.tags.</div>
-          <div>{"      "}<span className="cl-function">includes</span>(tag)</div>
-          <div>{"    )"}</div>
-          <div>{"  );"}</div>
-        </div>
-        <div className="code-leak code-leak-right" style={{ top: "45%" }} aria-hidden="true">
-          <div><span className="cl-keyword">const</span> <span className="cl-function">paginate</span> <span className="cl-operator">=</span></div>
-          <div>{"  "}(arr, p, sz) <span className="cl-keyword">{"=>"}</span> {"{"}</div>
-          <div>{"  "}<span className="cl-keyword">const</span> <span className="cl-variable">start</span> <span className="cl-operator">=</span></div>
-          <div>{"    "}(p <span className="cl-operator">-</span> <span className="cl-boolean">1</span>) <span className="cl-operator">*</span> sz;</div>
-          <div>{"  "}<span className="cl-keyword">return</span> arr.<span className="cl-function">slice</span>(</div>
-          <div>{"    "}start,</div>
-          <div>{"    "}start <span className="cl-operator">+</span> sz</div>
-          <div>{"  );"}</div>
-          <div>{"};"}</div>
-        </div>
+      <main className="main" id="main">
 
         <div className="container">
-          <div className="project-page-header">
+          <Reveal className="project-page-header">
+            <span className="eyebrow">Archive</span>
             <h1>My Projects</h1>
-          </div>
+          </Reveal>
 
           {/* <!-- Filter --> */}
           <div className="filters">
             <ul className="filter-items">
-              <li
-                className={`filter-item ${
-                  selectedFilter.length === 0 ? "active" : ""
-                }`}
-                onClick={() => handleFilterClick()}
-              >
-                all
+              <li>
+                <button
+                  type="button"
+                  className={`filter-item ${
+                    selectedFilter.length === 0 ? "active" : ""
+                  }`}
+                  aria-pressed={selectedFilter.length === 0}
+                  onClick={() => handleFilterClick()}
+                >
+                  all
+                </button>
               </li>
               {filterItem.map((item) => {
                 const count = projects.filter((project) =>
@@ -144,15 +124,18 @@ export function Projects() {
                 ).length;
 
                 return (
-                  <li
-                    key={item}
-                    className={`filter-item ${
-                      selectedFilter.includes(item) ? "active" : ""
-                    }`}
-                    onClick={() => handleFilterClick(item)}
-                  >
-                    {item}
-                    <span className="badge">{count}</span>
+                  <li key={item}>
+                    <button
+                      type="button"
+                      className={`filter-item ${
+                        selectedFilter.includes(item) ? "active" : ""
+                      }`}
+                      aria-pressed={selectedFilter.includes(item)}
+                      onClick={() => handleFilterClick(item)}
+                    >
+                      {item}
+                      <span className="badge">{count}</span>
+                    </button>
                   </li>
                 );
               })}
@@ -168,6 +151,7 @@ export function Projects() {
                 autoComplete="off"
                 name="search__project"
                 id="search__project"
+                aria-label="Search projects by title"
                 placeholder="search project using project title..."
                 value={search}
                 onFocus={() => setIsSearchFocused(true)}
@@ -182,13 +166,15 @@ export function Projects() {
               />
               {search && (
                 <FaTimes
+                  role="button"
+                  aria-label="Clear search"
                   style={{
                     position: "absolute",
                     right: "1rem",
                     top: "50%",
                     transform: "translateY(-50%)",
                     cursor: "pointer",
-                    color: isSearchFocused ? "var(--page-color-1)" : "var(--text-muted)",
+                    color: isSearchFocused ? "var(--c-accent-glow)" : "var(--c-text-faint)",
                     zIndex: 2,
                     fontSize: "1rem",
                   }}
@@ -202,7 +188,7 @@ export function Projects() {
                     right: "1rem",
                     top: "50%",
                     transform: "translateY(-50%)",
-                    color: isSearchFocused ? "var(--page-color-1)" : "var(--text-muted)",
+                    color: isSearchFocused ? "var(--c-accent-glow)" : "var(--c-text-faint)",
                     opacity: 0.7,
                     zIndex: 2,
                     fontSize: "1rem",
@@ -214,7 +200,7 @@ export function Projects() {
 
           {/* <!-- Project Count --> */}
           <div className="project__count__div">
-            <p style={{ color: filteredProjects.length <= 0 ? "#ef4444" : "var(--text-secondary)" }}>
+            <p style={{ color: filteredProjects.length <= 0 ? "var(--c-accent-glow)" : "var(--c-text-muted)" }}>
               <span className="project__count">
                 {filteredProjects.length <= 0
                   ? "No Projects Found"
@@ -247,7 +233,7 @@ export function Projects() {
                 style={{
                   padding: "3rem",
                   textAlign: "center",
-                  color: "var(--text-muted)",
+                  color: "var(--c-text-faint)",
                   width: "100%",
                   minHeight: "300px",
                   display: "flex",
@@ -258,28 +244,14 @@ export function Projects() {
                 }}
               >
                 <div style={{ fontSize: "4rem", opacity: 0.2 }}>🔍</div>
-                <div style={{ fontSize: "1.3rem", color: "var(--text-secondary)" }}>
+                <div style={{ fontSize: "1.3rem", color: "var(--c-text-muted)" }}>
                   No projects match your filters
                 </div>
                 <button
+                  className="btn btn-primary"
                   onClick={() => {
                     setSelectedFilter([]);
                     setSearch("");
-                  }}
-                  style={{
-                    background: "var(--page-color-1)",
-                    color: "#0a0a0f",
-                    border: "none",
-                    padding: "0.7rem 1.5rem",
-                    borderRadius: "8px",
-                    cursor: "pointer",
-                    fontWeight: "bold",
-                    boxShadow: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.5rem",
-                    fontSize: "14px",
-                    letterSpacing: "0.5px",
                   }}
                 >
                   <FaTimes /> Clear Filters

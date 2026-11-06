@@ -1,13 +1,9 @@
 import { FaDownload, FaEye, FaGithub, FaLink } from "react-icons/fa";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
 export function ProjectCard({ project }) {
 
   return (
-    <div className="project__item">
+    <article className="project__item glass">
       {/* Project Preview Image */}
       <div className="project__preview">
         {project.isFeatured && (
@@ -19,6 +15,7 @@ export function ProjectCard({ project }) {
           alt={project.title}
           className="project__img"
           loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -48,7 +45,7 @@ export function ProjectCard({ project }) {
               target="_blank"
               rel="noopener noreferrer"
               className="project__btn"
-              aria-label="View live demo"
+              aria-label={`View live demo of ${project.title}`}
             >
               <FaEye />
             </a>
@@ -60,7 +57,7 @@ export function ProjectCard({ project }) {
               target="_blank"
               rel="noopener noreferrer"
               className="project__btn"
-              aria-label="View source code"
+              aria-label={`View source code of ${project.title}`}
             >
               <FaGithub />
             </a>
@@ -72,7 +69,7 @@ export function ProjectCard({ project }) {
               target="_blank"
               rel="noopener noreferrer"
               className="project__btn"
-              aria-label="View link"
+              aria-label={`View link for ${project.title}`}
             >
               <FaLink />
             </a>
@@ -84,13 +81,13 @@ export function ProjectCard({ project }) {
               target="_blank"
               rel="noopener noreferrer"
               className="project__btn"
-              aria-label="Download project"
+              aria-label={`Download ${project.title}`}
             >
               <FaDownload />
             </a>
           )}
         </div>
       </div>
-    </div>
+    </article>
   );
 }

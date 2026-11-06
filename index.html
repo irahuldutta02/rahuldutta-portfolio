@@ -1,72 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- fav icon  -->
-    <link
-      rel="shortcut icon"
-      type="image/ico"
-      href="/rahul-dutta.ico"
-    />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0000" />
+    <script>
+      // Apply the saved (or OS-preferred) theme before first paint: no flash.
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "light" && t !== "dark") {
+            t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+          }
+          document.documentElement.dataset.theme = t;
+        } catch (e) {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <link rel="shortcut icon" type="image/ico" href="/rahul-dutta.ico" />
+
+    <title>Rahul Dutta | Full Stack Developer (MERN)</title>
     <meta
       name="description"
-      content="Passionate full stack web developer Rahul Dutta's portfolio showcasing skills, background, works and experience and projects."
+      content="Rahul Dutta is a full stack web developer (MERN stack). Explore his portfolio: tech stack, work experience and projects built with React, Node.js, Express and MongoDB."
     />
     <meta
       name="keywords"
-      content="Rahul Dutta, portfolio, projects, frontend developer, backend developer, Java developer, fullstack developer, mern stack developer, rahul dutta projects, rahul dutta portfolio, rahul dutta"
+      content="Rahul Dutta, portfolio, projects, frontend developer, backend developer, fullstack developer, mern stack developer, rahul dutta projects, rahul dutta portfolio, rahul dutta"
     />
-    <meta property="og:title" content="Rahul Dutta's Portfolio" />
+    <meta name="author" content="Rahul Dutta" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="__SITE_URL__/" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rahul Dutta" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Rahul Dutta | Full Stack Developer (MERN)" />
     <meta
       property="og:description"
-      content="Passionate full stack web developer Rahul Dutta's portfolio showcasing skills, background, works and experience and projects."
+      content="Full stack (MERN) developer. Tech stack, work experience and projects."
     />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta property="og:image" content="__SITE_URL__/images/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta
-      property="og:image"
-      content="https://ik.imagekit.io/irahuldutta02/rahuldutta-portfolio/image-rahuldutta-1.png"
+      property="og:image:alt"
+      content="Portrait of Rahul Dutta in black sunglasses lit by a red studio rim light"
     />
-    <meta property="og:url" content="https://rahuldutta.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@irahuldutta02" />
+    <meta name="twitter:title" content="Rahul Dutta | Full Stack Developer (MERN)" />
     <meta
-      name="author"
-      content="Rahul Dutta - https://github.com/irahuldutta02"
+      name="twitter:description"
+      content="Full stack (MERN) developer. Tech stack, work experience and projects."
     />
-    <!-- title  -->
-    <title>Rahul-Dutta</title>
-    <!-- box icons  -->
-    
-    <!-- font-awesome  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <meta name="twitter:image" content="__SITE_URL__/images/og.jpg" />
 
-    <!-- google fonts -->
+    <!-- Structured data: only facts already published on the site -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "__SITE_URL__/#website",
+            "url": "__SITE_URL__/",
+            "name": "Rahul Dutta",
+            "inLanguage": "en",
+            "publisher": { "@id": "__SITE_URL__/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "__SITE_URL__/#person",
+            "name": "Rahul Dutta",
+            "url": "__SITE_URL__/",
+            "image": "__SITE_URL__/images/og.jpg",
+            "jobTitle": "Full Stack Developer",
+            "sameAs": [
+              "https://linkedin.com/in/irahuldutta02",
+              "https://github.com/irahuldutta02/",
+              "https://twitter.com/irahuldutta02",
+              "https://instagram.com/irahuldutta02"
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
   </head>
   <body>
     <div id="root"></div>
-    <!-- public/index.html -->
-    <form name="myForm" netlify hidden>
-      <input type="text" name="name" autocomplete="off"/>
-      <input type="email" name="email" autocomplete="off"/>
-      <input type="text" name="subject" autocomplete="off"/>
-      <textarea name="message" autocomplete="off"></textarea>
-    </form>
+    <noscript>
+      <main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 4rem auto; padding: 0 1.25rem; color: #f5edeb">
+        <h1>Rahul Dutta</h1>
+        <p>Full stack (MERN) developer. This portfolio needs JavaScript to display.</p>
+        <ul>
+          <li><a style="color: #ff3b3b" href="https://github.com/irahuldutta02/">GitHub</a></li>
+          <li><a style="color: #ff3b3b" href="https://linkedin.com/in/irahuldutta02">LinkedIn</a></li>
+          <li><a style="color: #ff3b3b" href="__SITE_URL__/projects">Projects</a></li>
+        </ul>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -1212,87 +1212,331 @@ const techStack = [
   {
     id: 1,
     name: "HTML",
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    icon: "html5", // tech-stack-icons name
+    category: "Languages",
     iconSrc: "https://img.icons8.com/fluency/48/html-5.png",
   },
   {
     id: 2,
     name: "CSS",
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    icon: "css3", // tech-stack-icons name
+    category: "Languages",
     iconSrc: "https://img.icons8.com/fluency/48/css3.png",
   },
   {
     id: 3,
     name: "Bootstrap",
+    url: "https://getbootstrap.com",
+    icon: "bootstrap5", // tech-stack-icons name
+    category: "Libs & Frameworks",
     iconSrc: "https://img.icons8.com/fluency/48/bootstrap.png",
   },
   {
     id: 4,
     name: "Tailwind",
+    url: "https://tailwindcss.com",
+    icon: "tailwindcss", // tech-stack-icons name
+    category: "Libs & Frameworks",
     iconSrc: "https://img.icons8.com/color/48/tailwindcss.png",
   },
   {
     id: 5,
     name: "JavaScript",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    icon: "js", // tech-stack-icons name
+    category: "Languages",
     iconSrc: "https://img.icons8.com/color/48/javascript.png",
   },
   {
     id: 6,
     name: "TypeScript",
+    url: "https://www.typescriptlang.org",
+    icon: "typescript", // tech-stack-icons name
+    category: "Languages",
     iconSrc: "https://img.icons8.com/fluency/48/typescript--v2.png",
   },
   {
     id: 7,
     name: "ReactJs",
+    url: "https://react.dev",
+    icon: "react", // tech-stack-icons name
+    category: "Libs & Frameworks",
     iconSrc: "https://img.icons8.com/color/48/react-native.png",
   },
   {
     id: 8,
     name: "NextJs",
+    url: "https://nextjs.org",
+    icon: "nextjs2", // tech-stack-icons name
+    category: "Libs & Frameworks",
     iconSrc: "https://simpleicons.org/icons/nextdotjs.svg",
   },
   {
     id: 9,
     name: "Express Js",
+    url: "https://expressjs.com",
+    icon: "expressjs", // tech-stack-icons name
+    category: "Libs & Frameworks",
     iconSrc: "https://img.icons8.com/fluency/48/express-js.png",
   },
   {
     id: 10,
     name: "Node Js",
+    url: "https://nodejs.org",
+    icon: "nodejs", // tech-stack-icons name
+    category: "Libs & Frameworks",
     iconSrc: "https://img.icons8.com/color/48/nodejs.png",
   },
   {
     id: 11,
     name: "PostgreSQL",
+    url: "https://www.postgresql.org",
+    icon: "postgresql", // tech-stack-icons name
+    category: "Databases",
     iconSrc: "https://img.icons8.com/color/48/postgreesql.png",
   },
   {
     id: 12,
     name: "MongoDB",
+    url: "https://www.mongodb.com",
+    icon: "mongodb", // tech-stack-icons name
+    category: "Databases",
     iconSrc: "https://img.icons8.com/color/48/mongodb.png",
   },
   {
     id: 13,
     name: "Git",
+    url: "https://git-scm.com",
+    icon: "git", // tech-stack-icons name
+    category: "Tools & DevOps",
     iconSrc: "https://img.icons8.com/color/48/git.png",
   },
   {
     id: 14,
     name: "GitHub",
+    url: "https://github.com",
+    icon: "github", // tech-stack-icons name
+    category: "Tools & DevOps",
     iconSrc: "https://img.icons8.com/fluency/48/github.png",
   },
   {
     id: 15,
     name: "Linux",
-    iconSrc: "https://img.icons8.com/color/48/linux.png",
+    url: "https://www.kernel.org",
+    category: "Tools & DevOps",
+    iconSrc: "https://cdn.simpleicons.org/linux/FCC624",
   },
   {
     id: 16,
     name: "Docker",
+    url: "https://www.docker.com",
+    icon: "docker", // tech-stack-icons name
+    category: "Tools & DevOps",
     iconSrc: "https://img.icons8.com/color/48/docker.png",
   },
   {
     id: 17,
     name: "Figma",
+    url: "https://www.figma.com",
+    icon: "figma", // tech-stack-icons name
+    category: "Tools & DevOps",
     iconSrc: "https://img.icons8.com/color/48/figma.png",
+  },
+  {
+    id: 18,
+    name: "Redux Toolkit",
+    url: "https://redux-toolkit.js.org",
+    icon: "redux", // tech-stack-icons name
+    category: "Libs & Frameworks",
+    iconSrc: "https://cdn.simpleicons.org/redux/764ABC",
+  },
+  {
+    id: 19,
+    name: "RTK Query",
+    url: "https://redux-toolkit.js.org/rtk-query/overview",
+    icon: "redux", // tech-stack-icons name
+    category: "Libs & Frameworks",
+    iconSrc: "https://cdn.simpleicons.org/redux/764ABC",
+  },
+  {
+    id: 20,
+    name: "React Router",
+    url: "https://reactrouter.com",
+    icon: "reactrouter", // tech-stack-icons name
+    category: "Libs & Frameworks",
+    iconSrc: "https://cdn.simpleicons.org/reactrouter/CA4245",
+  },
+  {
+    id: 21,
+    name: "DaisyUI",
+    url: "https://daisyui.com",
+    category: "Libs & Frameworks",
+    iconSrc: "https://cdn.simpleicons.org/daisyui/5A0EF8",
+  },
+  {
+    id: 22,
+    name: "Axios",
+    url: "https://axios-http.com",
+    category: "Libs & Frameworks",
+    iconSrc: "https://cdn.simpleicons.org/axios/5A29E4",
+  },
+  {
+    id: 23,
+    name: "Socket.io",
+    url: "https://socket.io",
+    icon: "socketio", // tech-stack-icons name
+    category: "Libs & Frameworks",
+    iconSrc: "https://cdn.simpleicons.org/socketdotio/ffffff",
+  },
+  {
+    id: 24,
+    name: "Gemini AI",
+    url: "https://gemini.google.com",
+    icon: "gemini", // tech-stack-icons name
+    category: "AI & Agents",
+    iconSrc: "https://cdn.simpleicons.org/googlegemini/8E75B2",
+  },
+  {
+    id: 30,
+    name: "Anthropic",
+    url: "https://www.anthropic.com",
+    category: "AI & Agents",
+    icon: "anthropic", // tech-stack-icons name
+  },
+  {
+    id: 31,
+    name: "OpenAI",
+    url: "https://openai.com",
+    category: "AI & Agents",
+    icon: "openai", // tech-stack-icons name
+  },
+  {
+    id: 32,
+    name: "Codex",
+    url: "https://openai.com/codex",
+    category: "AI & Agents",
+    icon: "openai", // tech-stack-icons name
+  },
+  {
+    id: 33,
+    name: "Claude Code",
+    url: "https://www.anthropic.com/claude-code",
+    category: "AI & Agents",
+    icon: "claude", // tech-stack-icons name
+  },
+  {
+    id: 34,
+    name: "Antigravity",
+    url: "https://antigravity.google",
+    category: "AI & Agents",
+    icon: "antigravity", // tech-stack-icons name
+  },
+  {
+    id: 41,
+    name: "Framer Motion",
+    url: "https://motion.dev",
+    category: "Libs & Frameworks",
+    icon: "framer", // tech-stack-icons name
+  },
+  {
+    id: 42,
+    name: "Mongoose",
+    url: "https://mongoosejs.com",
+    category: "Libs & Frameworks",
+    icon: "mongoose", // tech-stack-icons name
+  },
+  {
+    id: 43,
+    name: "Cursor",
+    url: "https://cursor.com",
+    category: "AI & Agents",
+    icon: "cursor", // tech-stack-icons name
+  },
+  {
+    id: 44,
+    name: "GitHub Copilot",
+    url: "https://github.com/features/copilot",
+    category: "AI & Agents",
+    icon: "copilotgithub", // tech-stack-icons name
+  },
+  {
+    id: 45,
+    name: "VS Code",
+    url: "https://code.visualstudio.com",
+    category: "Tools & DevOps",
+    icon: "vscode", // tech-stack-icons name
+  },
+  {
+    id: 46,
+    name: "npm",
+    url: "https://www.npmjs.com",
+    category: "Tools & DevOps",
+    icon: "npm", // tech-stack-icons name
+  },
+  {
+    id: 47,
+    name: "Vite",
+    url: "https://vite.dev",
+    category: "Tools & DevOps",
+    icon: "vitejs", // tech-stack-icons name
+  },
+  {
+    id: 48,
+    name: "ESLint",
+    url: "https://eslint.org",
+    category: "Tools & DevOps",
+    icon: "eslint", // tech-stack-icons name
+  },
+  {
+    id: 49,
+    name: "Postman",
+    url: "https://www.postman.com",
+    category: "Tools & DevOps",
+    icon: "postman", // tech-stack-icons name
+  },
+  {
+    id: 50,
+    name: "Nginx",
+    url: "https://nginx.org",
+    category: "Tools & DevOps",
+    icon: "nginx", // tech-stack-icons name
+  },
+  {
+    id: 60,
+    name: "Python",
+    url: "https://www.python.org",
+    category: "Languages",
+    icon: "python", // tech-stack-icons name
+  },
+  {
+    id: 61,
+    name: "FastAPI",
+    url: "https://fastapi.tiangolo.com",
+    category: "Libs & Frameworks",
+    iconSrc: "https://cdn.simpleicons.org/fastapi/009688",
+  },
+  {
+    id: 62,
+    name: "Redis",
+    url: "https://redis.io",
+    category: "Databases",
+    icon: "redis", // tech-stack-icons name
+  },
+  {
+    id: 63,
+    name: "Valkey",
+    url: "https://valkey.io",
+    category: "Databases",
+    iconSrc: "/icons/valkey.svg",
+  },
+  {
+    id: 70,
+    name: "TanStack Query",
+    url: "https://tanstack.com/query",
+    icon: "reactquery", // tech-stack-icons name
+    category: "Libs & Frameworks",
   },
 ];
 
@@ -1331,7 +1575,7 @@ export const experiences = [
   {
     id: "chola",
     company: "Cholamandalam Investment and Finance Company",
-    role: "Software Developer",
+    role: "MERN Stack Developer",
     logo: cholaLogo,
     link: "https://www.cholamandalam.com",
     startDate: "2026-02-18",

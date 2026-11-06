@@ -1,0 +1,168 @@
+/* ==========================================================
+   Design tokens — sampled from the hero portrait
+   Base: near-black w/ red cast · Surfaces: deep crimson
+   Accent: hot red (restrained) · Highlight: warm skin tone
+   ========================================================== */
+:root {
+  /* Base & surfaces */
+  --c-base: #0a0000;
+  --c-base-2: #120202;
+  --c-surface-1: #1a0505;
+  --c-surface-2: #4a0000;
+  --c-surface-3: #7a0000;
+
+  /* Accent */
+  --c-accent: #e11d2e; /* glows, borders, large UI (3:1+ on base) */
+  --c-accent-strong: #d3182a; /* button fill — white text = 5.3:1 */
+  --c-accent-glow: #ff3b3b; /* red TEXT on dark — 5.6:1 on base */
+  --c-warm: #c98a6b; /* skin-tone highlight */
+
+  /* Text (all AA on --c-base and --c-surface-1) */
+  --c-text: #f5edeb;
+  --c-text-muted: #c0b0ac;
+  --c-text-faint: #9b8a86;
+
+  /* Glass + lines */
+  --glass-bg: linear-gradient(160deg, rgba(40, 8, 8, 0.62), rgba(18, 2, 2, 0.72));
+  --glass-border: rgba(225, 29, 46, 0.22);
+  --line: rgba(245, 237, 235, 0.08);
+  --line-accent: rgba(255, 59, 59, 0.4);
+
+  /* Typography */
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  /* Fluid type scale */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: clamp(1.05rem, 0.98rem + 0.3vw, 1.2rem);
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.55rem);
+  --fs-xl: clamp(1.75rem, 1.3rem + 1.8vw, 2.6rem);
+  --fs-2xl: clamp(2.25rem, 1.6rem + 3vw, 4rem);
+  --fs-hero: clamp(3rem, 1.8rem + 6.2vw, 6.75rem);
+
+  /* Spacing (4px base) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4.5rem;
+  --sp-9: 7rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-y: clamp(5rem, 10vw, 8.5rem);
+  --container: 1200px;
+
+  /* Radius */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-pill: 999px;
+
+  /* Shadows & glows */
+  --shadow-card: 0 18px 50px -20px rgba(0, 0, 0, 0.8);
+  --glow-sm: 0 0 18px -2px rgba(225, 29, 46, 0.45);
+  --glow-md: 0 0 38px -4px rgba(225, 29, 46, 0.5);
+  --glow-lg: 0 0 90px -10px rgba(255, 59, 59, 0.5);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.5s;
+
+  /* Theme-aware surfaces & effects (dark defaults) */
+  --body-glow: rgba(122, 0, 0, 0.35);
+  --glow-hero-1: rgba(122, 0, 0, 0.6);
+  --glow-hero-2: rgba(74, 0, 0, 0.5);
+  --glow-contact: rgba(122, 0, 0, 0.55);
+  --blob-a: rgba(225, 29, 46, 0.6);
+  --blob-b: rgba(122, 0, 0, 0.7);
+  --blob-opacity: 0.55;
+  --role-shadow: 0 0 28px rgba(255, 59, 59, 0.45);
+  --name-glow: rgba(255, 59, 59, 0.16);
+  --stripe: rgba(255, 59, 59, 0.13);
+  --grid-line: rgba(255, 59, 59, 0.3);
+  --beam: rgba(225, 29, 46, 0.22);
+  --chip-bg: rgba(40, 8, 8, 0.55);
+  --chip-bg-hover: rgba(74, 0, 0, 0.5);
+  --pill-bg: rgba(40, 8, 8, 0.45);
+  --input-bg: rgba(26, 5, 5, 0.7);
+  --nav-bg: rgba(14, 2, 2, 0.72);
+  --menu-bg: rgba(14, 2, 2, 0.94);
+  --fab-bg: rgba(20, 3, 3, 0.85);
+  --nav-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.9);
+  --logo-bg: rgba(245, 237, 235, 0.94);
+  --preview-bg: #0e0303;
+  --preview-fade: rgba(10, 0, 0, 0.85);
+  --badge-bg: rgba(10, 0, 0, 0.75);
+  --vignette: rgba(0, 0, 0, 0.55);
+  --grain-opacity: 0.07;
+
+  color-scheme: dark;
+}
+
+/* ==========================================================
+   Light theme: warm paper + crimson ink. Same accent, inverted surfaces.
+   Contrast (AA): text 17:1, muted 8.4:1, faint 5.4:1, red text 5.4:1 on base.
+   ========================================================== */
+:root[data-theme="light"] {
+  --c-base: #fbf5f3;
+  --c-base-2: #f5eae6;
+  --c-surface-1: #ffffff;
+  --c-surface-2: #f3dcd6;
+  --c-surface-3: #e8b9b0;
+
+  --c-accent: #d0192b;
+  --c-accent-strong: #c8102e; /* white text 5.9:1 */
+  --c-accent-glow: #c8102e; /* red TEXT on light: 5.4:1 */
+  --c-warm: #a8603f;
+
+  --c-text: #1a0505;
+  --c-text-muted: #5a433f;
+  --c-text-faint: #77605b;
+
+  --glass-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.88), rgba(255, 238, 234, 0.72));
+  --glass-border: rgba(200, 16, 46, 0.2);
+  --line: rgba(26, 5, 5, 0.1);
+  --line-accent: rgba(200, 16, 46, 0.42);
+
+  --shadow-card: 0 18px 44px -22px rgba(120, 20, 30, 0.32);
+  --glow-sm: 0 0 18px -4px rgba(200, 16, 46, 0.35);
+  --glow-md: 0 0 34px -6px rgba(200, 16, 46, 0.4);
+  --glow-lg: 0 0 70px -12px rgba(200, 16, 46, 0.4);
+
+  --body-glow: rgba(225, 29, 46, 0.1);
+  --glow-hero-1: rgba(225, 29, 46, 0.16);
+  --glow-hero-2: rgba(232, 185, 176, 0.5);
+  --glow-contact: rgba(225, 29, 46, 0.14);
+  --blob-a: rgba(225, 29, 46, 0.35);
+  --blob-b: rgba(232, 150, 140, 0.55);
+  --blob-opacity: 0.45;
+  --role-shadow: none;
+  --name-glow: rgba(225, 29, 46, 0.1);
+  --stripe: rgba(200, 16, 46, 0.1);
+  --grid-line: rgba(200, 16, 46, 0.26);
+  --beam: rgba(225, 29, 46, 0.16);
+  --chip-bg: rgba(255, 255, 255, 0.72);
+  --chip-bg-hover: rgba(225, 29, 46, 0.08);
+  --pill-bg: rgba(255, 255, 255, 0.65);
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --nav-bg: rgba(255, 250, 248, 0.78);
+  --menu-bg: rgba(255, 250, 248, 0.97);
+  --fab-bg: rgba(255, 250, 248, 0.94);
+  --nav-shadow: 0 10px 34px -16px rgba(120, 20, 30, 0.35);
+  --logo-bg: #ffffff;
+  --preview-bg: #f1e4e0;
+  --preview-fade: rgba(60, 10, 10, 0.22);
+  --badge-bg: rgba(255, 250, 248, 0.92);
+  --vignette: rgba(150, 40, 40, 0.1);
+  --grain-opacity: 0.06;
+
+  color-scheme: light;
+}
+:root[data-theme="light"] .fx-grain {
+  filter: invert(1); /* noise is white by default; make it dark ink on paper */
+}

@@ -1,26 +1,24 @@
 import { useEffect, useState } from "react";
+import { FaAngleUp } from "react-icons/fa";
 
 export function ScrollUp() {
-  const [showScroll, setShowScroll] = useState(false);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 560) {
-        setShowScroll(true);
-      } else {
-        setShowScroll(false);
-      }
-    });
+    const onScroll = () => setShow(window.scrollY > 560);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <>
-      <div
-        className={`scroll-up-btn ${showScroll ? "show" : ""}`}
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
-        <i className="fas fa-angle-up"></i>
-      </div>
-    </>
+    <button
+      type="button"
+      className={`scroll-up ${show ? "show" : ""}`}
+      aria-label="Scroll to top"
+      tabIndex={show ? 0 : -1}
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    >
+      <FaAngleUp aria-hidden="true" />
+    </button>
   );
 }

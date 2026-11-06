@@ -1,75 +1,86 @@
-import { useEffect } from "react";
-import Typed from "typed.js";
-import rahulDuttaImage from "../../assets/images/rahul-dutta.png";
+import { FaRegEnvelope } from "react-icons/fa";
+import { Magnetic } from "../../components/Magnetic";
+import { Reveal } from "../../components/Reveal";
+import { TiltCard } from "../../components/TiltCard";
+import { RoleRotator } from "../../components/RoleRotator";
+
+const FLOATERS = [
+  { t: "</>", x: "0%", y: "16%", d: "0s", z: "50px" },
+  { t: "{ }", x: "100%", y: "10%", d: "-1.2s", z: "70px" },
+  { t: "=>", x: "100%", y: "52%", d: "-0.6s", z: "80px" },
+  { t: "npm run", x: "0%", y: "78%", d: "-2.4s", z: "60px" },
+  { t: "git push", x: "68%", y: "100%", d: "-3.1s", z: "50px" },
+];
 
 export function About() {
-  useEffect(() => {
-    // Initialize Typed.js when component mounts
-    var typed = new Typed(".typing-2", {
-      strings: ["Full Stack Developer", "Software Engineer"],
-      typeSpeed: 100,
-      backSpeed: 60,
-      loop: true,
-    });
-
-    // Clean up Typed instance when component unmounts
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
   return (
-    <>
-      {/* <!-- about section start --> */}
-
-      <section className="about" id="about">
-        <div className="code-leak code-leak-right" style={{ top: "15%" }} aria-hidden="true">
-          <div><span className="cl-keyword">class</span> <span className="cl-variable">Developer</span> {"{"}</div>
-          <div>{"  "}<span className="cl-function">constructor</span>() {"{"}</div>
-          <div>{"    "}<span className="cl-keyword">this</span>.<span className="cl-variable">coffee</span> <span className="cl-operator">=</span> <span className="cl-boolean">true</span>;</div>
-          <div>{"    "}<span className="cl-keyword">this</span>.<span className="cl-variable">sleep</span> <span className="cl-operator">=</span> <span className="cl-boolean">false</span>;</div>
-          <div>{"  }"}</div>
-          <div>{" "}</div>
-          <div>{"  "}<span className="cl-function">code</span>() {"{"}</div>
-          <div>{"    "}<span className="cl-keyword">while</span>(<span className="cl-keyword">this</span>.<span className="cl-variable">coffee</span>) {"{"}</div>
-          <div>{"      "}<span className="cl-function">createMagic</span>();</div>
-          <div>{"    }"}</div>
-          <div>{"  }"}</div>
-          <div>{"}"}</div>
-        </div>
-
-        <div className="max-width">
-          <h2 className="title">About me</h2>
-          <div className="about-content">
-            <div className="column left">
-              <img
-                src={rahulDuttaImage}
-                width="320"
-                height="320"
-                alt="rahul-dutta-image"
+    <section className="section about" id="about" aria-labelledby="about-title">
+      <div className="container about-grid">
+        <Reveal className="about-media">
+          <TiltCard className="about-frame">
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/images/hero-480.webp 480w, /images/hero-720.webp 720w, /images/hero-1080.webp 1080w"
+                sizes="(max-width: 800px) 80vw, 440px"
               />
-            </div>
-            <div className="column right">
-              <div className="text">
-                I'm Rahul and I'm a <span className="typing-2"></span>
-              </div>
-              <p>
-                with experience in building scalable and high-performance Web
-                Applications and Software. Proficient in modern technologies to
-                drive impactful business outcomes. Adept at collaborating with
-                cross-functional teams to deliver solutions on time and within
-                scope.
-              </p>
-              <div className="about-hireme-btn">
-                <a className="about-button" href="#contact">
-                  Let&apos;s connect
-                  <i className="fa-regular fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+              <img
+                src="/images/hero-1080.jpg"
+                width="1080"
+                height="1080"
+                loading="lazy"
+                decoding="async"
+                alt="Portrait of Rahul Dutta in black sunglasses and a black knit sweater, lit by a red studio rim light against a deep crimson backdrop"
+              />
+            </picture>
+
+            {/* Cinematic FX layers (decorative) */}
+            <span className="fx-ring" aria-hidden="true" />
+            <span className="fx-clip" aria-hidden="true">
+              <span className="fx-grid" />
+            </span>
+            {FLOATERS.map((f) => (
+              <span
+                key={f.t}
+                className="fx-float"
+                style={{ "--x": f.x, "--y": f.y, "--d": f.d, "--z": f.z }}
+                aria-hidden="true"
+              >
+                {f.t}
+              </span>
+            ))}
+          </TiltCard>
+        </Reveal>
+
+        <div className="about-copy">
+          <Reveal>
+            <span className="eyebrow">About me</span>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <h2 id="about-title" className="about-title">
+              I&apos;m Rahul and I&apos;m a <em><RoleRotator /></em>
+            </h2>
+          </Reveal>
+          <Reveal delay={0.16}>
+            <p className="about-text">
+              with experience in building scalable and high-performance Web
+              Applications and Software. Proficient in modern technologies to
+              drive impactful business outcomes. Adept at collaborating with
+              cross-functional teams to deliver solutions on time and within
+              scope.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.24}>
+            <Magnetic>
+              <a className="btn btn-primary" href="#contact">
+                Let&apos;s connect
+                <FaRegEnvelope aria-hidden="true" />
+              </a>
+            </Magnetic>
+          </Reveal>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

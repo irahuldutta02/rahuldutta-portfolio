@@ -1,111 +1,100 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { FaBars, FaMoon, FaSun, FaTimes } from "react-icons/fa";
+import { useTheme } from "../theme/useTheme";
 
-import { useLocation } from "react-router-dom";
+const LINKS = [
+  { id: "about", label: "About" },
+  { id: "skills", label: "Tech stack" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" },
+];
 
 export function Nav() {
-  const [showMenu, setShowMenu] = useState(false);
-  const [makeSticky, setMakeSticky] = useState(false);
-
-  const location = useLocation();
-  const path = location.pathname;
-
-  function handleShowMenu() {
-    setShowMenu(!showMenu);
-  }
+  const { pathname } = useLocation();
+  const { theme, toggleTheme } = useTheme();
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState("");
+  const isHome = pathname === "/";
 
   useEffect(() => {
-    window.addEventListener("load", () => {
-      if (window.scrollY > 30) {
-        setMakeSticky(true);
-      } else {
-        setMakeSticky(false);
-      }
-    });
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 30) {
-        setMakeSticky(true);
-      } else {
-        setMakeSticky(false);
-      }
-    });
+    const onScroll = () => setScrolled(window.scrollY > 30);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (path === "/") {
-    return (
-      <>
-        <nav className={`navbar ${makeSticky ? "cSticky" : ""}`}>
-          <div className="max-width">
-            <div className="logo">
-              <Link to={"/"}>
-                Rahul <span>Dutta</span>
-              </Link>
-            </div>
-            <ul className={`menu ${showMenu && "active"}`}>
-              <li>
-                <a href="#about" className="menu-btn" onClick={handleShowMenu}>
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#skills" className="menu-btn" onClick={handleShowMenu}>
-                  Tech stack
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#experience"
-                  className="menu-btn"
-                  onClick={handleShowMenu}
-                >
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="menu-btn"
-                  onClick={handleShowMenu}
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="menu-btn"
-                  onClick={handleShowMenu}
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-            <div className="menu-btn" onClick={handleShowMenu}>
-              {showMenu ? (
-                <i className="fas fa-times"></i>
-              ) : (
-                <i className="fas fa-bars"></i>
-              )}
-            </div>
-          </div>
-        </nav>
-      </>
+  // scroll-spy
+  useEffect(() => {
+    if (!isHome) return;
+    const io = new IntersectionObserver(
+      (entries) =>
+        entries.forEach(
+          (e) => e.isIntersecting && setActive(e.target.id === "home" ? "" : e.target.id)
+        ),
+      { rootMargin: "-40% 0px -55% 0px" }
     );
-  }
+    ["home", ...LINKS.map((l) => l.id)].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+    return () => io.disconnect();
+  }, [isHome]);
 
-  if (path.includes("/projects")) {
-    return (
-      <>
-        <nav className="navbar cSticky">
-          <div className="max-width">
-            <div className="logo">
-              <Link to={"/"}>
-                Rahul <span>Dutta</span>
-              </Link>
-            </div>
-          </div>
-        </nav>
-      </>
-    );
-  }
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e) => e.key === "Escape" && setOpen(false);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  return (
+    <header className={`nav ${scrolled || !isHome ? "scrolled" : ""} ${open ? "open" : ""}`}>
+      <nav className="nav-inner" aria-label="Primary">
+        <Link to="/" className="logo" onClick={() => setOpen(false)}>
+          Rahul <span>Dutta</span>
+        </Link>
+        {isHome && (
+          <ul className="nav-links" id="nav-links">
+            {LINKS.map(({ id, label }) => (
+              <li key={id}>
+                <a
+                  href={`#${id}`}
+                  className={active === id ? "active" : ""}
+                  aria-current={active === id ? "true" : undefined}
+                  onClick={() => setOpen(false)}
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+        <div className="nav-actions">
+          <button
+            type="button"
+            className="icon-btn theme-toggle"
+            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            onClick={toggleTheme}
+          >
+            {theme === "dark" ? <FaSun aria-hidden="true" /> : <FaMoon aria-hidden="true" />}
+          </button>
+          {isHome && (
+            <button
+              type="button"
+              className="icon-btn nav-toggle"
+              aria-label={open ? "Close menu" : "Open menu"}
+              aria-expanded={open}
+              aria-controls="nav-links"
+              onClick={() => setOpen((o) => !o)}
+            >
+              {open ? <FaTimes /> : <FaBars />}
+            </button>
+          )}
+        </div>
+      </nav>
+    </header>
+  );
 }

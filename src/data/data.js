@@ -2,6 +2,20 @@ const projects = [
   /************************
    * Featured Projects
    *************************/
+  // PlanEase
+  {
+    id: "f66311b7-97d4-4a12-9e36-52eb145de04f",
+    isFeatured: true,
+    title: "PlanEase",
+    filter: ["react", "nextjs", "tailwind", "nodejs", "mongodb"],
+    preview: "/projects/plan-ease.png",
+    techStack: ["Next Js", "React", "Tailwind CSS", "MongoDB", "Framer Motion"],
+    livePreview: "https://planease.rahultech.in",
+    code: "https://github.com/irahuldutta02/plan-ease",
+    note: "",
+    download:
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/plan-ease",
+  },
   // FeedSync
   {
     id: "2b2bad37-2a58-44c0-9138-35d473907dd31",
@@ -28,14 +42,7 @@ const projects = [
     id: "207810ea-fe92-4a23-a0d8-857ce8c65b9b",
     isFeatured: true,
     title: "ChatEase",
-    filter: [
-      "react",
-      "express",
-      "socket.io",
-      "mongodb",
-      "nodejs",
-      "tailwind",
-    ],
+    filter: ["react", "express", "socket.io", "mongodb", "nodejs", "tailwind"],
     preview: "/projects/chat-ease.png",
     techStack: ["React Js", "Express Js", "Socket.io", "MongoDB", "Node Js"],
     livePreview: "https://chatease.rahultech.in",

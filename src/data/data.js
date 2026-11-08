@@ -2,6 +2,26 @@ const projects = [
   /************************
    * Featured Projects
    *************************/
+  // Money Manager
+  {
+    id: "39f997ac-1277-4086-a0ea-6cf90ff26d6f",
+    isFeatured: true,
+    title: "Money Manager",
+    filter: ["react", "nextjs", "tailwind", "mongodb"],
+    preview: "/projects/money-manager.png",
+    techStack: [
+      "Next Js",
+      "React",
+      "Tailwind CSS",
+      "MongoDB",
+      "Better Auth",
+    ],
+    livePreview: "https://moneymanager.rahultech.in",
+    code: "https://github.com/irahuldutta02/money-manager",
+    note: "",
+    download:
+      "https://downgit.github.io/#/home?url=https://github.com/irahuldutta02/money-manager",
+  },
   // PlanEase
   {
     id: "f66311b7-97d4-4a12-9e36-52eb145de04f",
